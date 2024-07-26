@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/ConsoleKit-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKit/Exports.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKit.build/Objects-normal/x86_64/Exports.o"
+  }
+}

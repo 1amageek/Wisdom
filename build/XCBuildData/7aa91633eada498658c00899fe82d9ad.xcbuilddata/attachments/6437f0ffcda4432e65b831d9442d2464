@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/Sources/Collections/Collections.swift" : {
+    "index-unit-output-path" : "/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-6a0fc04d253d2c276701fb4307b20860.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-6a0fc04d253d2c276701fb4307b20860.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-collections/build/swift-collections.build/Release/Collections.build/Objects-normal/x86_64/Collections-6a0fc04d253d2c276701fb4307b20860.o"
+  }
+}

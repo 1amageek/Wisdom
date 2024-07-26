@@ -1,0 +1,125 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/AsyncKit-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolError.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolItem.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolItem.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolItem.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolItem.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/ConnectionPoolSource.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolSource.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolSource.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/ConnectionPoolSource.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopConnectionPool.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopConnectionPool.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopConnectionPool.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopConnectionPool.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/ConnectionPool/EventLoopGroupConnectionPool.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroupConnectionPool.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroupConnectionPool.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroupConnectionPool.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Concurrency.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Flatten.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Flatten.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Flatten.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Flatten.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoop+Future.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Future.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Future.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoop+Future.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Concurrency.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoop/EventLoopGroup+Throwing.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Throwing.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Throwing.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopGroup+Throwing.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Collection+Flatten.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Collection+Flatten.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Collection+Flatten.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Collection+Flatten.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/EventLoopFutureQueue+Sequence.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue+Sequence.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue+Sequence.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/EventLoopFutureQueue+Sequence.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Collection.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Collection.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Collection.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Collection.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Conjunctions.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Conjunctions.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Conjunctions.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Conjunctions.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Miscellaneous.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Miscellaneous.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Miscellaneous.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Miscellaneous.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Nonempty.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Nonempty.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Nonempty.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Nonempty.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Optional.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Optional.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Optional.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Optional.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Transform.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Transform.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Transform.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Transform.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Future+Try.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Try.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Try.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Future+Try.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/FutureOperators.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/FutureOperators.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/FutureOperators.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/FutureOperators.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/EventLoopFuture/Optional+StrictMap.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Optional+StrictMap.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Optional+StrictMap.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Optional+StrictMap.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/Sources/AsyncKit/Exports.swift" : {
+    "index-unit-output-path" : "/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/async-kit/build/async-kit.build/Release/AsyncKit.build/Objects-normal/arm64/Exports.o"
+  }
+}

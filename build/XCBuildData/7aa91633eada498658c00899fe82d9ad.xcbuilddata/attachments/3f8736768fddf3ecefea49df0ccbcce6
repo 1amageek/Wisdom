@@ -1,0 +1,110 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartKit-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/BasicCodingKey.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/BasicCodingKey.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/BasicCodingKey.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/BasicCodingKey.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Deprecated/MultipartError.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Exports.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Exports.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.Decoder.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.Decoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.Decoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.Decoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.KeyedContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.KeyedContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.KeyedContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.KeyedContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.SingleValueContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.SingleValueContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.SingleValueContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.SingleValueContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataDecoder/FormDataDecoder.UnkeyedContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.UnkeyedContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.UnkeyedContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataDecoder.UnkeyedContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.Encoder.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.Encoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.Encoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.Encoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.KeyedContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.KeyedContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.KeyedContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.KeyedContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.SingleValueContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.SingleValueContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.SingleValueContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.SingleValueContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/FormDataEncoder.UnkeyedContainer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.UnkeyedContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.UnkeyedContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/FormDataEncoder.UnkeyedContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/FormDataEncoder/Storage.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Storage.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Storage.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Storage.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartFormData.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartFormData.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartFormData.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartFormData.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartParser.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartParser.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartParser.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartParser.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartPart.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPart.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPart.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPart.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartPartConvertible.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPartConvertible.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPartConvertible.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartPartConvertible.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/MultipartSerializer.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartSerializer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartSerializer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/MultipartSerializer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/Sources/MultipartKit/Utilities.swift" : {
+    "index-unit-output-path" : "/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Utilities.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Utilities.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/multipart-kit/build/multipart-kit.build/Release/MultipartKit.build/Objects-normal/arm64/Utilities.o"
+  }
+}

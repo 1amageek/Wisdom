@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/_NIOFileSystemFoundationCompat-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystemFoundationCompat/Date+FileInfo.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/Date+FileInfo.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/Date+FileInfo.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystemFoundationCompat.build/Objects-normal/arm64/Date+FileInfo.o"
+  }
+}

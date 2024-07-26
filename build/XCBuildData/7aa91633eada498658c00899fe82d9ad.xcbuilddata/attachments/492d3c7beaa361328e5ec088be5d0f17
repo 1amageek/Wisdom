@@ -1,0 +1,32 @@
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/DerivedSources/resource_bundle_accessor.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedReader.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedWriter.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteBuffer+FileSystem.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteCount.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Convenience.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntries.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntry.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Exports.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileChunks.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandle.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandleProtocol.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileInfo.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystem.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError+Syscall.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemProtocol.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileType.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedOrAnyStream.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedStream.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Cancellation.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Concurrency\ Primitives/UnsafeTransfer.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/String+UnsafeUnititializedCapacity.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/CInterop.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/Errno.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/FileDescriptor+Syscalls.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/Mocking.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/Syscall.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System\ Calls/Syscalls.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/SystemFileHandle.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Utilities.swift
+/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/OpenOptions.swift

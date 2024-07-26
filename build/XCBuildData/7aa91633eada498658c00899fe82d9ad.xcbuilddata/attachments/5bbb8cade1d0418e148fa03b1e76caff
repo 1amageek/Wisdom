@@ -1,0 +1,85 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master.d",
+    "diagnostics" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/Wisdom-master.swiftdeps"
+  },
+  "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/AppState.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/Build/BuildManager.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/BuildManager.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/BuildManager.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/BuildManager.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/CodeFile.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/CodeFile.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/CodeFile.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/CodeFile.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/ContentView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/ContextManager.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextManager.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextManager.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextManager.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/ContextView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ContextView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/FileItem.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItem.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItem.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItem.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/FileItemView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItemView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItemView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileItemView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/FileSystemObserver.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemObserver.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemObserver.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemObserver.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/FileSystemView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileSystemView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/FileTypeSelectionView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileTypeSelectionView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileTypeSelectionView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/FileTypeSelectionView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/Server/ServerManager.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerManager.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerManager.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerManager.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/Server/ServerSettingView.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerSettingView.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerSettingView.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/ServerSettingView.o"
+  },
+  "/Users/1amageek/Desktop/Wisdom/Wisdom/WisdomApp.swift" : {
+    "index-unit-output-path" : "/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/WisdomApp.o",
+    "llvm-bc" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/WisdomApp.bc",
+    "object" : "/Users/1amageek/Desktop/Wisdom/build/Wisdom.build/Release/Wisdom.build/Objects-normal/arm64/WisdomApp.o"
+  }
+}

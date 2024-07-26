@@ -1,0 +1,70 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/NIOSOCKS-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSClientHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSClientHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSClientHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSClientHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Channel Handlers/SOCKSServerHandshakeHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSServerHandshakeHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSServerHandshakeHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSServerHandshakeHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/AuthenticationMethod.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/AuthenticationMethod.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/AuthenticationMethod.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/AuthenticationMethod.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/ClientGreeting.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientGreeting.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientGreeting.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientGreeting.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Errors.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Errors.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Errors.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Errors.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Helpers.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Helpers.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Helpers.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Helpers.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/Messages.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Messages.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Messages.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/Messages.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SelectedAuthenticationMethod.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SelectedAuthenticationMethod.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SelectedAuthenticationMethod.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SelectedAuthenticationMethod.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSRequest.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSRequest.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSRequest.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSRequest.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/Messages/SOCKSResponse.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSResponse.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSResponse.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/SOCKSResponse.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ClientStateMachine.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientStateMachine.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientStateMachine.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ClientStateMachine.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/Sources/NIOSOCKS/State/ServerStateMachine.swift" : {
+    "index-unit-output-path" : "/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ServerStateMachine.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ServerStateMachine.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio-extras/build/swift-nio-extras.build/Release/NIOSOCKS.build/Objects-normal/x86_64/ServerStateMachine.o"
+  }
+}

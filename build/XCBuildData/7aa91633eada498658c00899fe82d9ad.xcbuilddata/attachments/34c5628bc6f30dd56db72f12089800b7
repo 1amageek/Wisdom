@@ -1,0 +1,45 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketKit-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/Concurrency/WebSocket+Concurrency.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/Exports.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/Exports.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/HTTPUpgradeRequestHandler.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/HTTPUpgradeRequestHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/HTTPUpgradeRequestHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/HTTPUpgradeRequestHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocket+Connect.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Connect.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Connect.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocket+Connect.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketClient.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketClient.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketClient.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketClient.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/Sources/WebSocketKit/WebSocketHandler.swift" : {
+    "index-unit-output-path" : "/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/websocket-kit/build/websocket-kit.build/Release/WebSocketKit.build/Objects-normal/x86_64/WebSocketHandler.o"
+  }
+}

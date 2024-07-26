@@ -1,0 +1,20 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/CoreMetrics-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/Sources/CoreMetrics/Locks.swift" : {
+    "index-unit-output-path" : "/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Locks.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Locks.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Locks.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/Sources/CoreMetrics/Metrics.swift" : {
+    "index-unit-output-path" : "/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Metrics.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Metrics.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-metrics/build/swift-metrics.build/Release/CoreMetrics.build/Objects-normal/arm64/Metrics.o"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/RoutingKit-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/AnyRouter.swift" : {
+    "index-unit-output-path" : "/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/AnyRouter.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/AnyRouter.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/AnyRouter.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/Parameters.swift" : {
+    "index-unit-output-path" : "/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Parameters.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Parameters.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Parameters.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/PathComponent.swift" : {
+    "index-unit-output-path" : "/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/PathComponent.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/PathComponent.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/PathComponent.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/Router.swift" : {
+    "index-unit-output-path" : "/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Router.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Router.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/Router.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/Sources/RoutingKit/TrieRouter.swift" : {
+    "index-unit-output-path" : "/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/TrieRouter.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/TrieRouter.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/routing-kit/build/routing-kit.build/Release/RoutingKit.build/Objects-normal/arm64/TrieRouter.o"
+  }
+}

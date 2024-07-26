@@ -1,0 +1,140 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Splash-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/CharacterSet/CharacterSet+Contains.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/CharacterSet+Contains.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/CharacterSet+Contains.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/CharacterSet+Contains.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Equatable/Equatable+AnyOf.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Equatable+AnyOf.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Equatable+AnyOf.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Equatable+AnyOf.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Int/Int+IsOdd.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Int+IsOdd.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Int+IsOdd.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Int+IsOdd.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Sequence/Sequence+AnyOf.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+AnyOf.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+AnyOf.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+AnyOf.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Sequence/Sequence+Occurrences.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+Occurrences.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+Occurrences.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Sequence+Occurrences.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Strings/String+HTMLEntities.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+HTMLEntities.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+HTMLEntities.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+HTMLEntities.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Strings/String+IsNumber.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+IsNumber.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+IsNumber.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+IsNumber.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Strings/String+PrefixChecking.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+PrefixChecking.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+PrefixChecking.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+PrefixChecking.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Strings/String+Removing.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+Removing.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+Removing.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/String+Removing.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Extensions/Strings/Substring+HasSuffix.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Substring+HasSuffix.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Substring+HasSuffix.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Substring+HasSuffix.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Grammar/Grammar.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Grammar.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Grammar.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Grammar.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Grammar/SwiftGrammar.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/SwiftGrammar.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SwiftGrammar.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SwiftGrammar.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Output/AttributedStringOutputFormat.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/AttributedStringOutputFormat.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/AttributedStringOutputFormat.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/AttributedStringOutputFormat.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Output/HTMLOutputFormat.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/HTMLOutputFormat.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/HTMLOutputFormat.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/HTMLOutputFormat.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Output/MarkdownDecorator.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/MarkdownDecorator.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/MarkdownDecorator.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/MarkdownDecorator.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Output/OutputBuilder.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputBuilder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputBuilder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputBuilder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Output/OutputFormat.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputFormat.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputFormat.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/OutputFormat.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Syntax/SyntaxHighlighter.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxHighlighter.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxHighlighter.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxHighlighter.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Syntax/SyntaxRule.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxRule.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxRule.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/SyntaxRule.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Theming/Color.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Color.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Color.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Color.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Theming/Font.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Font.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Font.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Font.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Theming/Theme.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Theming/Theme+Defaults.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme+Defaults.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme+Defaults.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Theme+Defaults.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Tokenizing/Segment.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Segment.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Segment.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Segment.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Tokenizing/Tokenizer.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/Tokenizer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Tokenizer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/Tokenizer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/Sources/Splash/Tokenizing/TokenType.swift" : {
+    "index-unit-output-path" : "/Splash.build/Release/Splash.build/Objects-normal/x86_64/TokenType.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/TokenType.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/Splash/build/Splash.build/Release/Splash.build/Objects-normal/x86_64/TokenType.o"
+  }
+}

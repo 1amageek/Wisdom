@@ -1,0 +1,170 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/_NIOFileSystem-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedReader.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedReader.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedReader.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedReader.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/BufferedWriter.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedWriter.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedWriter.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedWriter.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteBuffer+FileSystem.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteBuffer+FileSystem.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteBuffer+FileSystem.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteBuffer+FileSystem.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/ByteCount.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteCount.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteCount.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/ByteCount.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Convenience.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Convenience.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Convenience.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Convenience.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntries.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntries.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntries.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntries.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/DirectoryEntry.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntry.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntry.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/DirectoryEntry.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Exports.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Exports.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileChunks.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileChunks.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileChunks.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileChunks.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandle.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandle.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandle.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandle.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileHandleProtocol.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandleProtocol.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandleProtocol.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileHandleProtocol.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileInfo.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileInfo.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileInfo.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileInfo.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystem.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystem.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystem.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystem.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemError+Syscall.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError+Syscall.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError+Syscall.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemError+Syscall.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileSystemProtocol.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileSystemProtocol.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/FileType.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileType.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileType.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileType.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedOrAnyStream.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedOrAnyStream.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedOrAnyStream.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedOrAnyStream.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/BufferedStream.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedStream.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedStream.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/BufferedStream.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Cancellation.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Cancellation.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Cancellation.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Cancellation.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Concurrency Primitives/UnsafeTransfer.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/UnsafeTransfer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/UnsafeTransfer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/UnsafeTransfer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/String+UnsafeUnititializedCapacity.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/String+UnsafeUnititializedCapacity.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/String+UnsafeUnititializedCapacity.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/String+UnsafeUnititializedCapacity.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/CInterop.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/CInterop.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/CInterop.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/CInterop.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Errno.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Errno.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Errno.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Errno.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/FileDescriptor+Syscalls.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileDescriptor+Syscalls.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileDescriptor+Syscalls.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/FileDescriptor+Syscalls.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Mocking.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Mocking.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Mocking.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Mocking.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Syscall.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscall.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscall.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscall.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/System Calls/Syscalls.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscalls.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscalls.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Syscalls.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/SystemFileHandle.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/SystemFileHandle.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/SystemFileHandle.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/SystemFileHandle.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/Internal/Utilities.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Utilities.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Utilities.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/Utilities.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOFileSystem/OpenOptions.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/OpenOptions.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/OpenOptions.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/_NIOFileSystem.build/Objects-normal/arm64/OpenOptions.o"
+  }
+}

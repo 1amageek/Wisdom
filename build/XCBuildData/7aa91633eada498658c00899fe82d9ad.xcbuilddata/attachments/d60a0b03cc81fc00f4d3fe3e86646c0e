@@ -1,0 +1,30 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/Sources/Logging/Locks.swift" : {
+    "index-unit-output-path" : "/swift-log.build/Release/Logging.build/Objects-normal/arm64/Locks.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Locks.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Locks.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/Sources/Logging/Logging.swift" : {
+    "index-unit-output-path" : "/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/Logging.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/Sources/Logging/LogHandler.swift" : {
+    "index-unit-output-path" : "/swift-log.build/Release/Logging.build/Objects-normal/arm64/LogHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/LogHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/LogHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/Sources/Logging/MetadataProvider.swift" : {
+    "index-unit-output-path" : "/swift-log.build/Release/Logging.build/Objects-normal/arm64/MetadataProvider.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/MetadataProvider.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-log/build/swift-log.build/Release/Logging.build/Objects-normal/arm64/MetadataProvider.o"
+  }
+}

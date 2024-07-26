@@ -1,0 +1,1045 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Vapor-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/_Deprecations.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/_Deprecations.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/_Deprecations.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/_Deprecations.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Application.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/AuthenticationCache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AuthenticationCache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AuthenticationCache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AuthenticationCache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/Authenticator.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authenticator.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authenticator.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authenticator.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/BasicAuthorization.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicAuthorization.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicAuthorization.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicAuthorization.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/BearerAuthorization.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BearerAuthorization.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BearerAuthorization.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BearerAuthorization.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/GuardMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/GuardMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/GuardMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/GuardMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/RedirectMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RedirectMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RedirectMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RedirectMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Authentication/SessionAuthenticatable.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionAuthenticatable.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionAuthenticatable.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionAuthenticatable.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Bcrypt/Bcrypt.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bcrypt.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bcrypt.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bcrypt.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Cache/Application+Cache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Cache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Cache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Cache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Cache/Cache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Cache/CacheExpirationTime.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CacheExpirationTime.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CacheExpirationTime.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CacheExpirationTime.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Cache/MemoryCache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemoryCache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemoryCache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemoryCache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Cache/Request+Cache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Cache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Cache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Cache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Client/Application+Clients.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Clients.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Clients.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Clients.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Client/Client.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Client/ClientRequest.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientRequest.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientRequest.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientRequest.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Client/ClientResponse.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientResponse.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientResponse.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ClientResponse.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Client/Request+Client.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Client.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Client.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Client.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Commands/BootCommand.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BootCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BootCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BootCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Commands/CommandContext+Application.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CommandContext+Application.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CommandContext+Application.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CommandContext+Application.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Commands/RoutesCommand.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Commands/ServeCommand.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ServeCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ServeCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ServeCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/AnyResponse+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/AsyncBasicResponder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncBasicResponder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncBasicResponder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncBasicResponder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/AsyncMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/AsyncPasswordHasher+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/AsyncSessionDriver.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncSessionDriver.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncSessionDriver.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncSessionDriver.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/Authentication+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authentication+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authentication+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Authentication+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/Cache+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Cache+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/Client+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Client+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/RequestBody+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RequestBody+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RequestBody+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RequestBody+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/Responder+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/ResponseCodable+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/RoutesBuilder+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/ViewRenderer+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Concurrency/WebSocket+Concurrency.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/WebSocket+Concurrency.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/WebSocket+Concurrency.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/WebSocket+Concurrency.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/ContainerGetPathExecutor.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContainerGetPathExecutor.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContainerGetPathExecutor.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContainerGetPathExecutor.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/Content.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Content.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Content.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Content.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/ContentCoders.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentCoders.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentCoders.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentCoders.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/ContentConfiguration.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentConfiguration.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentConfiguration.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentConfiguration.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/ContentContainer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ContentContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/JSONCoder+Custom.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoder+Custom.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoder+Custom.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoder+Custom.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/JSONCoders+Content.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoders+Content.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoders+Content.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/JSONCoders+Content.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/PlaintextDecoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextDecoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextDecoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextDecoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/PlaintextEncoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextEncoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextEncoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextEncoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/URLQueryCoders.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryCoders.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryCoders.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryCoders.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Content/URLQueryContainer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryContainer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryContainer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryContainer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Core/Core.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Core.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Core.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Core.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Core/Running.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Running.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Running.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Running.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Deprecations/CORSMiddleware+AllowOriginSetting.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+AllowOriginSetting.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+AllowOriginSetting.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+AllowOriginSetting.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Deprecations/CORSMiddleware+Configuration+exposedHeaders.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+Configuration+exposedHeaders.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+Configuration+exposedHeaders.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware+Configuration+exposedHeaders.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Deprecations/DotEnvFile+load.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnvFile+load.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnvFile+load.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnvFile+load.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Deprecations/Routes+caseInsenstive.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes+caseInsenstive.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes+caseInsenstive.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes+caseInsenstive.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Deprecations/Validatable+validate.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable+validate.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable+validate.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable+validate.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Environment/Environment.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Environment/Environment+Process.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Process.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Process.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Process.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Environment/Environment+Secret.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Secret.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Secret.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Environment+Secret.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/Abort.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Abort.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Abort.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Abort.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/AbortError.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AbortError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AbortError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AbortError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/DebuggableError.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DebuggableError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DebuggableError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DebuggableError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/Demangler.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Demangler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Demangler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Demangler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/ErrorSource.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorSource.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorSource.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorSource.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Error/StackTrace.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/StackTrace.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/StackTrace.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/StackTrace.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Exports.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Exports.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Exports.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Exports.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Application+HTTP.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/BasicResponder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicResponder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicResponder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicResponder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/BodyStream.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BodyStream.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BodyStream.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BodyStream.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Client/Application+HTTP+Client.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Client.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Client.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Client.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Client/EventLoopHTTPClient.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/EventLoopHTTPClient.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/EventLoopHTTPClient.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/EventLoopHTTPClient.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/EndpointCache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/EndpointCache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/EndpointCache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/EndpointCache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPCookies.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPCookies.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPCookies.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPCookies.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaderCacheControl.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderCacheControl.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderCacheControl.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderCacheControl.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaderExpires.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderExpires.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderExpires.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderExpires.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaderLastModified.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderLastModified.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderLastModified.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaderLastModified.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Cache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Cache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Cache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Cache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Connection.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Connection.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Connection.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Connection.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+ContentDisposition.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentDisposition.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentDisposition.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentDisposition.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+ContentRange.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentRange.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentRange.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+ContentRange.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Directive.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Directive.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Directive.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Directive.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Forwarded.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Forwarded.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Forwarded.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Forwarded.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Link.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Link.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Link.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Link.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPHeaders+Name.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Name.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Name.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPHeaders+Name.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPMediaType.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaType.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaType.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaType.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Headers/HTTPMediaTypePreference.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaTypePreference.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaTypePreference.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMediaTypePreference.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/HTTPMethod+String.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMethod+String.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMethod+String.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPMethod+String.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/HTTPStatus.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPStatus.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPStatus.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPStatus.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Responder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Responder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/Application+HTTP+Server.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Server.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Server.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+HTTP+Server.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/HTTPServer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/HTTPServerHandler.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/HTTPServerRequestDecoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerRequestDecoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerRequestDecoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerRequestDecoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/HTTPServerResponseEncoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerResponseEncoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerResponseEncoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerResponseEncoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/HTTP/Server/HTTPServerUpgradeHandler.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerUpgradeHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerUpgradeHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/HTTPServerUpgradeHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Logging/Logger+Report.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Logger+Report.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Logger+Report.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Logger+Report.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Logging/LoggingSystem+Environment.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/LoggingSystem+Environment.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/LoggingSystem+Environment.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/LoggingSystem+Environment.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/Application+Middleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Middleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Middleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Middleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/CORSMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CORSMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/ErrorMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ErrorMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/FileMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/Middleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Middleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Middleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Middleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/MiddlewareConfiguration.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/MiddlewareConfiguration.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MiddlewareConfiguration.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MiddlewareConfiguration.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Middleware/RouteLoggingMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteLoggingMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteLoggingMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteLoggingMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Multipart/File+Multipart.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/File+Multipart.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/File+Multipart.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/File+Multipart.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Multipart/FormDataDecoder+Content.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataDecoder+Content.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataDecoder+Content.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataDecoder+Content.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Multipart/FormDataEncoder+Content.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataEncoder+Content.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataEncoder+Content.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FormDataEncoder+Content.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/Application+Password.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Password.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Password.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Password.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/Application+Passwords.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Passwords.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Passwords.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Passwords.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/AsyncPasswordHasher.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AsyncPasswordHasher.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/BcryptHasher.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BcryptHasher.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BcryptHasher.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BcryptHasher.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/PasswordHasher.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/PasswordHasher.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PasswordHasher.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PasswordHasher.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/PlaintextHasher.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextHasher.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextHasher.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextHasher.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Passwords/Request+Password.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Password.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Password.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Password.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Request/Redirect.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Redirect.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Redirect.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Redirect.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Request/Request.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Request/Request+Body.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Body.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Body.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Body.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Request/Request+BodyStream.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+BodyStream.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+BodyStream.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+BodyStream.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Responder/Application+Responder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Responder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Responder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Responder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Responder/DefaultResponder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DefaultResponder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DefaultResponder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DefaultResponder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Response/Response.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Response/Response+Body.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response+Body.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response+Body.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Response+Body.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Response/ResponseCodable.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ResponseCodable.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/Application+Routes.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Routes.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Routes.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Routes.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/Parameters+Require.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Parameters+Require.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Parameters+Require.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Parameters+Require.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/Request+WebSocket.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+WebSocket.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+WebSocket.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+WebSocket.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/Route.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Route.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Route.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Route.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RouteCollection.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteCollection.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteCollection.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RouteCollection.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/Routes.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Routes.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RoutesBuilder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RoutesBuilder+Group.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Group.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Group.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Group.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RoutesBuilder+Method.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Method.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Method.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Method.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RoutesBuilder+Middleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Middleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Middleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+Middleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Routing/RoutesBuilder+WebSocket.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+WebSocket.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+WebSocket.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RoutesBuilder+WebSocket.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Security/OTP.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/OTP.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/OTP.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/OTP.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Server/Application+Servers.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Servers.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Servers.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Servers.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Server/Server.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Server.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Server.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Server.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/Application+Sessions.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Sessions.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Sessions.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Sessions.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/MemorySessions.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemorySessions.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemorySessions.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/MemorySessions.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/Request+Session.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Session.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Session.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+Session.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/Session.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Session.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Session.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Session.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/SessionCache.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionCache.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionCache.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionCache.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/SessionData.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionData.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionData.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionData.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/SessionDriver.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionDriver.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionDriver.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionDriver.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/SessionsConfiguration.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsConfiguration.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsConfiguration.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsConfiguration.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Sessions/SessionsMiddleware.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsMiddleware.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsMiddleware.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SessionsMiddleware.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormData.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormData.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormData.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormData.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormDecoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormDecoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormDecoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormDecoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormEncoder.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormEncoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormEncoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormEncoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormError.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormParser.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormParser.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormParser.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormParser.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLEncodedFormSerializer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormSerializer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormSerializer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLEncodedFormSerializer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/URLEncodedForm/URLQueryFragmentConvertible.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryFragmentConvertible.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryFragmentConvertible.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URLQueryFragmentConvertible.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/AnyResponse.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/AnyResponse.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Array+Random.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Array+Random.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Array+Random.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Array+Random.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Base32.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base32.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base32.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base32.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Base64.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base64.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base64.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Base64.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/BaseN.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BaseN.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BaseN.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BaseN.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/BasicCodingKey.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicCodingKey.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicCodingKey.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/BasicCodingKey.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/ByteCount.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ByteCount.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ByteCount.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ByteCount.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Bytes+Hex.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+Hex.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+Hex.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+Hex.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Bytes+SecureCompare.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+SecureCompare.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+SecureCompare.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Bytes+SecureCompare.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Collection+Safe.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Collection+Safe.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Collection+Safe.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Collection+Safe.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/DataProtocol+Copy.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DataProtocol+Copy.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DataProtocol+Copy.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DataProtocol+Copy.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/DecoderUnwrapper.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DecoderUnwrapper.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DecoderUnwrapper.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DecoderUnwrapper.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/DirectoryConfiguration.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DirectoryConfiguration.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DirectoryConfiguration.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DirectoryConfiguration.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/DotEnv.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnv.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnv.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/DotEnv.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Extendable.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Extendable.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Extendable.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Extendable.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/File.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/File.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/File.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/File.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/FileIO.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileIO.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileIO.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/FileIO.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/LifecycleHandler.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/LifecycleHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/LifecycleHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/LifecycleHandler.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/OptionalType.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/OptionalType.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/OptionalType.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/OptionalType.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/RFC1123.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RFC1123.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RFC1123.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RFC1123.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/SocketAddress+Hostname.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/SocketAddress+Hostname.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SocketAddress+Hostname.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/SocketAddress+Hostname.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Storage.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Storage.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Storage.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Storage.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/String+IsIPAddress.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/String+IsIPAddress.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/String+IsIPAddress.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/String+IsIPAddress.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/Thread.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Thread.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Thread.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Thread.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Utilities/URI.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URI.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URI.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URI.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/RangeResult.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/RangeResult.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RangeResult.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/RangeResult.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validatable.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validatable.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validation.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validation.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validation.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validation.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/ValidationKey.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationKey.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationKey.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationKey.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validations.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validations.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validations.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validations.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/ValidationsError.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationsError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationsError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidationsError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validator.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validator.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validator.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Validator.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/ValidatorResult.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidatorResult.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidatorResult.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ValidatorResult.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/And.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/And.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/And.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/And.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Case.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Case.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Case.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Case.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/CharacterSet.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/CharacterSet.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CharacterSet.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/CharacterSet.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Count.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Count.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Count.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Count.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Email.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Email.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Email.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Email.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Empty.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Empty.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Empty.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Empty.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/In.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/In.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/In.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/In.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Nil.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Nil.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Nil.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Nil.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/NilIgnoring.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/NilIgnoring.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/NilIgnoring.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/NilIgnoring.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Not.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Not.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Not.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Not.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Or.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Or.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Or.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Or.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Pattern.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Pattern.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Pattern.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Pattern.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Range.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Range.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Range.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Range.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/URL.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/URL.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URL.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/URL.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/Validation/Validators/Valid.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Valid.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Valid.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Valid.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/View/Application+Views.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Views.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Views.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Application+Views.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/View/PlaintextRenderer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextRenderer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextRenderer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/PlaintextRenderer.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/View/Request+View.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+View.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+View.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/Request+View.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/View/View.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/View.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/View.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/View.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/Sources/Vapor/View/ViewRenderer.swift" : {
+    "index-unit-output-path" : "/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/vapor/build/vapor.build/Release/Vapor.build/Objects-normal/arm64/ViewRenderer.o"
+  }
+}

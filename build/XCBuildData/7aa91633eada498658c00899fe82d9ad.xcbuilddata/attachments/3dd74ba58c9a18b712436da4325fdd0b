@@ -1,0 +1,60 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocket-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketClientUpgrader.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketClientUpgrader.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketClientUpgrader.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketClientUpgrader.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketFrameAggregator.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketFrameAggregator.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketFrameAggregator.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketFrameAggregator.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/NIOWebSocketServerUpgrader.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketServerUpgrader.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketServerUpgrader.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/NIOWebSocketServerUpgrader.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/SHA1.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/SHA1.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/SHA1.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/SHA1.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketErrorCodes.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketErrorCodes.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketErrorCodes.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketErrorCodes.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrame.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrame.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrame.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrame.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrameDecoder.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameDecoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameDecoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameDecoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketFrameEncoder.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameEncoder.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameEncoder.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketFrameEncoder.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketOpcode.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketOpcode.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketOpcode.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketOpcode.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/Sources/NIOWebSocket/WebSocketProtocolErrorHandler.swift" : {
+    "index-unit-output-path" : "/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketProtocolErrorHandler.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketProtocolErrorHandler.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/swift-nio/build/swift-nio.build/Release/NIOWebSocket.build/Objects-normal/x86_64/WebSocketProtocolErrorHandler.o"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "" : {
+    "const-values" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master.swiftconstvalues",
+    "dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master.d",
+    "diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master.dia",
+    "emit-module-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master-emit-module.dia",
+    "swift-dependencies" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleKitCommands-master.swiftdeps"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Async/AnyAsyncCommand.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyAsyncCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyAsyncCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyAsyncCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Async/AsyncCommand.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Async/AsyncCommandGroup.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommandGroup.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommandGroup.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommandGroup.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Async/AsyncCommands.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommands.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommands.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AsyncCommands.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Async/GenerateAsyncAutocompleteCommand.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAsyncAutocompleteCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAsyncAutocompleteCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAsyncAutocompleteCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/AnyCommand.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/AnyCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/Command.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Command.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Command.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Command.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/CommandContext.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandContext.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandContext.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandContext.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/CommandError.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/CommandGroup.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandGroup.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandGroup.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandGroup.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/CommandInput.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandInput.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandInput.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandInput.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/Commands.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Commands.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Commands.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Commands.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/Console+Run.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Console+Run.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Console+Run.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Console+Run.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Base/ConsoleError.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleError.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleError.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/ConsoleError.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Completion/Completion.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Completion.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Completion.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Completion.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Completion/GenerateAutocompleteCommand.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAutocompleteCommand.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAutocompleteCommand.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/GenerateAutocompleteCommand.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Deprecated/MergedAsyncCommandGroup.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/MergedAsyncCommandGroup.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/MergedAsyncCommandGroup.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/MergedAsyncCommandGroup.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Signatures/Argument.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Argument.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Argument.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Argument.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Signatures/CommandSignature.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandSignature.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandSignature.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/CommandSignature.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Signatures/Flag.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Flag.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Flag.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Flag.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Signatures/Option.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Option.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Option.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Option.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Utilities/String+LevenshteinDistance.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/String+LevenshteinDistance.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/String+LevenshteinDistance.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/String+LevenshteinDistance.o"
+  },
+  "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/Sources/ConsoleKitCommands/Utilities/Utilities.swift" : {
+    "index-unit-output-path" : "/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Utilities.o",
+    "llvm-bc" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Utilities.bc",
+    "object" : "/Users/1amageek/Library/Developer/Xcode/DerivedData/Wisdom-anwiaytrdyaxstdlwulhklegdmtf/SourcePackages/checkouts/console-kit/build/console-kit.build/Release/ConsoleKitCommands.build/Objects-normal/x86_64/Utilities.o"
+  }
+}
