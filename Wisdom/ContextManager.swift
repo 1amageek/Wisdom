@@ -174,7 +174,7 @@ class ContextManager {
         }
     }
     
-    private func addOrUpdateFile(at url: URL) async {
+    func addOrUpdateFile(at url: URL) async {
         do {
             guard FileManager.default.fileExists(atPath: url.path) else {
                 logger.warning("Attempted to add/update non-existent file: \(url.lastPathComponent)")
@@ -254,7 +254,9 @@ class ContextManager {
     }
     
     private func updateFullContext() {
-        fullContext = formatFiles(files)
+        let directoryTree = generateDirectoryTree()
+        let filesContent = formatFiles(files)
+        fullContext = directoryTree + "\n\n" + filesContent
         isContextDirty = false
     }
     
@@ -283,5 +285,21 @@ class ContextManager {
     
     deinit {
         fileObserver?.stopObserving()
+    }
+}
+
+extension ContextManager {
+    
+    private func generateDirectoryTree() -> String {
+        let rootItem = FileItem(url: rootURL)
+        rootItem.loadChildren() // Make sure children are loaded
+        return "Directory Structure:\n" + rootItem.generateDirectoryTree()
+    }
+    
+    func getDirectoryStructure() -> String {
+        if isContextDirty {
+            updateFullContext()
+        }
+        return generateDirectoryTree()
     }
 }

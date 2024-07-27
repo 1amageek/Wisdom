@@ -32,7 +32,7 @@ struct FileSystemView<Content: View>: View {
                         }
                 }
             }
-            .navigationSplitViewColumnWidth(ideal: 200)
+            .navigationSplitViewColumnWidth(ideal: 260)
         } else {
             content()
         }

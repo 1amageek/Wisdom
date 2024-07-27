@@ -15,7 +15,7 @@ struct ContextView: View {
     
     var body: some View {
         ZStack {
-            if appState.contextManager!.isLoading {
+            if appState.contextManager?.isLoading ?? true {
                 ProgressView("Loading context...")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 

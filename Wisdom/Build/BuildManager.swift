@@ -7,141 +7,109 @@
 
 import Foundation
 
-actor BuildManager {
-    private let fileManager = FileManager.default
-    private let buildQueue = DispatchQueue(label: "com.wisdom.buildQueue", qos: .userInitiated)
+@Observable
+class BuildManager {
+    var buildCommand: String = "swift build"
+    private var buildProcess: Process?
+    private var outputPipe: Pipe?
+    private var errorPipe: Pipe?
     
-    enum BuildError: Error, LocalizedError {
-        case directoryNotFound
-        case buildFailed(String)
-        case invalidScheme
-        
-        var errorDescription: String? {
-            switch self {
-            case .directoryNotFound:
-                return "Project directory not found."
-            case .buildFailed(let reason):
-                return "Build failed: \(reason)"
-            case .invalidScheme:
-                return "Invalid or unsupported scheme."
-            }
-        }
+    var buildWorkingDirectory: URL?
+    
+    var isBuilding = false
+    var buildOutputLines: [BuildLog] = []
+    var buildErrorLines: [BuildLog] = []
+    var lastBuildStatus: BuildStatus = .none
+    
+    func setBuildWorkingDirectory(_ url: URL?) {
+        self.buildWorkingDirectory = url
+        print("Build working directory set to: \(url?.path ?? "nil")")
     }
     
-    struct BuildConfiguration {
-        var scheme: String
-        var configuration: String
-        var extraArguments: [String]
+    func start() async throws {
+        guard !isBuilding else { throw BuildError.buildInProgress }
+        guard let workingDirectory = buildWorkingDirectory else { throw BuildError.noWorkingDirectory }
         
-        init(scheme: String, configuration: String = "Debug", extraArguments: [String] = []) {
-            self.scheme = scheme
-            self.configuration = configuration
-            self.extraArguments = extraArguments
-        }
-    }
-    
-    func build(projectPath: URL, configuration: BuildConfiguration, progress: @escaping (String) -> Void) async throws {
-        guard fileManager.fileExists(atPath: projectPath.path) else {
-            throw BuildError.directoryNotFound
-        }
+        isBuilding = true
+        buildOutputLines.removeAll()
+        buildErrorLines.removeAll()
+        lastBuildStatus = .inProgress
         
         let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/xcodebuild")
-        process.arguments = [
-            "-project", projectPath.path,
-            "-scheme", configuration.scheme,
-            "-configuration", configuration.configuration,
-            "build"
-        ] + configuration.extraArguments
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+        
+        var environment = ProcessInfo.processInfo.environment
+        environment["PATH"] = "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+        process.environment = environment
+        
+        process.arguments = ["xcrun", "swift"] + buildCommand.components(separatedBy: " ").dropFirst()
+        process.currentDirectoryURL = workingDirectory
         
         let outputPipe = Pipe()
         let errorPipe = Pipe()
+        
         process.standardOutput = outputPipe
         process.standardError = errorPipe
         
-        outputPipe.fileHandleForReading.readabilityHandler = { fileHandle in
-            if let line = String(data: fileHandle.availableData, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines), !line.isEmpty {
-                progress(line)
-            }
-        }
+        self.buildProcess = process
+        self.outputPipe = outputPipe
+        self.errorPipe = errorPipe
         
-        errorPipe.fileHandleForReading.readabilityHandler = { fileHandle in
-            if let line = String(data: fileHandle.availableData, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines), !line.isEmpty {
-                progress("Error: \(line)")
-            }
-        }
+        buildOutputLines.append(.init("Working directory: \(workingDirectory.path)"))
         
         do {
             try process.run()
+            
+            Task {
+                for try await line in outputPipe.fileHandleForReading.bytes.lines {
+                    await MainActor.run {
+                        self.buildOutputLines.append(.init(line))
+                    }
+                }
+            }
+            
+            Task {
+                for try await line in errorPipe.fileHandleForReading.bytes.lines {
+                    await MainActor.run {
+                        self.buildErrorLines.append(.init(line))
+                    }
+                }
+            }
+            
             process.waitUntilExit()
             
-            outputPipe.fileHandleForReading.readabilityHandler = nil
-            errorPipe.fileHandleForReading.readabilityHandler = nil
+            isBuilding = false
             
             if process.terminationStatus != 0 {
-                print("-------", process.terminationStatus)
-                throw BuildError.buildFailed("Process exited with status \(process.terminationStatus)")
+                lastBuildStatus = .failed(code: process.terminationStatus)
+                throw BuildError.buildFailed(code: process.terminationStatus)
+            } else {
+                lastBuildStatus = .success
             }
         } catch {
-            throw BuildError.buildFailed(error.localizedDescription)
+            isBuilding = false
+            lastBuildStatus = .failed(code: -1)
+            throw error
         }
     }
     
-    func clean(projectPath: URL, scheme: String, progress: @escaping (String) -> Void) async throws {
-        guard fileManager.fileExists(atPath: projectPath.path) else {
-            throw BuildError.directoryNotFound
-        }
-        
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/xcodebuild")
-        process.arguments = ["-project", projectPath.path, "-scheme", scheme, "clean"]
-        
-        let outputPipe = Pipe()
-        process.standardOutput = outputPipe
-        process.standardError = outputPipe
-        
-        outputPipe.fileHandleForReading.readabilityHandler = { fileHandle in
-            if let line = String(data: fileHandle.availableData, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines), !line.isEmpty {
-                progress(line)
-            }
-        }
-        
-        do {
-            try process.run()
-            process.waitUntilExit()
-            
-            outputPipe.fileHandleForReading.readabilityHandler = nil
-            
-            if process.terminationStatus != 0 {
-                throw BuildError.buildFailed("Clean failed with status \(process.terminationStatus)")
-            }
-        } catch {
-            throw BuildError.buildFailed(error.localizedDescription)
-        }
+    func stop() {
+        buildProcess?.terminate()
+        isBuilding = false
+        lastBuildStatus = .stopped
     }
     
-    func listSchemes(projectPath: URL) async throws -> [String] {
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/xcodebuild")
-        process.arguments = ["-project", projectPath.path, "-list"]
-        
-        let outputPipe = Pipe()
-        process.standardOutput = outputPipe
-        
-        try process.run()
-        process.waitUntilExit()
-        
-        guard let output = try outputPipe.fileHandleForReading.readToEnd(),
-              let outputString = String(data: output, encoding: .utf8) else {
-            throw BuildError.buildFailed("Failed to read schemes")
-        }
-        
-        let schemes = outputString.components(separatedBy: "Schemes:")
-            .last?
-            .components(separatedBy: .newlines)
-            .compactMap { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-            .filter { !$0.isEmpty } ?? []
-        
-        return schemes
+    enum BuildError: Error {
+        case buildInProgress
+        case buildFailed(code: Int32)
+        case noWorkingDirectory
+    }
+    
+    enum BuildStatus {
+        case none
+        case inProgress
+        case success
+        case failed(code: Int32)
+        case stopped
     }
 }

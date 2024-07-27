@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
     
     @Environment(AppState.self) var appState: AppState
+    @Environment(BuildManager.self) var buildManager: BuildManager
     
     @Environment(\.openURL) private var openURL: OpenURLAction
     
@@ -18,13 +18,15 @@ struct ContentView: View {
     
     @State private var isFileTypeSelectionPresented = false
     
-    @State private var isServerSettingsPresented = false
+    @State private var isSettingsPresented = false
     
     @State var isServerRunning: Bool = false
     
     @State var isBuildInProgress: Bool = false
     
-    @State private var isChatViewPresented: Bool = false
+    @State private var showBuildErrorAlert = false
+    
+    @State private var selectedCode: ImprovedCode?
     
     var body: some View {
         @Bindable var state = appState
@@ -41,24 +43,27 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItemGroup(placement: .primaryAction) {
                     Spacer()
-      
+                    
                     Button {
                         Task {
                             do {
-                                isBuildInProgress = true
-                                try await appState.buildProject()
-                                isBuildInProgress = false
+                                if buildManager.isBuilding {
+                                    buildManager.stop()
+                                } else {
+                                    try await buildManager.start()
+                                }
                             } catch {
-                                isBuildInProgress = false
+                                print(error)
+                                showBuildErrorAlert = true
                             }
                         }
                     } label: {
-                        Image(systemName: isServerRunning ? "stop.fill" : "play.fill")
+                        Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
                             .padding(.horizontal, 6)
                     }
-         
+                    
                     Button {
-                        isServerSettingsPresented.toggle()
+                        isSettingsPresented.toggle()
                     } label: {
                         Image(systemName: "gear")
                     }
@@ -87,45 +92,39 @@ struct ContentView: View {
                 .background(.regularMaterial)
             }
         } detail: {
-            ContextView()
-                .toolbar {
-                    ToolbarItemGroup(placement: .primaryAction) {
-                        Button {
-                            Task {
-                                let isRunning = await appState.isServerRunning()
-                                if isRunning {
-                                    self.isServerRunning = false
-                                    await appState.stopServer()
-                                } else {
-                                    self.isServerRunning = true
-                                    await appState.startServer()
-                                    let hostname = await self.appState.serverManager.hostname
-                                    let port = await self.appState.serverManager.port
-                                    self.openURL(URL(string: "http://\(hostname):\(port)/context")!)
-                                }
-                            }
-                        } label: {
-                            Image(systemName: isServerRunning ? "stop.fill" : "play.fill")
-                                .padding(.horizontal, 6)
-                        }
-                        Button {
-                            appState.copyToClipboard()
-                        } label: {
-                            Image(systemName: "doc.on.clipboard")
-                        }
-                        Button {
-                            openWindow(id: "chat")
-                        } label: {
-                            Image(systemName: "message")
-                        }
+            VSplitView {
+                ContextView()
+                    .frame(maxWidth: .infinity)
+                LogView()
+                    .frame(maxWidth: .infinity)
+                    .frame(idealHeight: 120)
+            }
+            .frame(maxWidth: .infinity)
+            .toolbar {
+                ToolbarItemGroup(placement: .primaryAction) {
+                    Button {
+                        appState.copyToClipboard()
+                    } label: {
+                        Image(systemName: "doc.on.clipboard")
+                    }
+                    Button {
+                        openWindow(id: "chat")
+                    } label: {
+                        Image(systemName: "message")
                     }
                 }
+            }
         }
         .sheet(isPresented: $isFileTypeSelectionPresented) {
             FileTypeSelectionView()
         }
-        .sheet(isPresented: $isServerSettingsPresented) {
-            ServerSettingsView()
+        .sheet(isPresented: $isSettingsPresented) {
+            SettingView()
+        }
+        .alert("Build Failed", isPresented: $showBuildErrorAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("The build process failed. Please check the log for more details.")
         }
     }
 }

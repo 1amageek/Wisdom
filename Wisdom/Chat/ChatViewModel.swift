@@ -11,24 +11,21 @@ import Observation
 
 @Observable
 class ChatViewModel {
-    
     var threads: [ChatThread] = []
     var messages: [ChatMessage] = []
+    var agentActions: [AgentAction] = []
     var inputMessage: String = ""
     var isLoading: Bool = false
-    var selectedThreadID: String?
+    var selectedThreadID: String? {
+        didSet {
+            messages.removeAll()
+        }
+    }
     
     func addNewThread(name: String) {
         let newThread = ChatThread(id: UUID().uuidString, name: name, createdAt: Date(), updatedAt: Date())
         threads.append(newThread)
         selectedThreadID = newThread.id
-    }
-    
-    func selectThread(_ threadID: String) {
-        selectedThreadID = threadID
-        // ここでスレッドに応じたメッセージの読み込みを行う
-        // 現在は簡略化のため、メッセージをクリアするだけにしています
-        messages.removeAll()
     }
     
     func sendMessage() {
@@ -49,14 +46,15 @@ class ChatViewModel {
         
         Task {
             do {
-                let response = try await Functions.shared.requirements(
+                let (response, actions) = try await Functions.shared.message(
                     userID: "testUser",
                     packageID: "testPackage",
                     threadID: threadID,
                     message: sentMessage
-                )                            
+                )
                 await MainActor.run {
-                    messages.append(response)
+                    self.agentActions.append(contentsOf: actions)
+                    self.messages.append(response)
                     isLoading = false
                 }
             } catch {

@@ -2,17 +2,19 @@
 //  ServerSettingView.swift
 //  Wisdom
 //
-//  Created by Norikazu Muramoto on 2024/07/25.
+//  Created by Norikazu Muramoto on 2024/07/27.
 //
 
 import SwiftUI
 
-struct ServerSettingsView: View {
+struct ServerSettingView: View {
+    
     @Environment(AppState.self) var appState: AppState
+    
     @Environment(\.dismiss) private var dismiss
     
     @State private var hostname: String = "127.0.0.1"
-    @State private var port: Int = 8080
+    @State private var port: Int = 6060
     
     init() {
         
@@ -38,7 +40,7 @@ struct ServerSettingsView: View {
                 Button("Reset") {
                     Task {
                         await appState.serverManager.setHostname("127.0.0.1")
-                        await appState.serverManager.setPort(8080)
+                        await appState.serverManager.setPort(6060)
                     }
                 }
                 Spacer()
@@ -63,7 +65,8 @@ struct ServerSettingsView: View {
     }
 }
 
+
 #Preview {
-    ServerSettingsView()
+    ServerSettingView()
         .environment(AppState())
 }

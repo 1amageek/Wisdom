@@ -91,3 +91,20 @@ extension FileItem: Hashable {
         hasher.combine(url)
     }
 }
+
+extension FileItem {
+    func generateDirectoryTree(depth: Int = 0) -> String {
+        guard isDirectory else { return "" }
+        
+        let indent = String(repeating: "  ", count: depth)
+        var result = "\(indent)\(name)/\n"
+        
+        if let children = children {
+            for child in children where child.isDirectory {
+                result += child.generateDirectoryTree(depth: depth + 1)
+            }
+        }
+        
+        return result
+    }
+}

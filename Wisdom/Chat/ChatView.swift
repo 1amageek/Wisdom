@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ChatView: View {
-
     @State var viewModel: ChatViewModel = ChatViewModel()
+    @State private var selectedAction: AgentAction?
+    @State private var isInspectorPresented = false
     
     var body: some View {
         NavigationSplitView {
@@ -32,12 +33,13 @@ struct ChatView: View {
             ZStack {
                 if viewModel.selectedThreadID == nil {
                     Text("No messages")
-                        .font(.title)
+                        .font(.title3)
+                        .foregroundStyle(.secondary)
                 } else {
                     ScrollView {
                         LazyVStack {
                             ForEach(viewModel.messages) { message in
-                                ChatBalloonView(message: message)
+                                ChatBalloonView(message: message, selectedAction: $selectedAction)
                             }
                         }
                         .padding()
@@ -57,7 +59,6 @@ struct ChatView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 12.0))
                                 .font(.system(size: 12))
                             
-                            
                             if !viewModel.inputMessage.isEmpty {
                                 Button(action: viewModel.sendMessage) {
                                     if viewModel.isLoading {
@@ -73,16 +74,28 @@ struct ChatView: View {
                                 }
                                 .buttonStyle(.borderless)
                                 .disabled(viewModel.inputMessage.isEmpty || viewModel.isLoading)
+                                .keyboardShortcut(.return, modifiers: .command)
                             }
                         }
                         .padding(12)
                         .background(.ultraThinMaterial)
                     }
                 }
-            }            
+            }
             .navigationTitle("Prompt")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button(action: { isInspectorPresented.toggle() }) {
+                        Image(systemName: "sidebar.right")
+                    }
+                }
+            }
+            .inspector(isPresented: $isInspectorPresented) {
+                AgentActionInspectorView(action: selectedAction)
+            }
         }
-        .frame(width: 680, height: 600)
+        .frame(minWidth: 640, minHeight: 600)
+        .environment(viewModel)
     }
 }
 

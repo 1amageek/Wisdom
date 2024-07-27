@@ -83,6 +83,26 @@ public class Functions {
         }
     }
     
+    func message(userID: String, packageID: String, threadID: String, message: String) async throws -> (ChatMessage, [AgentAction]) {
+        let parameters: [String: Any] = [
+            "message": message
+        ]
+        let data = try await callFunction("message", parameters: parameters)
+        let decoder = Functions.createDecoder()
+        
+        do {
+            let improveMessage = try decoder.decode(ImproveMessage.self, from: data)
+            let actions: [AgentAction] = improveMessage.actions
+            let codeContents: [CodeContent] = actions.map { CodeContent(id: $0.id, URL: $0.url) }
+            let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.explanation, codes: codeContents)], role: .user, timestamp: improveMessage.timestamp)
+            print("Successfully decoded ChatMessage: \(chatMessage)")
+            return (chatMessage, actions)
+        } catch {
+            print("Decoding Error: \(error)")
+            throw error
+        }
+    }
+    
 //    func spec(userID: String, packageID: String, message: String, dependencies: String) async throws -> ProjectSpec {
 //        let parameters: [String: Any] = [
 //            "userID": userID,

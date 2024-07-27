@@ -11,11 +11,12 @@ import Vapor
 actor ServerManager {
     private var app: Application?
     private weak var appState: AppState?
+    private weak var buildManager: BuildManager?
     private var isRunning = false
     var hostname: String
     var port: Int
     
-    init(hostname: String = "127.0.0.1", port: Int = 8080) {
+    init(hostname: String = "127.0.0.1", port: Int = 6060) {
         self.hostname = hostname
         self.port = port
     }
@@ -24,8 +25,9 @@ actor ServerManager {
         return isRunning
     }
     
-    func setDelegate(_ appState: AppState) {
+    func setDelegate(_ appState: AppState, buildManager: BuildManager) {
         self.appState = appState
+        self.buildManager = buildManager
     }
     
     func setHostname(_ newHostname: String) {
@@ -104,7 +106,15 @@ actor ServerManager {
         }
         
         app.get("context") { req -> String in
-            return self.appState?.context ?? ""
+            let codes = self.appState?.context ?? ""
+            let error = self.buildManager?.buildOutputLines.map({ $0.text }).joined(separator: "\n") ?? ""
+            
+            return """
+\(codes)
+---
+Error:
+\(error)
+"""
         }
         
         app.get("files", ":filename") { req -> Response in

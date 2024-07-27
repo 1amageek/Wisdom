@@ -1,8 +1,8 @@
 //
 //  AppState.swift
-//  Wisdom
 //
-//  Created by Norikazu Muramoto on 2024/07/25.
+//
+//  Created by Norikazu Muramoto on 2024/07/21.
 //
 
 import Foundation
@@ -12,46 +12,23 @@ import AppKit
 class AppState {
     
     var rootItem: FileItem?
-    
     var selection: Set<FileItem> = []
-    
     var availableFileTypes: [String] = []
-    
     var selectedFileTypes: [String] = ["swift"]
-    
     var contextManager: ContextManager?
-    
     var serverManager: ServerManager = ServerManager()
-    
-    var buildManager: BuildManager = BuildManager()
     
     var context: String { self.contextManager?.getFullContext() ?? "" }
     
-    var availableSchemes: [String] = []
+    var files: [CodeFile] { self.contextManager?.files ?? [] }
     
-    var selectedScheme: String = "Wisdom"
-    
-    var buildConfiguration: String = "Debug"
-    
-    var buildProgress: String = ""
-    
-    init() {
-        self.loadSavedDirectory()        
-    }
+    private var directoryManager = DirectoryManager()
     
     func setURL(_ url: URL) {
         do {
-            let bookmarkData = try url.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil)
-            UserDefaults.standard.set(bookmarkData, forKey: "RootDirectoryBookmark")
-            UserDefaults.standard.set(url.path, forKey: "LastOpenedDirectory")
-            
-            guard url.startAccessingSecurityScopedResource() else {
-                print("Failed to access security scoped resource")
-                return
-            }
-            
-            self.rootItem = FileItem(url: url)
-            self.contextManager = ContextManager(rootURL: url, config: ContextManager.Configuration(
+            let resolvedURL = try directoryManager.setDirectory(url)
+            self.rootItem = FileItem(url: resolvedURL)
+            self.contextManager = ContextManager(rootURL: resolvedURL, config: ContextManager.Configuration(
                 maxDepth: 5,
                 excludedDirectories: ["Pods", ".git"],
                 maxFileSize: 1_000_000,
@@ -59,71 +36,72 @@ class AppState {
                 monitoredFileTypes: selectedFileTypes
             ))
             
+            UserDefaults.standard.set(resolvedURL.path, forKey: "LastOpenedDirectory")
+             
             Task {
-                await loadAvailableFileTypes(url)
+                await loadAvailableFileTypes(resolvedURL)
             }
             
-            print("Directory set and bookmarked successfully: \(url.path)")
+            print("Directory set successfully: \(resolvedURL.path)")
         } catch {
-            print("Error setting URL and creating bookmark: \(error.localizedDescription)")
+            print("Error setting URL: \(error.localizedDescription)")
         }
     }
     
-    func selectDirectory() {
-        let panel = NSOpenPanel()
-        panel.canChooseFiles = false
-        panel.canChooseDirectories = true
-        panel.allowsMultipleSelection = false
+    func saveFile(url: URL, content: String) async throws {
+        guard let rootURL = rootItem?.url else {
+            throw FileOperationError.rootDirectoryNotSet
+        }
         
-        if panel.runModal() == .OK, let url = panel.url {
-            setURL(url)
+        let relativeURL = url.relativePath(from: rootURL)
+        let saveURL = rootURL.appendingPathComponent(relativeURL)
+        
+        guard saveURL.path.hasPrefix(rootURL.path) else {
+            throw FileOperationError.fileOutsideRootDirectory
+        }
+        
+        let directory = saveURL.deletingLastPathComponent()
+        if !FileManager.default.fileExists(atPath: directory.path) {
+            try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true, attributes: nil)
+        }
+        
+        do {
+            try content.write(to: saveURL, atomically: true, encoding: .utf8)
+            print("File saved successfully: \(saveURL.path)")        
+        } catch {
+            print("Error saving file: \(error.localizedDescription)")
+            throw error
         }
     }
     
-    private func loadSavedDirectory() {
-        if let bookmarkData = UserDefaults.standard.data(forKey: "RootDirectoryBookmark") {
-            do {
-                var isStale = false
-                let url = try URL(resolvingBookmarkData: bookmarkData, options: .withSecurityScope, relativeTo: nil, bookmarkDataIsStale: &isStale)
-                
-                if isStale {
-                    setURL(url)
-                } else {
-                    guard url.startAccessingSecurityScopedResource() else {
-                        print("Failed to access security scoped resource")
-                        return
-                    }
-                    
-                    self.rootItem = FileItem(url: url)
-                    self.contextManager = ContextManager(rootURL: url, config: ContextManager.Configuration(
-                        maxDepth: 5,
-                        excludedDirectories: ["Pods", ".git"],
-                        maxFileSize: 1_000_000,
-                        debounceInterval: 0.5,
-                        monitoredFileTypes: selectedFileTypes
-                    ))
-                    print("Loaded bookmarked directory: \(url.path)")
-                    
-                    Task {
-                        await loadAvailableFileTypes(url)
-                    }
-                }
-            } catch {
-                print("Error resolving bookmark: \(error.localizedDescription)")
-                loadFallbackDirectory()
-            }
-        } else {
-            loadFallbackDirectory()
+    func deleteFile(at url: URL) async throws {
+        guard let rootURL = rootItem?.url else {
+            throw FileOperationError.rootDirectoryNotSet
+        }
+        
+        let relativeURL = url.relativePath(from: rootURL)
+        let deleteURL = rootURL.appendingPathComponent(relativeURL)
+        
+        guard deleteURL.path.hasPrefix(rootURL.path) else {
+            throw FileOperationError.fileOutsideRootDirectory
+        }
+        
+        do {
+            try FileManager.default.removeItem(at: deleteURL)
+            print("File deleted successfully: \(deleteURL.path)")     
+        } catch {
+            print("Error deleting file: \(error.localizedDescription)")
+            throw error
         }
     }
     
-    private func loadFallbackDirectory() {
-        if let lastPath = UserDefaults.standard.string(forKey: "LastOpenedDirectory"),
-           let url = URL(string: lastPath) {
-            setURL(url)
-        } else {
-            print("No saved directory found")
-        }
+    func getFileContent(for filePath: String) -> String? {
+        return files.first(where: { $0.url.path == filePath })?.content
+    }
+    
+    func updateSelectedFileTypes(_ types: [String]) {
+        selectedFileTypes = types
+        contextManager?.updateMonitoredFileTypes(types)
     }
     
     private func loadAvailableFileTypes(_ url: URL) async {
@@ -136,16 +114,12 @@ class AppState {
             }
             
             for case let fileURL as URL in enumerator {
-                do {
-                    let resourceValues = try fileURL.resourceValues(forKeys: [.isRegularFileKey])
-                    if resourceValues.isRegularFile == true {
-                        let fileExtension = fileURL.pathExtension.lowercased()
-                        if !fileExtension.isEmpty {
-                            fileTypes.insert(fileExtension)
-                        }
+                if let resourceValues = try? fileURL.resourceValues(forKeys: [.isRegularFileKey]),
+                   resourceValues.isRegularFile == true {
+                    let fileExtension = fileURL.pathExtension.lowercased()
+                    if !fileExtension.isEmpty {
+                        fileTypes.insert(fileExtension)
                     }
-                } catch {
-                    print("Error accessing file \(fileURL.path): \(error.localizedDescription)")
                 }
             }
             
@@ -158,90 +132,59 @@ class AppState {
         }
     }
     
-    func updateSelectedFileTypes(_ types: [String]) {
-        selectedFileTypes = types
-        contextManager?.updateMonitoredFileTypes(types)
-    }
-    
     func copyToClipboard() {
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
         pasteboard.setString(context, forType: .string)
     }
     
+    func selectDirectory() {
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        panel.allowsMultipleSelection = false
+        panel.message = "Select a directory to save improved code files"
+        panel.prompt = "Select"
+        
+        if panel.runModal() == .OK, let url = panel.url {
+            setURL(url)
+        }
+    }
+    
     deinit {
-        rootItem?.url.stopAccessingSecurityScopedResource()
+        if let rootURL = rootItem?.url {
+            directoryManager.stopAccessingSecurityScopedResource(for: rootURL)
+        }
+    }
+    
+    enum FileOperationError: Error {
+        case rootDirectoryNotSet
+        case fileOutsideRootDirectory
     }
 }
 
-// MARK: - ServerManager
-
-extension AppState {
-    
-    var files: [CodeFile] { self.contextManager?.files ?? [] }
-    
-    func isServerRunning() async -> Bool {
-        return await self.serverManager.isServerRunning()
-    }
-    
-    func startServer() async {
-        do {
-            try await serverManager.start()
-        } catch {
-            print("Failed to start server: \(error)")
-        }
-    }
-    
-    func stopServer() async {
-        do {
-            try await serverManager.stop()
-        } catch {
-            print("Failed to stop server: \(error)")
-        }
-    }
-}
-
-// MARK: - BuildManager
-
-extension AppState {
-    
-    func buildProject() async throws {
-        guard let projectURL = rootItem?.url else {
-            throw BuildManager.BuildError.directoryNotFound
+extension URL {
+    func relativePath(from base: URL) -> String {
+        let fromPath = self.standardized.path
+        let toPath = base.standardized.path
+        
+        let fromComponents = fromPath.components(separatedBy: "/")
+        let toComponents = toPath.components(separatedBy: "/")
+        
+        var relativeComponents: [String] = []
+        var index = 0
+        
+        while index < fromComponents.count && index < toComponents.count && fromComponents[index] == toComponents[index] {
+            index += 1
         }
         
-        let configuration = BuildManager.BuildConfiguration(
-            scheme: selectedScheme,
-            configuration: buildConfiguration
-        )
+        let toRemaining = toComponents.count - index
+        if toRemaining > 0 {
+            relativeComponents = Array(repeating: "..", count: toRemaining)
+        }
         
-        try await buildManager.build(projectPath: projectURL, configuration: configuration) { progress in
-            Task { @MainActor in
-                self.buildProgress = progress
-            }
-        }
+        relativeComponents.append(contentsOf: fromComponents[index...])
+        
+        return relativeComponents.joined(separator: "/")
     }
-    
-    func cleanProject() async throws {
-        guard let projectURL = rootItem?.url else {
-            throw BuildManager.BuildError.directoryNotFound
-        }
-        try await buildManager.clean(projectPath: projectURL, scheme: selectedScheme) { progress in
-            Task { @MainActor in
-                self.buildProgress = progress
-            }
-        }
-    }
-    
-    func loadAvailableSchemes() async {
-         guard let projectURL = rootItem?.url else { return }
-         do {
-             self.availableSchemes = try await buildManager.listSchemes(projectPath: projectURL)
-             if !availableSchemes.isEmpty && !availableSchemes.contains(selectedScheme) {
-                 selectedScheme = availableSchemes[0]
-             }
-         } catch {
-             print("Failed to load schemes: \(error.localizedDescription)")
-         }
-     }
 }

@@ -22,6 +22,7 @@ struct ChatMessage: Identifiable, Codable, Equatable {
     
     struct Content: Codable {
         var text: String
+        var codes: [CodeContent]?
     }
     
     var isUser: Bool { role == .user }
@@ -30,4 +31,9 @@ struct ChatMessage: Identifiable, Codable, Equatable {
     var content: [Content]
     var role: Role
     var timestamp: Date
+}
+
+struct CodeContent: Identifiable, Codable {
+    var id: String
+    var URL: URL
 }
