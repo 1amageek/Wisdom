@@ -106,7 +106,8 @@ actor ServerManager {
         }
         
         app.get("errors") { req -> String in
-            return self.buildManager?.buildOutputLines.map({ $0.text }).joined(separator: "\n") ?? ""
+            guard let url = self.appState?.rootItem?.url else { return "" }
+            return self.buildManager?.errors(url) ?? ""
         }
         
         app.get("context") { req -> String in

@@ -46,6 +46,7 @@
 		1274457F2C54DEEC0080BCEB /* BuildLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274457E2C54DEEC0080BCEB /* BuildLog.swift */; };
 		127445812C55DF880080BCEB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445802C55DF880080BCEB /* ChatView.swift */; };
 		127445842C55F49A0080BCEB /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445832C55F49A0080BCEB /* Agent.swift */; };
+		1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458B2C561C110080BCEB /* AgentMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		1274457E2C54DEEC0080BCEB /* BuildLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildLog.swift; sourceTree = "<group>"; };
 		127445802C55DF880080BCEB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		127445832C55F49A0080BCEB /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		1274458B2C561C110080BCEB /* AgentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				1266B5B62C520E3E00A4A6C9 /* ContentView.swift */,
 				1266B5E52C520E4600A4A6C9 /* ContextManager.swift */,
 				1266B5E12C520E4600A4A6C9 /* FileItem.swift */,
+				1274458B2C561C110080BCEB /* AgentMessageView.swift */,
 				1266B5E62C520E4600A4A6C9 /* FileItemView.swift */,
 				1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */,
 				1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */,
@@ -419,6 +422,7 @@
 			files = (
 				1266B5F02C52180F00A4A6C9 /* ContextView.swift in Sources */,
 				1274457F2C54DEEC0080BCEB /* BuildLog.swift in Sources */,
+				1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */,
 				1266B60D2C53877C00A4A6C9 /* ChatMessage.swift in Sources */,
 				1266B6262C54AAF200A4A6C9 /* ServerSettingView.swift in Sources */,
 				1266B5F22C5227D000A4A6C9 /* CodeFile.swift in Sources */,

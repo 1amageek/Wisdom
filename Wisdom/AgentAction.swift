@@ -15,7 +15,7 @@ enum ActionType: String, Codable {
 
 struct AgentAction: Identifiable, Codable {
     var id: String
-    var url: URL
+    var path: String
     var actionType: ActionType
     var content: String?
 }

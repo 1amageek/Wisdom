@@ -265,8 +265,9 @@ class ContextManager {
             .filter { config.monitoredFileTypes.contains($0.fileType) }
             .lazy
             .map { file in
+                let relativePath = file.url.relativePath(from: self.rootURL)
                 let content = """
-                URL: \(file.url)
+                path: \(relativePath)
                 ```\(file.fileType):\(file.url.lastPathComponent)
                 \(file.content)
                 ```

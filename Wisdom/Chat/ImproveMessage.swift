@@ -10,7 +10,7 @@ import Foundation
 
 struct ImproveMessage: Identifiable, Codable {
     var id: String
-    var actions: [AgentAction]
+    var operations: [AgentAction]
     var text: String
     var timestamp: Date
 }

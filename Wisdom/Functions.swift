@@ -92,11 +92,11 @@ public class Functions {
         
         do {
             let improveMessage = try decoder.decode(ImproveMessage.self, from: data)
-            let actions: [AgentAction] = improveMessage.actions
-            let codeContents: [CodeContent] = actions.map { CodeContent(id: $0.id, URL: $0.url) }
+            let operations: [AgentAction] = improveMessage.operations
+            let codeContents: [CodeContent] = operations.map { CodeContent(id: $0.id, path: $0.path) }
             let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.text, codes: codeContents)], role: .model, timestamp: improveMessage.timestamp)
             print("Successfully decoded ChatMessage: \(chatMessage)")
-            return (chatMessage, actions)
+            return (chatMessage, operations)
         } catch {
             print("Decoding Error: \(error)")
             throw error

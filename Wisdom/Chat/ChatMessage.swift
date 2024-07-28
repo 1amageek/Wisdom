@@ -35,5 +35,5 @@ struct ChatMessage: Identifiable, Codable, Equatable {
 
 struct CodeContent: Identifiable, Codable {
     var id: String
-    var URL: URL
+    var path: String
 }

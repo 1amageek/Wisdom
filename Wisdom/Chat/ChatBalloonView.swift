@@ -30,11 +30,11 @@ struct ChatBalloonView: View {
                 if let codes = message.content[0].codes {
                     ForEach(codes) { code in
                         VStack(alignment: .leading) {
-                            Text(code.URL.lastPathComponent)
+                            Text(code.path)
                                 .font(.caption)
                                 .foregroundColor(.secondary)
                             
-                            Text(codeName(for: code.URL))
+                            Text(codeName(for: code.path))
                                 .font(.system(.body, design: .monospaced))
                                 .padding(8)
                                 .background(Color.secondary.opacity(0.1))
@@ -54,8 +54,8 @@ struct ChatBalloonView: View {
         }
     }
     
-    private func codeName(for url: URL) -> String {
-        return "\(url.lastPathComponent)"
+    private func codeName(for path: String) -> String {
+        return "\(path)"
     }
     
     private func actionContent(for id: String) -> AgentAction? {

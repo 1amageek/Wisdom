@@ -10,11 +10,12 @@ struct ContentView: View {
     
     @State private var isFileTypeSelectionPresented = false
     @State private var isSettingsPresented = false
+    @State private var isAgentMessageSheetPresented = false
     @State var isServerRunning: Bool = false
     @State var isBuildInProgress: Bool = false
     @State private var showBuildErrorAlert = false
     @State private var selectedCode: ImprovedCode?
-    @State private var isAgentRunning: Bool = false
+    @State private var agentMessage: String = ""
     
     var body: some View {
         @Bindable var state = appState
@@ -51,20 +52,9 @@ struct ContentView: View {
                     }
                     
                     Button {
-                        if isAgentRunning {
-                            Task {
-                                await appState.stopAgent()
-                                isAgentRunning = false
-                            }
-                        } else {
-                            Task {
-                                appState.initializeAgent(buildManager: buildManager)
-                                await appState.startAgent()
-                                isAgentRunning = true
-                            }
-                        }
+                        isAgentMessageSheetPresented = true
                     } label: {
-                        Image(systemName: isAgentRunning ? "stop.circle" : "repeat")
+                        Image(systemName: appState.isAgentRunning ? "stop.circle" : "repeat")
                     }
                 }
             }
@@ -125,10 +115,20 @@ struct ContentView: View {
         .sheet(isPresented: $isSettingsPresented) {
             SettingView()
         }
+        .sheet(isPresented: $isAgentMessageSheetPresented) {
+            AgentMessageView(message: $agentMessage, onStart: startAgent)
+        }
         .alert("Build Failed", isPresented: $showBuildErrorAlert) {
             Button("OK", role: .cancel) { }
         } message: {
             Text("The build process failed. Please check the log for more details.")
+        }
+    }
+    
+    private func startAgent() {
+        Task {
+            appState.initializeAgent(buildManager: buildManager)
+            await appState.startAgent(with: agentMessage)
         }
     }
 }

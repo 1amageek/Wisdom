@@ -20,20 +20,26 @@ class BuildManager {
     var buildOutputLines: [BuildLog] = []
     var buildErrorLines: [BuildLog] = []
     var lastBuildStatus: BuildStatus = .none
+    var buildError: Error?
     
     func setBuildWorkingDirectory(_ url: URL?) {
         self.buildWorkingDirectory = url
         print("Build working directory set to: \(url?.path ?? "nil")")
     }
     
-    func start() async throws {
-        guard !isBuilding else { throw BuildError.buildInProgress }
-        guard let workingDirectory = buildWorkingDirectory else { throw BuildError.noWorkingDirectory }
+    func start() async {
+        guard !isBuilding else { return }
+        guard let workingDirectory = buildWorkingDirectory else {
+            lastBuildStatus = .failed(code: -1)
+            buildError = BuildError.noWorkingDirectory
+            return
+        }
         
         isBuilding = true
         buildOutputLines.removeAll()
         buildErrorLines.removeAll()
         lastBuildStatus = .inProgress
+        buildError = nil
         
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/env")
@@ -82,14 +88,14 @@ class BuildManager {
             
             if process.terminationStatus != 0 {
                 lastBuildStatus = .failed(code: process.terminationStatus)
-                throw BuildError.buildFailed(code: process.terminationStatus)
+                buildError = BuildError.buildFailed(code: process.terminationStatus)
             } else {
                 lastBuildStatus = .success
             }
         } catch {
             isBuilding = false
             lastBuildStatus = .failed(code: -1)
-            throw error
+            buildError = error
         }
     }
     
@@ -97,6 +103,15 @@ class BuildManager {
         buildProcess?.terminate()
         isBuilding = false
         lastBuildStatus = .stopped
+    }
+    
+    private func convertUrlToPath(_ text: String) -> String {
+        guard let workingDirectory = buildWorkingDirectory else { return text }
+        return text.replacingOccurrences(of: workingDirectory.path, with: ".")
+    }
+    
+    func errors(_ rootURL: URL) -> String {
+        return buildErrorLines.map { convertUrlToPath($0.text) }.joined(separator: "\n")
     }
     
     enum BuildError: Error {

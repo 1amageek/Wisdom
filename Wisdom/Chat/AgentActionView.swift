@@ -19,7 +19,7 @@ struct AgentActionView: View {
         if let action = viewModel.selectedAction {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(action.url.lastPathComponent)
+                    Text(action.path)
                         .font(.headline)
                     
                     Text("Action: \(action.actionType.rawValue)")
@@ -67,10 +67,10 @@ struct AgentActionView: View {
             switch action.actionType {
             case .create, .update:
                 if let content = action.content {
-                    try await appState.saveFile(url: action.url, content: content)
+                    try await appState.saveFile(path: action.path, content: content)
                 }
             case .delete:
-                try await appState.deleteFile(at: action.url)
+                try await appState.deleteFile(path: action.path)
                 break
             }
             showingSaveAlert = true
