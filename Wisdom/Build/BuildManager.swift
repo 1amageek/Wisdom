@@ -18,7 +18,6 @@ class BuildManager {
     
     var isBuilding = false
     var buildOutputLines: [BuildLog] = []
-    var buildErrorLines: [BuildLog] = []
     var lastBuildStatus: BuildStatus = .none
     var buildError: Error?
     
@@ -37,7 +36,6 @@ class BuildManager {
         
         isBuilding = true
         buildOutputLines.removeAll()
-        buildErrorLines.removeAll()
         lastBuildStatus = .inProgress
         buildError = nil
         
@@ -74,14 +72,6 @@ class BuildManager {
                 }
             }
             
-            Task {
-                for try await line in errorPipe.fileHandleForReading.bytes.lines {
-                    await MainActor.run {
-                        self.buildErrorLines.append(.init(line))
-                    }
-                }
-            }
-            
             process.waitUntilExit()
             
             isBuilding = false
@@ -111,7 +101,7 @@ class BuildManager {
     }
     
     func errors(_ rootURL: URL) -> String {
-        return buildErrorLines.map { convertUrlToPath($0.text) }.joined(separator: "\n")
+        return buildOutputLines.map { convertUrlToPath($0.text) }.joined(separator: "\n")
     }
     
     enum BuildError: Error {

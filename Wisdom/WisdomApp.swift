@@ -14,6 +14,7 @@ struct WisdomApp: App {
     @State private var appState: AppState = AppState()
     @State private var buildManager: BuildManager = BuildManager()
     @State private var directoryManager: DirectoryManager = DirectoryManager()
+    @State private var agent: Agent = Agent()
     
     
     init() {
@@ -30,6 +31,7 @@ struct WisdomApp: App {
             ContentView()
                 .environment(appState)
                 .environment(buildManager)
+                .environment(agent)
                 .onAppear {
                     if let url = directoryManager.loadSavedDirectory() {
                         setDirectoryURL(url)

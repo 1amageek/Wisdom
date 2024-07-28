@@ -4,6 +4,7 @@ struct ContentView: View {
     
     @Environment(AppState.self) var appState: AppState
     @Environment(BuildManager.self) var buildManager: BuildManager
+    @Environment(Agent.self) var agent: Agent
     
     @Environment(\.openURL) private var openURL: OpenURLAction
     @Environment(\.openWindow) private var openWindow: OpenWindowAction
@@ -127,8 +128,7 @@ struct ContentView: View {
     
     private func startAgent() {
         Task {
-            appState.initializeAgent(buildManager: buildManager)
-            await appState.startAgent(with: agentMessage)
+            await appState.startAgent(with: agentMessage, agent: agent, buildManager: buildManager)
         }
     }
 }

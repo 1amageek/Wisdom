@@ -198,26 +198,29 @@ extension URL {
 }
 
 extension AppState {
-    // MARK: - Agent Management
-    func initializeAgent(buildManager: BuildManager) {
+
+    func startAgent(with message: String, agent: Agent, buildManager: BuildManager) async {
+        
         let buildClosure: Agent.BuildClosure = {
             await buildManager.start()
-            let errorCount = buildManager.buildErrorLines.count
+            let errorCount = buildManager.buildOutputLines.count
             let successful = buildManager.lastBuildStatus == .success
             return (errorCount, successful)
         }
         
-        let generatorClosure: Agent.GeneratorClosure = { message, buildErrors in
+        let generateClosure: Agent.GenerateClosure = { message, buildErrors in
             let proposal = try await Functions.shared.improve(
                 userID: "testUser",
                 packageID: "testPackage",
-                message: message 
+                message: message
             )
+            
+            
             return proposal
         }
         
         let fileOperationClosure: Agent.FileOperationClosure = { operation in
-            switch operation.type {
+            switch operation.actionType {
             case .create, .update:
                 guard let content = operation.content else {
                     throw NSError(domain: "FileOperation", code: 1, userInfo: [NSLocalizedDescriptionKey: "Content is required for create and update operations"])
@@ -227,25 +230,14 @@ extension AppState {
                 try await self.deleteFile(path: operation.path)
             }
         }
-        
-        self.agent = Agent(
-            buildClosure: buildClosure,
-            generatorClosure: generatorClosure,
-            fileOperationClosure: fileOperationClosure,
-            maxNoImprovementCount: 3,
-            continueOnSuccess: false
-        )
-    }
-    
-    func startAgent(with message: String) async {
-        guard let agent = agent else { return }
+
         isAgentRunning = true
-        await agent.start(with: message)
+        await agent.start(with: message, build: buildClosure, generate: generateClosure, fileOperation: fileOperationClosure)
         isAgentRunning = false
     }
     
     func stopAgent() async {
-        await agent?.stop()
+        agent?.stop()
         isAgentRunning = false
     }
 }
