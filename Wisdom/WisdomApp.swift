@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Observation
 
 @main
 struct WisdomApp: App {
@@ -46,7 +47,7 @@ struct WisdomApp: App {
         }
         
         Window("Chat", id: "chat") {
-            ChatView()
+            ChatNavigationView()
                 .environment(appState)
         }
         .windowResizability(.contentSize)

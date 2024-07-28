@@ -1,5 +1,5 @@
 //
-//  AgentActionInspectorView.swift
+//  AgentActionView.swift
 //  Wisdom
 //
 //  Created by Norikazu Muramoto on 2024/07/26.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct AgentActionInspectorView: View {
-    let action: AgentAction?
+struct AgentActionView: View {
     
     @Environment(AppState.self) private var appState
+    @Environment(ChatViewModel.self) var viewModel: ChatViewModel
     
     @State private var showingSaveAlert = false
     @State private var saveError: Error?
     
     var body: some View {
-        if let action = action {
+        if let action = viewModel.selectedAction {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
                     Text(action.url.lastPathComponent)
@@ -83,6 +83,6 @@ struct AgentActionInspectorView: View {
 }
 
 #Preview {
-    AgentActionInspectorView(action: AgentAction(id: "preview", url: URL(string: "/")!, actionType: .create, content: "Sample content"))
+    AgentActionView()
         .environment(AppState())
 }

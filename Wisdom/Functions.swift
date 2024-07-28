@@ -94,7 +94,7 @@ public class Functions {
             let improveMessage = try decoder.decode(ImproveMessage.self, from: data)
             let actions: [AgentAction] = improveMessage.actions
             let codeContents: [CodeContent] = actions.map { CodeContent(id: $0.id, URL: $0.url) }
-            let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.explanation, codes: codeContents)], role: .user, timestamp: improveMessage.timestamp)
+            let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.text, codes: codeContents)], role: .model, timestamp: improveMessage.timestamp)
             print("Successfully decoded ChatMessage: \(chatMessage)")
             return (chatMessage, actions)
         } catch {

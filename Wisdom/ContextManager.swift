@@ -98,7 +98,7 @@ class ContextManager {
     private func loadInitialFiles() async {
         var loadedFiles = 0
         var accessDeniedDirectories: [String] = []
-        
+
         func loadFiles(in directory: URL, currentDepth: Int) async {
             guard currentDepth <= config.maxDepth else { return }
             
@@ -254,7 +254,7 @@ class ContextManager {
     }
     
     private func updateFullContext() {
-        let directoryTree = generateDirectoryTree()
+        let directoryTree = generateDirectoryTree(for: rootURL)
         let filesContent = formatFiles(files)
         fullContext = directoryTree + "\n\n" + filesContent
         isContextDirty = false
@@ -288,18 +288,44 @@ class ContextManager {
     }
 }
 
+
 extension ContextManager {
     
-    private func generateDirectoryTree() -> String {
-        let rootItem = FileItem(url: rootURL)
-        rootItem.loadChildren() // Make sure children are loaded
-        return "Directory Structure:\n" + rootItem.generateDirectoryTree()
-    }
-    
-    func getDirectoryStructure() -> String {
-        if isContextDirty {
-            updateFullContext()
+    private func generateDirectoryTree(for url: URL, depth: Int = 0) -> String {
+        let fileManager = FileManager.default
+        guard let enumerator = fileManager.enumerator(at: url, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles]) else {
+            return ""
         }
-        return generateDirectoryTree()
+        
+        var result = ""
+        var directoryStructure: [Int: Bool] = [:] // depth: isLastDirectory
+        
+        for case let fileURL as URL in enumerator {
+            guard let resourceValues = try? fileURL.resourceValues(forKeys: [.isDirectoryKey]),
+                  let isDirectory = resourceValues.isDirectory, isDirectory else {
+                continue // Skip non-directory items
+            }
+            
+            let relativeDepth = fileURL.pathComponents.count - url.pathComponents.count
+            
+            // Update directory structure
+            directoryStructure[relativeDepth] = true
+            for key in directoryStructure.keys where key > relativeDepth {
+                directoryStructure.removeValue(forKey: key)
+            }
+            
+            // Generate tree structure
+            for i in 0..<relativeDepth {
+                if i == relativeDepth - 1 {
+                    result += directoryStructure[i, default: true] ? "└── " : "├── "
+                } else {
+                    result += directoryStructure[i, default: true] ? "    " : "│   "
+                }
+            }
+            
+            result += "\(fileURL.lastPathComponent)\n"
+        }
+        
+        return result
     }
 }

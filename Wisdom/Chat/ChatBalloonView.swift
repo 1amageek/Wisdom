@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ChatBalloonView: View {
+    
     @Environment(ChatViewModel.self) var viewModel: ChatViewModel
     
     let message: ChatMessage
-    
-    @Binding var selectedAction: AgentAction?
-    
+        
     var body: some View {
         HStack {
             if message.isUser {
@@ -42,7 +41,7 @@ struct ChatBalloonView: View {
                                 .cornerRadius(8)
                                 .contentShape(Rectangle())
                                 .onTapGesture {
-                                    selectedAction = actionContent(for: code.id)
+                                    viewModel.selectedAction = actionContent(for: code.id)
                                 }
                         }
                     }
@@ -65,6 +64,6 @@ struct ChatBalloonView: View {
 }
 
 #Preview {
-    ChatBalloonView(message: .init(id: "id", content: [.init(text: "")], role: .model, timestamp: Date()), selectedAction: .constant(nil))
+    ChatBalloonView(message: .init(id: "id", content: [.init(text: "")], role: .model, timestamp: Date()))
         .environment(ChatViewModel())
 }

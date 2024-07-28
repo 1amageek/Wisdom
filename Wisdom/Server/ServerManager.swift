@@ -105,16 +105,12 @@ actor ServerManager {
             return "OK"
         }
         
+        app.get("errors") { req -> String in
+            return self.buildManager?.buildOutputLines.map({ $0.text }).joined(separator: "\n") ?? ""
+        }
+        
         app.get("context") { req -> String in
-            let codes = self.appState?.context ?? ""
-            let error = self.buildManager?.buildOutputLines.map({ $0.text }).joined(separator: "\n") ?? ""
-            
-            return """
-\(codes)
----
-Error:
-\(error)
-"""
+            return self.appState?.context ?? ""
         }
         
         app.get("files", ":filename") { req -> Response in

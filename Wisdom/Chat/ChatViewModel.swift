@@ -14,6 +14,7 @@ class ChatViewModel {
     var threads: [ChatThread] = []
     var messages: [ChatMessage] = []
     var agentActions: [AgentAction] = []
+    var selectedAction: AgentAction?
     var inputMessage: String = ""
     var isLoading: Bool = false
     var selectedThreadID: String? {

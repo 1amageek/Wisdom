@@ -61,11 +61,10 @@ struct ContentView: View {
                         Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
                             .padding(.horizontal, 6)
                     }
-                    
                     Button {
-                        isSettingsPresented.toggle()
+                        
                     } label: {
-                        Image(systemName: "gear")
+                        Image(systemName: "repeat")
                     }
                 }
             }
@@ -102,6 +101,11 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
             .toolbar {
                 ToolbarItemGroup(placement: .primaryAction) {
+                    Button {
+                        isSettingsPresented.toggle()
+                    } label: {
+                        Image(systemName: "gear")
+                    }
                     Button {
                         appState.copyToClipboard()
                     } label: {
