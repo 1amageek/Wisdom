@@ -106,10 +106,7 @@ actor ServerManager {
         }
         
         app.get("errors") { req -> String in
-            print("!!!!!!!!!!!", self.appState?.rootItem)
             guard let url = self.appState?.rootItem?.url else { return "" }
-            print("222222", url)
-            print("wwwwww", self.buildManager?.errors(url) ?? "")
             return self.buildManager?.errors(url) ?? ""
         }
         

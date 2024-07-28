@@ -25,7 +25,6 @@
 		1266B5F42C522D7300A4A6C9 /* FileTypeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5F32C522D7300A4A6C9 /* FileTypeSelectionView.swift */; };
 		1266B5F72C524D0E00A4A6C9 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5F62C524D0E00A4A6C9 /* ServerManager.swift */; };
 		1266B5FA2C524DBC00A4A6C9 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = 1266B5F92C524DBC00A4A6C9 /* Vapor */; };
-		1266B6002C528FAF00A4A6C9 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 1266B5FF2C528FAF00A4A6C9 /* Splash */; };
 		1266B6062C52B78300A4A6C9 /* BuildManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6052C52B78300A4A6C9 /* BuildManager.swift */; };
 		1266B6092C53873600A4A6C9 /* ChatNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6082C53873600A4A6C9 /* ChatNavigationView.swift */; };
 		1266B60D2C53877C00A4A6C9 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B60C2C53877C00A4A6C9 /* ChatMessage.swift */; };
@@ -47,6 +46,7 @@
 		127445812C55DF880080BCEB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445802C55DF880080BCEB /* ChatView.swift */; };
 		127445842C55F49A0080BCEB /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445832C55F49A0080BCEB /* Agent.swift */; };
 		1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458B2C561C110080BCEB /* AgentMessageView.swift */; };
+		1274458E2C5695B30080BCEB /* LogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458D2C5695B30080BCEB /* LogDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +109,7 @@
 		127445802C55DF880080BCEB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		127445832C55F49A0080BCEB /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		1274458B2C561C110080BCEB /* AgentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentMessageView.swift; sourceTree = "<group>"; };
+		1274458D2C5695B30080BCEB /* LogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1266B5FA2C524DBC00A4A6C9 /* Vapor in Frameworks */,
-				1266B6002C528FAF00A4A6C9 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +236,7 @@
 				1266B6052C52B78300A4A6C9 /* BuildManager.swift */,
 				1274457E2C54DEEC0080BCEB /* BuildLog.swift */,
 				127445792C54B7E00080BCEB /* LogView.swift */,
+				1274458D2C5695B30080BCEB /* LogDetailView.swift */,
 			);
 			path = Build;
 			sourceTree = "<group>";
@@ -300,7 +301,6 @@
 			name = Wisdom;
 			packageProductDependencies = (
 				1266B5F92C524DBC00A4A6C9 /* Vapor */,
-				1266B5FF2C528FAF00A4A6C9 /* Splash */,
 			);
 			productName = Wisdom;
 			productReference = 1266B5B12C520E3E00A4A6C9 /* Wisdom.app */;
@@ -376,7 +376,6 @@
 			mainGroup = 1266B5A82C520E3E00A4A6C9;
 			packageReferences = (
 				1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */,
-				1266B5FE2C528E5000A4A6C9 /* XCRemoteSwiftPackageReference "Splash" */,
 			);
 			productRefGroup = 1266B5B22C520E3E00A4A6C9 /* Products */;
 			projectDirPath = "";
@@ -450,6 +449,7 @@
 				1266B6222C54AABC00A4A6C9 /* SettingView.swift in Sources */,
 				1274457D2C54C9F00080BCEB /* DirectoryManager.swift in Sources */,
 				1266B5EB2C520E4600A4A6C9 /* ContextManager.swift in Sources */,
+				1274458E2C5695B30080BCEB /* LogDetailView.swift in Sources */,
 				1266B6152C539C6D00A4A6C9 /* ChatThread.swift in Sources */,
 				1266B61D2C5495BD00A4A6C9 /* ImprovedCode.swift in Sources */,
 				1266B61B2C540F4300A4A6C9 /* FileOperationService.swift in Sources */,
@@ -785,14 +785,6 @@
 				minimumVersion = 4.102.1;
 			};
 		};
-		1266B5FE2C528E5000A4A6C9 /* XCRemoteSwiftPackageReference "Splash" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/Splash";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.16.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -800,11 +792,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */;
 			productName = Vapor;
-		};
-		1266B5FF2C528FAF00A4A6C9 /* Splash */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1266B5FE2C528E5000A4A6C9 /* XCRemoteSwiftPackageReference "Splash" */;
-			productName = Splash;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

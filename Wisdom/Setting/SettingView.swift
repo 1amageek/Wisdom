@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingView: View {
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
         NavigationStack {
             List {
@@ -19,9 +21,19 @@ struct SettingView: View {
                 }
             }
             .navigationTitle("Settings")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Close") {
+                        dismiss()
+                    }
+                }
+            }
         }
+        .frame(width: 400)
+        .frame(minHeight: 200)
     }
 }
+
 
 #Preview {
     SettingView()

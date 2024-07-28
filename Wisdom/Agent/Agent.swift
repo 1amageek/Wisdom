@@ -34,6 +34,8 @@ public struct AgentLog: Identifiable, Codable {
     public let type: LogType
     public let message: String
     public var details: String?
+    public var proposalID: String?
+    public var operationID: String?
     
     public enum LogType: String, Codable {
         case info
@@ -42,12 +44,14 @@ public struct AgentLog: Identifiable, Codable {
         case action
     }
     
-    init(type: LogType, message: String, details: String? = nil) {
+    init(type: LogType, message: String, details: String? = nil, proposalID: String? = nil, operationID: String? = nil) {
         self.id = UUID()
         self.timestamp = Date()
         self.type = type
         self.message = message
         self.details = details
+        self.proposalID = proposalID
+        self.operationID = operationID
     }
 }
 
@@ -67,6 +71,7 @@ public class Agent {
     
     public private(set) var logs: [AgentLog] = []
     public private(set) var isRunning: Bool = false
+    public private(set) var proposals: [AgentFileProposal] = []
     
     public init(
         maxNoImprovementCount: Int = 5,
@@ -74,97 +79,107 @@ public class Agent {
     ) {
         self.maxNoImprovementCount = maxNoImprovementCount
         self.continueOnSuccess = continueOnSuccess
-        self.logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "com.yourcompany.Wisdom", category: "Agent")
+        self.logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "team.stamp.Wisdom", category: "Agent")
     }
     
     public func start(
-          with message: String,
-          build: BuildClosure,
-          generate: GenerateClosure,
-          fileOperation: FileOperationClosure
-      ) async {
-          guard !isRunning else {
-              addLog(.warning, "[AGENT] Agent is already running, ignoring start request")
-              return
-          }
-          
-          isRunning = true
-          var noImprovementCount = 0
-          var lastErrorCount = Int.max
-          
-          addLog(.info, "[AGENT] Agent started with message: \(message)")
-          
-          func runCycle() async -> Bool {
-              do {
-                  // Build process
-                  addLog(.info, "[BUILD] Starting build process")
-                  let (currentErrorCount, buildSuccessful) = try await build()
-                  let buildStatus = buildSuccessful ? "successful" : "failed"
-                  addLog(.info, "[BUILD] Build \(buildStatus) with \(currentErrorCount) errors")
-                  
-                  if currentErrorCount >= lastErrorCount {
-                      noImprovementCount += 1
-                      addLog(.warning, "[BUILD] No improvement in error count", details: "Current: \(currentErrorCount), Last: \(lastErrorCount)")
-                  } else {
-                      noImprovementCount = 0
-                      addLog(.info, "[BUILD] Error count improved", details: "From \(lastErrorCount) to \(currentErrorCount)")
-                  }
-                  lastErrorCount = currentErrorCount
-                  
-                  // Generate process
-                  addLog(.info, "[GENERATE] Starting code generation")
-                  let buildErrors = "Build \(buildStatus) with \(currentErrorCount) errors."
-                  do {
-                      let proposal: AgentFileProposal = try await generate(message, buildErrors)
-                      addLog(.info, "[GENERATE] Generated proposal", details: "Operations count: \(proposal.operations.count)")
-                      
-                      // File operations
-                      addLog(.info, "[FILE_OP] Starting file operations")
-                      for operation in proposal.operations {
-                          do {
-                              try await fileOperation(operation)
-                              addLog(.action, "[FILE_OP] Executed file operation", details: "\(operation.actionType.rawValue) on \(operation.path)")
-                          } catch {
-                              addLog(.error, "[FILE_OP] Failed file operation", details: "\(operation.actionType.rawValue) on \(operation.path) - Error: \(error.localizedDescription)")
-                          }
-                      }
-                      addLog(.info, "[FILE_OP] Completed all file operations")
-                  } catch {
-                      addLog(.error, "[GENERATE] Failed to generate proposal", details: error.localizedDescription)
-                      return false // Stop the cycle if generate fails
-                  }
-                  
-                  if buildSuccessful && !continueOnSuccess {
-                      addLog(.info, "[CYCLE] Build successful, stopping agent as configured")
-                      return false
-                  }
-                  
-              } catch {
-                  addLog(.error, "[CYCLE] Error in cycle", details: error.localizedDescription)
-                  noImprovementCount += 1
-              }
-              
-              if noImprovementCount >= maxNoImprovementCount {
-                  addLog(.warning, "[CYCLE] No improvement after multiple attempts", details: "Attempts: \(self.maxNoImprovementCount)")
-                  return false
-              }
-              
-              return true
-          }
-          
-          var firstRun = true
-          while isRunning && (firstRun || noImprovementCount < maxNoImprovementCount) {
-              let shouldContinue = await runCycle()
-              firstRun = false
-              if !shouldContinue {
-                  addLog(.info, "[CYCLE] Cycle completed, breaking loop")
-                  break
-              }
-          }
-          
-          addLog(.info, "[AGENT] Agent stopped")
-          isRunning = false
-      }
+        with message: String,
+        build: BuildClosure,
+        generate: GenerateClosure,
+        fileOperation: FileOperationClosure
+    ) async {
+        guard !isRunning else {
+            addLog(.warning, "[AGENT] Agent is already running, ignoring start request")
+            return
+        }
+        
+        isRunning = true
+        var noImprovementCount = 0
+        var lastErrorCount = Int.max
+        var iterationCount = 0
+        
+        addLog(.info, "[AGENT] Agent started with message: \(message)")
+        
+        func runCycle() async -> Bool {
+            iterationCount += 1
+            addLog(.info, "[CYCLE:\(iterationCount)] Starting new iteration 🚀")
+            do {
+                // Build process
+                addLog(.info, "[BUILD:\(iterationCount)] Starting build process")
+                let (currentErrorCount, buildSuccessful) = try await build()
+                let buildStatus = buildSuccessful ? "successful" : "failed"
+                addLog(.info, "[BUILD:\(iterationCount)] Build \(buildStatus) with \(currentErrorCount) errors")
+                
+                if currentErrorCount >= lastErrorCount {
+                    noImprovementCount += 1
+                    addLog(.warning, "[BUILD:\(iterationCount)] No improvement in error count", details: "Current: \(currentErrorCount), Last: \(lastErrorCount)")
+                } else {
+                    noImprovementCount = 0
+                    addLog(.info, "[BUILD:\(iterationCount)] Error count improved", details: "From \(lastErrorCount) to \(currentErrorCount)")
+                }
+                lastErrorCount = currentErrorCount
+                
+                // Generate process
+                addLog(.info, "[GENERATE:\(iterationCount)] Starting code generation")
+                let buildErrors = "Build \(buildStatus) with \(currentErrorCount) errors."
+                do {
+                    let proposal: AgentFileProposal = try await generate(message, buildErrors)
+                    addProposal(proposal)
+                    addLog(.info, "[GENERATE:\(iterationCount)] Generated proposal", details: "Operations count: \(proposal.operations.count)", proposalID: proposal.id)
+                    
+                    // File operations
+                    addLog(.info, "[FILE_OP:\(iterationCount)] Starting file operations", proposalID: proposal.id)
+                    for operation in proposal.operations {
+                        do {
+                            try await fileOperation(operation)
+                            let fileName = extractFileName(from: operation.path)
+                            addLog(.action, "[FILE_OP:\(iterationCount)] Executed file operation",
+                                   details: "\(operation.actionType.rawValue) on file: \(fileName)",
+                                   proposalID: proposal.id,
+                                   operationID: operation.id)
+                        } catch {
+                            let fileName = extractFileName(from: operation.path)
+                            addLog(.error, "[FILE_OP:\(iterationCount)] Failed file operation",
+                                   details: "\(operation.actionType.rawValue) on file: \(fileName) - Error: \(error.localizedDescription)",
+                                   proposalID: proposal.id,
+                                   operationID: operation.id)
+                        }
+                    }
+                    addLog(.info, "[FILE_OP:\(iterationCount)] Completed all file operations", proposalID: proposal.id)
+                } catch {
+                    addLog(.error, "[GENERATE:\(iterationCount)] Failed to generate proposal", details: error.localizedDescription)
+                    return false // Stop the cycle if generate fails
+                }
+                
+                if buildSuccessful && !continueOnSuccess {
+                    addLog(.info, "[CYCLE:\(iterationCount)] Build successful, stopping agent as configured")
+                    return false
+                }
+                
+            } catch {
+                addLog(.error, "[CYCLE:\(iterationCount)] Error in cycle", details: error.localizedDescription)
+                noImprovementCount += 1
+            }
+            
+            if noImprovementCount >= maxNoImprovementCount {
+                addLog(.warning, "[CYCLE:\(iterationCount)] No improvement after multiple attempts", details: "Attempts: \(self.maxNoImprovementCount)")
+                return false
+            }
+            
+            return true
+        }
+        
+        while isRunning && (iterationCount == 0 || noImprovementCount < maxNoImprovementCount) {
+            let shouldContinue = await runCycle()
+            if !shouldContinue {
+                addLog(.info, "[CYCLE:\(iterationCount)] Cycle completed, breaking loop")
+                break
+            }
+        }
+        
+        addLog(.info, "[AGENT] Agent stopped after \(iterationCount) iterations")
+        isRunning = false
+    }
     
     public func stop() {
         if isRunning {
@@ -174,17 +189,57 @@ public class Agent {
             addLog(.info, "[AGENT] Agent stop requested, but agent was not running")
         }
     }
+    
+    private func extractFileName(from path: String) -> String {
+        return (path as NSString).lastPathComponent
+    }
+}
+
+// MARK: - Proposal
+
+extension Agent {
+    
+    private func addProposal(_ proposal: AgentFileProposal) {
+        proposals.append(proposal)
+    }
+    
+    public func getProposal(id: String) -> AgentFileProposal? {
+        return proposals.first { $0.id == id }
+    }
+    
+    public func getLatestProposal() -> AgentFileProposal? {
+        return proposals.last
+    }
+    
+    public func getOperation(id: String) -> AgentFileOperation? {
+        for proposal in proposals {
+            if let operation = proposal.operations.first(where: { $0.id == id }) {
+                return operation
+            }
+        }
+        return nil
+    }
 }
 
 // MARK: - Log
 
 extension Agent {
-    private func addLog(_ type: AgentLog.LogType, _ message: String, details: String? = nil) {
-        let log = AgentLog(type: type, message: message, details: details)
+    private func addLog(_ type: AgentLog.LogType, _ message: String, details: String? = nil, proposalID: String? = nil, operationID: String? = nil) {
+        let log = AgentLog(type: type, message: message, details: details, proposalID: proposalID, operationID: operationID)
         logs.append(log)
         
-        // 既存のloggerも併用し、detailsも表示
-        let logMessage = details.map { "\(message) - Details: \($0)" } ?? message
+        // 既存のloggerも併用し、details、proposalID、operationIDも表示
+        var logMessage = message
+        if let details = details {
+            logMessage += " - Details: \(details)"
+        }
+        if let proposalID = proposalID {
+            logMessage += " - ProposalID: \(proposalID)"
+        }
+        if let operationID = operationID {
+            logMessage += " - OperationID: \(operationID)"
+        }
+        
         switch type {
         case .info:
             logger.info("\(logMessage)")

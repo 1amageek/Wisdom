@@ -27,11 +27,14 @@ struct ServerSettingView: View {
     }
     
     var body: some View {
-        Form {
-            Section(header: Text("Server Settings")) {
-                TextField("Host", text: $hostname)
-                TextField("Port", value: $port, formatter: numberFormatter)
+        VStack {
+            Form {
+                Section(header: Text("Server Settings")) {
+                    TextField("Host", text: $hostname)
+                    TextField("Port", value: $port, formatter: numberFormatter)
+                }
             }
+            Spacer()
         }
         .padding()
         .navigationTitle("Server Settings")

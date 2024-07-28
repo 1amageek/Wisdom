@@ -36,15 +36,10 @@ struct ContentView: View {
                     
                     Button {
                         Task {
-                            do {
-                                if buildManager.isBuilding {
-                                    buildManager.stop()
-                                } else {
-                                    try await buildManager.start()
-                                }
-                            } catch {
-                                print(error)
-                                showBuildErrorAlert = true
+                            if buildManager.isBuilding {
+                                buildManager.stop()
+                            } else {
+                                await buildManager.start()
                             }
                         }
                     } label: {
@@ -53,7 +48,12 @@ struct ContentView: View {
                     }
                     
                     Button {
-                        isAgentMessageSheetPresented = true
+                        if !isAgentMessageSheetPresented {
+                            isAgentMessageSheetPresented = true
+                        } else {
+                            agent.stop()
+                            isAgentMessageSheetPresented = false
+                        }
                     } label: {
                         Image(systemName: appState.isAgentRunning ? "stop.circle" : "repeat")
                     }

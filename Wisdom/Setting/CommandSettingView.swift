@@ -14,11 +14,15 @@ struct CommandSettingView: View {
     
     var body: some View {
         @Bindable var state = buildManager
-        Form {
-            Section(header: Text("Build Command")) {
-                TextField("Enter build command", text: $state.buildCommand)
+        VStack {
+            Form {
+                Section(header: Text("Build Command")) {
+                    TextField("Enter build command", text: $state.buildCommand)
+                }
             }
+            Spacer()
         }
+        .padding()
         .navigationTitle("Command Settings")
     }
 }
