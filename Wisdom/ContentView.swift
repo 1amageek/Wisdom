@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Wisdom
-//
-//  Created by Norikazu Muramoto on 2024/07/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -13,20 +6,15 @@ struct ContentView: View {
     @Environment(BuildManager.self) var buildManager: BuildManager
     
     @Environment(\.openURL) private var openURL: OpenURLAction
-    
     @Environment(\.openWindow) private var openWindow: OpenWindowAction
     
     @State private var isFileTypeSelectionPresented = false
-    
     @State private var isSettingsPresented = false
-    
     @State var isServerRunning: Bool = false
-    
     @State var isBuildInProgress: Bool = false
-    
     @State private var showBuildErrorAlert = false
-    
     @State private var selectedCode: ImprovedCode?
+    @State private var isAgentRunning: Bool = false
     
     var body: some View {
         @Bindable var state = appState
@@ -61,10 +49,22 @@ struct ContentView: View {
                         Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
                             .padding(.horizontal, 6)
                     }
+                    
                     Button {
-                        
+                        if isAgentRunning {
+                            Task {
+                                await appState.stopAgent()
+                                isAgentRunning = false
+                            }
+                        } else {
+                            Task {
+                                appState.initializeAgent(buildManager: buildManager)
+                                await appState.startAgent()
+                                isAgentRunning = true
+                            }
+                        }
                     } label: {
-                        Image(systemName: "repeat")
+                        Image(systemName: isAgentRunning ? "stop.circle" : "repeat")
                     }
                 }
             }
@@ -131,8 +131,4 @@ struct ContentView: View {
             Text("The build process failed. Please check the log for more details.")
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

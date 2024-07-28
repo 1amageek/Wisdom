@@ -7,29 +7,30 @@
 
 import Foundation
 
-public enum AgentFileOperationType {
+public enum AgentFileOperationType: String, Codable {
     case create
     case update
     case delete
 }
 
-public struct AgentFileOperation {
+public struct AgentFileOperation: Identifiable, Codable {
+    public var id: String
+    public var language: String
     public let type: AgentFileOperationType
     public let path: String
     public let content: String?
-    
-    public init(type: AgentFileOperationType, path: String, content: String? = nil) {
-        self.type = type
-        self.path = path
-        self.content = content
-    }
 }
 
+public struct AgentFileProposal: Identifiable, Codable {
+    public var id: String
+    public var operations: [AgentFileOperation]
+    public var timestamp: Date
+}
 
 actor Agent {
     typealias BuildResult = (errorCount: Int, successful: Bool)
     typealias BuildClosure = () async throws -> BuildResult
-    typealias GeneratorClosure = (String) async throws -> [AgentFileOperation]
+    typealias GeneratorClosure = (String) async throws -> AgentFileProposal
     typealias FileOperationClosure = (AgentFileOperation) async throws -> Void
 
     private var buildClosure: BuildClosure
@@ -90,9 +91,9 @@ actor Agent {
 
             let buildStatus = buildSuccessful ? "successful" : "failed"
             let buildErrors = "Build \(buildStatus) with \(currentErrorCount) errors."
-            let fileOperations = try await generatorClosure(buildErrors)
+            let proposal: AgentFileProposal = try await generatorClosure(buildErrors)
 
-            for operation in fileOperations {
+            for operation in proposal.operations {
                 try await fileOperationClosure(operation)
             }
 

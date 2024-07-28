@@ -103,6 +103,23 @@ public class Functions {
         }
     }
     
+    func improve(userID: String, packageID: String, message: String) async throws -> AgentFileProposal {
+        let parameters: [String: Any] = [
+            "message": message
+        ]
+        let data = try await callFunction("improve", parameters: parameters)
+        let decoder = Functions.createDecoder()
+        
+        do {
+            let proposal = try decoder.decode(AgentFileProposal.self, from: data)
+            print("Successfully decoded proposal: \(proposal)")
+            return proposal
+        } catch {
+            print("Decoding Error: \(error)")
+            throw error
+        }
+    }
+    
 //    func spec(userID: String, packageID: String, message: String, dependencies: String) async throws -> ProjectSpec {
 //        let parameters: [String: Any] = [
 //            "userID": userID,

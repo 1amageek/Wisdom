@@ -1,16 +1,9 @@
-//
-//  AppState.swift
-//
-//
-//  Created by Norikazu Muramoto on 2024/07/21.
-//
-
-import Foundation
-import AppKit
+import SwiftUI
+import Combine
 
 @Observable
 class AppState {
-    
+    // MARK: - Properties
     var rootItem: FileItem?
     var selection: Set<FileItem> = []
     var availableFileTypes: [String] = []
@@ -19,11 +12,21 @@ class AppState {
     var serverManager: ServerManager = ServerManager()
     
     var context: String { self.contextManager?.getFullContext() ?? "" }
-    
     var files: [CodeFile] { self.contextManager?.files ?? [] }
+    
+    private var agent: Agent?
+    var isAgentRunning = false
     
     private var directoryManager = DirectoryManager()
     
+    // MARK: - Initialization
+    init() {
+        if let url = directoryManager.loadSavedDirectory() {
+            setURL(url)
+        }
+    }
+    
+    // MARK: - Directory Management
     func setURL(_ url: URL) {
         do {
             let resolvedURL = try directoryManager.setDirectory(url)
@@ -48,6 +51,7 @@ class AppState {
         }
     }
     
+    // MARK: - File Operations
     func saveFile(url: URL, content: String) async throws {
         guard let rootURL = rootItem?.url else {
             throw FileOperationError.rootDirectoryNotSet
@@ -67,7 +71,7 @@ class AppState {
         
         do {
             try content.write(to: saveURL, atomically: true, encoding: .utf8)
-            print("File saved successfully: \(saveURL.path)")        
+            print("File saved successfully: \(saveURL.path)")
         } catch {
             print("Error saving file: \(error.localizedDescription)")
             throw error
@@ -88,17 +92,14 @@ class AppState {
         
         do {
             try FileManager.default.removeItem(at: deleteURL)
-            print("File deleted successfully: \(deleteURL.path)")     
+            print("File deleted successfully: \(deleteURL.path)")
         } catch {
             print("Error deleting file: \(error.localizedDescription)")
             throw error
         }
     }
     
-    func getFileContent(for filePath: String) -> String? {
-        return files.first(where: { $0.url.path == filePath })?.content
-    }
-    
+    // MARK: - File Type Management
     func updateSelectedFileTypes(_ types: [String]) {
         selectedFileTypes = types
         contextManager?.updateMonitoredFileTypes(types)
@@ -132,6 +133,7 @@ class AppState {
         }
     }
     
+    // MARK: - Utility Functions
     func copyToClipboard() {
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
@@ -151,18 +153,73 @@ class AppState {
         }
     }
     
+    // MARK: - Agent Management
+    func initializeAgent(buildManager: BuildManager) {
+        let buildClosure: Agent.BuildClosure = {
+            try await buildManager.start()
+            let errorCount = buildManager.buildErrorLines.count
+            let successful = buildManager.lastBuildStatus == .success
+            return (errorCount, successful)
+        }
+
+        let generatorClosure: Agent.GeneratorClosure = { buildErrors in
+            let proposal = try await Functions.shared.improve(
+                userID: "testUser",
+                packageID: "testPackage",
+                message: "エラーを修正、改善を行ってください。"
+            )
+            return proposal
+        }
+
+        let fileOperationClosure: Agent.FileOperationClosure = { operation in
+            let url = URL(fileURLWithPath: operation.path)
+            switch operation.type {
+            case .create, .update:
+                guard let content = operation.content else {
+                    throw NSError(domain: "FileOperation", code: 1, userInfo: [NSLocalizedDescriptionKey: "Content is required for create and update operations"])
+                }
+                try await self.saveFile(url: url, content: content)
+            case .delete:
+                try await self.deleteFile(at: url)
+            }
+        }
+
+        self.agent = Agent(
+            buildClosure: buildClosure,
+            generatorClosure: generatorClosure,
+            fileOperationClosure: fileOperationClosure,
+            maxNoImprovementCount: 3,
+            continueOnSuccess: false
+        )
+    }
+
+    func startAgent() async {
+        guard let agent = agent else { return }
+        isAgentRunning = true
+        await agent.start()
+        isAgentRunning = false
+    }
+
+    func stopAgent() async {
+        await agent?.stop()
+        isAgentRunning = false
+    }
+    
+    // MARK: - Error Handling
+    enum FileOperationError: Error {
+        case rootDirectoryNotSet
+        case fileOutsideRootDirectory
+    }
+    
+    // MARK: - Deinitialization
     deinit {
         if let rootURL = rootItem?.url {
             directoryManager.stopAccessingSecurityScopedResource(for: rootURL)
         }
     }
-    
-    enum FileOperationError: Error {
-        case rootDirectoryNotSet
-        case fileOutsideRootDirectory
-    }
 }
 
+// MARK: - URL Extension
 extension URL {
     func relativePath(from base: URL) -> String {
         let fromPath = self.standardized.path

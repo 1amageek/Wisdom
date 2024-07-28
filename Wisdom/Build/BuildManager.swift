@@ -105,7 +105,7 @@ class BuildManager {
         case noWorkingDirectory
     }
     
-    enum BuildStatus {
+    enum BuildStatus: Equatable {
         case none
         case inProgress
         case success
