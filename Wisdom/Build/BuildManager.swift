@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 @Observable
 class BuildManager {
@@ -15,7 +16,9 @@ class BuildManager {
     private var errorPipe: Pipe?
     
     var buildWorkingDirectory: URL?
-    
+    var buildType: BuildType = .swift
+    var errorCount: Int = 0
+    var warningCount: Int = 0
     var isBuilding = false
     var buildOutputLines: [BuildLog] = []
     var lastBuildStatus: BuildStatus = .none
@@ -26,6 +29,19 @@ class BuildManager {
         print("Build working directory set to: \(url?.path ?? "nil")")
     }
     
+    func setBuildType(_ type: BuildType) {
+        buildType = type
+        resetBuildState()
+    }
+    
+    private func resetBuildState() {
+        errorCount = 0
+        warningCount = 0
+        buildOutputLines.removeAll()
+        lastBuildStatus = .none
+        buildError = nil
+    }
+    
     func start() async {
         guard !isBuilding else { return }
         guard let workingDirectory = buildWorkingDirectory else {
@@ -34,8 +50,10 @@ class BuildManager {
             return
         }
         
-        isBuilding = true
-        buildOutputLines.removeAll()
+        withAnimation {
+            isBuilding = true
+        }
+        resetBuildState()
         lastBuildStatus = .inProgress
         buildError = nil
         
@@ -68,13 +86,20 @@ class BuildManager {
                 for try await line in outputPipe.fileHandleForReading.bytes.lines {
                     await MainActor.run {
                         self.buildOutputLines.append(.init(line))
+                        if line.contains("error:") {
+                            self.errorCount += 1
+                        } else if line.contains("warning:") {
+                            self.warningCount += 1
+                        }
                     }
                 }
             }
             
             process.waitUntilExit()
-            
-            isBuilding = false
+
+            withAnimation {
+                isBuilding = false
+            }
             
             if process.terminationStatus != 0 {
                 lastBuildStatus = .failed(code: process.terminationStatus)
@@ -83,7 +108,9 @@ class BuildManager {
                 lastBuildStatus = .success
             }
         } catch {
-            isBuilding = false
+            withAnimation {
+                isBuilding = false
+            }
             lastBuildStatus = .failed(code: -1)
             buildError = error
         }
@@ -93,6 +120,15 @@ class BuildManager {
         buildProcess?.terminate()
         isBuilding = false
         lastBuildStatus = .stopped
+    }    
+    
+    private func parseOutput(_ line: String) {
+        if line.lowercased().contains("error") {
+            errorCount += 1
+        } else if line.lowercased().contains("warning") {
+            warningCount += 1
+        }
+        buildOutputLines.append(.init(line))
     }
     
     private func convertUrlToPath(_ text: String) -> String {

@@ -38,6 +38,7 @@ struct WisdomApp: App {
                     }
                 }
         }
+        .windowToolbarStyle(.unifiedCompact(showsTitle: false))
         .onChange(of: appState.rootItem) { _, newValue in
             if let newRootItem = newValue {
                 print("App: New root item set - \(newRootItem.name)")

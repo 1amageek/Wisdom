@@ -2,14 +2,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
     @Environment(AppState.self) var appState: AppState
     @Environment(BuildManager.self) var buildManager: BuildManager
     @Environment(Agent.self) var agent: Agent
     
     @Environment(\.openURL) private var openURL: OpenURLAction
     @Environment(\.openWindow) private var openWindow: OpenWindowAction
-    
-    @State private var isFileTypeSelectionPresented = false
+        
     @State private var isSettingsPresented = false
     @State private var isAgentMessageSheetPresented = false
     @State var isServerRunning: Bool = false
@@ -20,70 +20,47 @@ struct ContentView: View {
     
     var body: some View {
         @Bindable var state = appState
+        @Bindable var manager = buildManager
         NavigationSplitView {
-            FileSystemView(rootItem: appState.rootItem, selection: $state.selection) {
-                Text("No directory loaded")
-                
-                Button {
-                    appState.selectDirectory()
-                } label: {
-                    Text("Select Directory")
-                }
-            }
-            .toolbar {
-                ToolbarItemGroup(placement: .primaryAction) {
-                    Spacer()
-                    
-                    Button {
-                        Task {
-                            if buildManager.isBuilding {
-                                buildManager.stop()
-                            } else {
-                                await buildManager.start()
+            SideBar()
+                .toolbar {
+                    ToolbarItemGroup(placement: .primaryAction) {
+                        Spacer()
+                        
+                        if !appState.isAgentRunning {
+                            Button {
+                                Task {
+                                    if buildManager.isBuilding {
+                                        buildManager.stop()
+                                    } else {
+                                        await buildManager.start()
+                                    }
+                                }
+                            } label: {
+                                Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
+                                    .padding(.horizontal, 6)
                             }
                         }
-                    } label: {
-                        Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
-                            .padding(.horizontal, 6)
-                    }
-                    
-                    Button {
-                        if !isAgentMessageSheetPresented {
-                            isAgentMessageSheetPresented = true
-                        } else {
-                            agent.stop()
-                            isAgentMessageSheetPresented = false
+                        
+                        Button {
+                            withAnimation {
+                                if !isAgentMessageSheetPresented {
+                                    isAgentMessageSheetPresented = true
+                                } else {
+                                    agent.stop()
+                                    isAgentMessageSheetPresented = false
+                                }
+                            }
+                        } label: {
+                            Image(systemName: appState.isAgentRunning ? "stop.fill" : "forward.fill")
+                                .padding(.horizontal, 4)
                         }
-                    } label: {
-                        Image(systemName: appState.isAgentRunning ? "stop.circle" : "repeat")
                     }
                 }
-            }
-            .padding(0)
-            .safeAreaInset(edge: .bottom) {
-                HStack(spacing: 12) {
-                    Button {
-                        appState.selectDirectory()
-                    } label: {
-                        Image(systemName: "folder")
-                    }
-                    .controlSize(.small)
-                    .buttonStyle(.borderless)
-                    Button {
-                        isFileTypeSelectionPresented.toggle()
-                    } label: {
-                        Image(systemName: "list.bullet")
-                    }
-                    .controlSize(.small)
-                    .buttonStyle(.borderless)
-                    Spacer()
-                }
-                .padding(8)
-                .background(.regularMaterial)
-            }
+                .padding(0)
         } detail: {
             VSplitView {
-                ContextView()
+                MainView()
                     .frame(maxWidth: .infinity)
                 LogView()
                     .frame(maxWidth: .infinity)
@@ -91,7 +68,11 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity)
             .toolbar {
+                ToolbarItemGroup(placement: .navigation) {
+                    BuildStatusView()
+                }
                 ToolbarItemGroup(placement: .primaryAction) {
+                    Spacer()
                     Button {
                         isSettingsPresented.toggle()
                     } label: {
@@ -109,9 +90,6 @@ struct ContentView: View {
                     }
                 }
             }
-        }
-        .sheet(isPresented: $isFileTypeSelectionPresented) {
-            FileTypeSelectionView()
         }
         .sheet(isPresented: $isSettingsPresented) {
             SettingView()

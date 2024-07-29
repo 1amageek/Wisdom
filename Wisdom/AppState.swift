@@ -8,6 +8,11 @@
 import Foundation
 import AppKit
 
+enum SidebarNavigation {
+    case fileSystem
+    case requirements
+}
+
 @Observable
 class AppState {
     
@@ -20,6 +25,7 @@ class AppState {
     var context: String { self.contextManager?.getFullContext() ?? "" }
     var files: [CodeFile] { self.contextManager?.files ?? [] }
     var isAgentRunning = false
+    var selectedNavigation: SidebarNavigation = .fileSystem
     
     private var agent: Agent?
     private var directoryManager = DirectoryManager()
@@ -46,7 +52,7 @@ class AppState {
             ))
             
             UserDefaults.standard.set(resolvedURL.path, forKey: "LastOpenedDirectory")
-             
+            
             Task {
                 await loadAvailableFileTypes(resolvedURL)
             }
@@ -96,7 +102,7 @@ class AppState {
         
         do {
             try FileManager.default.removeItem(at: deleteURL)
-            print("File deleted successfully: \(deleteURL.path)")     
+            print("File deleted successfully: \(deleteURL.path)")
         } catch {
             print("Error deleting file: \(error.localizedDescription)")
             throw error
@@ -198,7 +204,7 @@ extension URL {
 }
 
 extension AppState {
-
+    
     func startAgent(with message: String, agent: Agent, buildManager: BuildManager) async {
         
         let buildClosure: Agent.BuildClosure = {
@@ -230,7 +236,7 @@ extension AppState {
                 try await self.deleteFile(path: operation.path)
             }
         }
-
+        
         isAgentRunning = true
         await agent.start(with: message, build: buildClosure, generate: generateClosure, fileOperation: fileOperationClosure)
         isAgentRunning = false

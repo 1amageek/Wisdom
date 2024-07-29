@@ -47,6 +47,16 @@
 		127445842C55F49A0080BCEB /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445832C55F49A0080BCEB /* Agent.swift */; };
 		1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458B2C561C110080BCEB /* AgentMessageView.swift */; };
 		1274458E2C5695B30080BCEB /* LogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458D2C5695B30080BCEB /* LogDetailView.swift */; };
+		127445902C56A8D10080BCEB /* BuildStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458F2C56A8D10080BCEB /* BuildStatusView.swift */; };
+		127445922C56ACEC0080BCEB /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445912C56ACEC0080BCEB /* BuildType.swift */; };
+		127445962C574F260080BCEB /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445952C574F260080BCEB /* SideBar.swift */; };
+		127445982C5751A10080BCEB /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445972C5751A10080BCEB /* RequirementsView.swift */; };
+		1274459B2C575CDA0080BCEB /* RequirementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274459A2C575CDA0080BCEB /* RequirementsManager.swift */; };
+		1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274459D2C5765CD0080BCEB /* CodeEditor.swift */; };
+		127445A32C57662E0080BCEB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A22C57662E0080BCEB /* MainView.swift */; };
+		127445A62C576AE50080BCEB /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 127445A52C576AE50080BCEB /* CodeEditSourceEditor */; };
+		127445A82C576BE60080BCEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A72C576BE60080BCEB /* Theme.swift */; };
+		127445AA2C5777950080BCEB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A92C5777950080BCEB /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +120,15 @@
 		127445832C55F49A0080BCEB /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 		1274458B2C561C110080BCEB /* AgentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentMessageView.swift; sourceTree = "<group>"; };
 		1274458D2C5695B30080BCEB /* LogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailView.swift; sourceTree = "<group>"; };
+		1274458F2C56A8D10080BCEB /* BuildStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildStatusView.swift; sourceTree = "<group>"; };
+		127445912C56ACEC0080BCEB /* BuildType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildType.swift; sourceTree = "<group>"; };
+		127445952C574F260080BCEB /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		127445972C5751A10080BCEB /* RequirementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsView.swift; sourceTree = "<group>"; };
+		1274459A2C575CDA0080BCEB /* RequirementsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementsManager.swift; sourceTree = "<group>"; };
+		1274459D2C5765CD0080BCEB /* CodeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEditor.swift; sourceTree = "<group>"; };
+		127445A22C57662E0080BCEB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		127445A72C576BE60080BCEB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		127445A92C5777950080BCEB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1266B5FA2C524DBC00A4A6C9 /* Vapor in Frameworks */,
+				127445A62C576AE50080BCEB /* CodeEditSourceEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,11 +185,9 @@
 				1266B5B42C520E3E00A4A6C9 /* WisdomApp.swift */,
 				1266B5B62C520E3E00A4A6C9 /* ContentView.swift */,
 				1266B5E52C520E4600A4A6C9 /* ContextManager.swift */,
-				1266B5E12C520E4600A4A6C9 /* FileItem.swift */,
+				1274459A2C575CDA0080BCEB /* RequirementsManager.swift */,
+				127445992C5754760080BCEB /* Navigation */,
 				1274458B2C561C110080BCEB /* AgentMessageView.swift */,
-				1266B5E62C520E4600A4A6C9 /* FileItemView.swift */,
-				1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */,
-				1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */,
 				1266B5ED2C520F4500A4A6C9 /* AppState.swift */,
 				1266B6122C5388A100A4A6C9 /* Functions.swift */,
 				1266B5F32C522D7300A4A6C9 /* FileTypeSelectionView.swift */,
@@ -181,7 +199,7 @@
 				1266B6202C54AAAE00A4A6C9 /* Setting */,
 				1266B6072C53872700A4A6C9 /* Chat */,
 				1266B6042C52B77400A4A6C9 /* Build */,
-				1266B5EF2C52180F00A4A6C9 /* ContextView.swift */,
+				127445A12C57661A0080BCEB /* Viewer */,
 				1266B6012C529C9B00A4A6C9 /* Server */,
 				1266B5BA2C520E3E00A4A6C9 /* Assets.xcassets */,
 				1266B5BF2C520E3E00A4A6C9 /* Wisdom.entitlements */,
@@ -234,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				1266B6052C52B78300A4A6C9 /* BuildManager.swift */,
+				127445912C56ACEC0080BCEB /* BuildType.swift */,
+				1274458F2C56A8D10080BCEB /* BuildStatusView.swift */,
 				1274457E2C54DEEC0080BCEB /* BuildLog.swift */,
 				127445792C54B7E00080BCEB /* LogView.swift */,
 				1274458D2C5695B30080BCEB /* LogDetailView.swift */,
@@ -283,6 +303,31 @@
 			path = Agent;
 			sourceTree = "<group>";
 		};
+		127445992C5754760080BCEB /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1266B5E12C520E4600A4A6C9 /* FileItem.swift */,
+				1266B5E62C520E4600A4A6C9 /* FileItemView.swift */,
+				1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */,
+				1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */,
+				127445972C5751A10080BCEB /* RequirementsView.swift */,
+				127445952C574F260080BCEB /* SideBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		127445A12C57661A0080BCEB /* Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				1266B5EF2C52180F00A4A6C9 /* ContextView.swift */,
+				127445A22C57662E0080BCEB /* MainView.swift */,
+				127445A72C576BE60080BCEB /* Theme.swift */,
+				1274459D2C5765CD0080BCEB /* CodeEditor.swift */,
+				127445A92C5777950080BCEB /* String+.swift */,
+			);
+			path = Viewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,6 +346,7 @@
 			name = Wisdom;
 			packageProductDependencies = (
 				1266B5F92C524DBC00A4A6C9 /* Vapor */,
+				127445A52C576AE50080BCEB /* CodeEditSourceEditor */,
 			);
 			productName = Wisdom;
 			productReference = 1266B5B12C520E3E00A4A6C9 /* Wisdom.app */;
@@ -376,6 +422,7 @@
 			mainGroup = 1266B5A82C520E3E00A4A6C9;
 			packageReferences = (
 				1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */,
+				127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
 			);
 			productRefGroup = 1266B5B22C520E3E00A4A6C9 /* Products */;
 			projectDirPath = "";
@@ -420,9 +467,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1266B5F02C52180F00A4A6C9 /* ContextView.swift in Sources */,
+				127445AA2C5777950080BCEB /* String+.swift in Sources */,
 				1274457F2C54DEEC0080BCEB /* BuildLog.swift in Sources */,
 				1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */,
 				1266B60D2C53877C00A4A6C9 /* ChatMessage.swift in Sources */,
+				127445982C5751A10080BCEB /* RequirementsView.swift in Sources */,
 				1266B6262C54AAF200A4A6C9 /* ServerSettingView.swift in Sources */,
 				1266B5F22C5227D000A4A6C9 /* CodeFile.swift in Sources */,
 				1266B5B72C520E3E00A4A6C9 /* ContentView.swift in Sources */,
@@ -435,16 +484,23 @@
 				1266B6242C54AAD800A4A6C9 /* CommandSettingView.swift in Sources */,
 				1266B5B52C520E3E00A4A6C9 /* WisdomApp.swift in Sources */,
 				1274457A2C54B7E00080BCEB /* LogView.swift in Sources */,
+				127445A32C57662E0080BCEB /* MainView.swift in Sources */,
+				1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */,
 				1266B6092C53873600A4A6C9 /* ChatNavigationView.swift in Sources */,
 				1266B6172C53B3F000A4A6C9 /* ImproveMessage.swift in Sources */,
+				127445962C574F260080BCEB /* SideBar.swift in Sources */,
 				1266B6132C5388A100A4A6C9 /* Functions.swift in Sources */,
 				1266B6192C53BC6B00A4A6C9 /* AgentActionView.swift in Sources */,
+				127445922C56ACEC0080BCEB /* BuildType.swift in Sources */,
 				1266B5EE2C520F4500A4A6C9 /* AppState.swift in Sources */,
+				1274459B2C575CDA0080BCEB /* RequirementsManager.swift in Sources */,
+				127445A82C576BE60080BCEB /* Theme.swift in Sources */,
 				127445812C55DF880080BCEB /* ChatView.swift in Sources */,
 				127445842C55F49A0080BCEB /* Agent.swift in Sources */,
 				1266B5E82C520E4600A4A6C9 /* FileItemView.swift in Sources */,
 				1266B5E92C520E4600A4A6C9 /* FileSystemView.swift in Sources */,
 				1266B5F42C522D7300A4A6C9 /* FileTypeSelectionView.swift in Sources */,
+				127445902C56A8D10080BCEB /* BuildStatusView.swift in Sources */,
 				1266B5EC2C520E4600A4A6C9 /* FileSystemObserver.swift in Sources */,
 				1266B6222C54AABC00A4A6C9 /* SettingView.swift in Sources */,
 				1274457D2C54C9F00080BCEB /* DirectoryManager.swift in Sources */,
@@ -785,6 +841,14 @@
 				minimumVersion = 4.102.1;
 			};
 		};
+		127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeEditApp/CodeEditSourceEditor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -792,6 +856,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */;
 			productName = Vapor;
+		};
+		127445A52C576AE50080BCEB /* CodeEditSourceEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
+			productName = CodeEditSourceEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
