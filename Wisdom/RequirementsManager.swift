@@ -7,60 +7,121 @@
 
 import Foundation
 
+import Foundation
+
 class RequirementsManager {
+    
     static let shared = RequirementsManager()
+    
+    private let fileManager = FileManager.default
+    private var wisdomURL: URL?
     
     private init() {}
     
-    func ensureRequirementsFiles(in directory: URL) {
-        let requirementsURL = directory.appendingPathComponent("REQUIREMENTS.md")
-        let featureTodoURL = directory.appendingPathComponent("FEATURE_TODO.md")
+    func setRootURL(_ url: URL) {
+        self.wisdomURL = url.appendingPathComponent(".wisdom")
+    }
+    
+    func createFile(name: String) throws {
+        guard let wisdomURL = wisdomURL else { throw RequirementsError.wisdomDirectoryNotSet }
+        
+        let fileURL = wisdomURL.appendingPathComponent(name).appendingPathExtension("md")
+        let initialContent = "# \(name)\n\nEnter your content here."
+        
+        try initialContent.write(to: fileURL, atomically: true, encoding: .utf8)
+    }
+    
+    func readFile(at url: URL) throws -> String {
+        try String(contentsOf: url, encoding: .utf8)
+    }
+    
+    func updateFile(at url: URL, content: String) throws {
+        try content.write(to: url, atomically: true, encoding: .utf8)
+    }
+    
+    func context() -> String {
+        guard let wisdomURL = wisdomURL else { return "" }
+        do {
+            let fileURLs = try fileManager.contentsOfDirectory(at: wisdomURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
+            
+            return try fileURLs
+                .filter { $0.pathExtension.lowercased() == "md" }
+                .map { url -> String in
+                    let content = try String(contentsOf: url, encoding: .utf8)
+                    return """
+                    File: \(url.lastPathComponent)
+                    
+                    \(content)
+                    
+                    ---
+                    """
+                }
+                .joined(separator: "\n\n")
+        } catch {
+            return ""
+        }
+    }
+
+    enum RequirementsError: Error {
+        case wisdomDirectoryNotSet
+    }
+}
+
+// MARK: -
+
+extension RequirementsManager {
+    
+    static func ensureWisdomDirectory(at url: URL) throws -> URL {
         let fileManager = FileManager.default
+        let wisdomURL = url.appendingPathComponent(".wisdom")
+        
+        if !fileManager.fileExists(atPath: wisdomURL.path) {
+            try fileManager.createDirectory(at: wisdomURL, withIntermediateDirectories: true, attributes: nil)
+        }
+        
+        let requirementsURL = wisdomURL.appendingPathComponent("REQUIREMENTS.md")
+        let featureTodoURL = wisdomURL.appendingPathComponent("FEATURE_TODO.md")
         
         if !fileManager.fileExists(atPath: requirementsURL.path) {
-            createRequirementsFile(at: requirementsURL)
+            try createRequirementsFile(at: requirementsURL)
         }
         
         if !fileManager.fileExists(atPath: featureTodoURL.path) {
-            createFeatureTodoFile(at: featureTodoURL)
+            try createFeatureTodoFile(at: featureTodoURL)
         }
+        return wisdomURL
     }
     
-    private func createRequirementsFile(at url: URL) {
+    static private func createRequirementsFile(at url: URL) throws {
         let content = """
         # Product Requirements Document
-        
+
         ## Project Overview
         [Brief description of the product and its main purpose]
-        
+
         ## Development Environment
         - Language: [e.g., Swift 5.5]
         - Framework: [e.g., SwiftUI]
         - Deployment Target: [e.g., iOS 15.0+]
         - Key Dependencies: [List only crucial dependencies]
-        
+
         ## Core Functionality
         1. [Key function 1]
         2. [Key function 2]
         3. [Key function 3]
-        
+
         ## Architecture
         - Pattern: [e.g., MVVM]
         - Key Components: [e.g., Views, ViewModels, Models, Services]
         """
         
-        do {
-            try content.write(to: url, atomically: true, encoding: .utf8)
-            print("REQUIREMENTS.md created successfully at \(url.path)")
-        } catch {
-            print("Error creating REQUIREMENTS.md: \(error)")
-        }
+        try content.write(to: url, atomically: true, encoding: .utf8)
     }
     
-    private func createFeatureTodoFile(at url: URL) {
+    static private func createFeatureTodoFile(at url: URL) throws {
         let content = """
         # TODO Feature
-        
+
         - [ ] Create todo items
         - [ ] Delete todo items
         - [ ] Mark todos as complete/incomplete
@@ -72,15 +133,11 @@ class RequirementsManager {
         - [ ] Group todos by categories/projects
         - [ ] Set reminders for todos
         - [ ] Sync across devices
-        
+
         Note: Checked items [x] are implemented, unchecked [ ] are not yet implemented.
         """
         
-        do {
-            try content.write(to: url, atomically: true, encoding: .utf8)
-            print("FEATURE_TODO.md created successfully at \(url.path)")
-        } catch {
-            print("Error creating FEATURE_TODO.md: \(error)")
-        }
+        try content.write(to: url, atomically: true, encoding: .utf8)
     }
+    
 }

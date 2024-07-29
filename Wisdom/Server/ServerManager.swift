@@ -105,13 +105,17 @@ actor ServerManager {
             return "OK"
         }
         
-        app.get("errors") { req -> String in
-            guard let url = self.appState?.rootItem?.url else { return "" }
-            return self.buildManager?.errors(url) ?? ""
+        app.get("requirements") { req -> String in
+            return RequirementsManager.shared.context()
         }
         
         app.get("context") { req -> String in
             return self.appState?.context ?? ""
+        }
+        
+        app.get("errors") { req -> String in
+            guard let url = self.appState?.rootItem?.url else { return "" }
+            return self.buildManager?.errors(url) ?? ""
         }
         
         app.get("files", ":filename") { req -> Response in

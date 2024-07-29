@@ -51,6 +51,8 @@ class AppState {
                 monitoredFileTypes: selectedFileTypes
             ))
             
+            RequirementsManager.shared.setRootURL(resolvedURL)
+            
             UserDefaults.standard.set(resolvedURL.path, forKey: "LastOpenedDirectory")
             
             Task {

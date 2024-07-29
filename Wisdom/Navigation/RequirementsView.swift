@@ -21,20 +21,15 @@ struct RequirementsView<Content: View>: View {
     var content: () -> Content
     
     init(rootItem: FileItem?, selection: Binding<Set<FileItem>>, @ViewBuilder content: @escaping () -> Content) {
-        if let url = rootItem?.url.appendingPathComponent(".wisdom") {
-            let fileManager = FileManager.default
-            if !fileManager.fileExists(atPath: url.path) {
-                do {
-                    try fileManager.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
-                    print("Directory created successfully")
-                } catch {
-                    print("Error creating directory: \(error)")
-                }
+        if let url = rootItem?.url {
+            do {
+                let wisdomURL = try RequirementsManager.ensureWisdomDirectory(at: url)
+                self.rootItem = FileItem(url: wisdomURL)
+                print("Directory created successfully")
+            } catch {
+                print("Error creating directory: \(error)")
+                self.rootItem = nil
             }
-            
-            RequirementsManager.shared.ensureRequirementsFiles(in: url)
-            
-            self.rootItem = FileItem(url: url)
         } else {
             self.rootItem = nil
         }
