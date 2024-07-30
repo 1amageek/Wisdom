@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MarkdownUI
 
 struct ChatBalloonView: View {
     
@@ -20,7 +21,7 @@ struct ChatBalloonView: View {
             }
             
             VStack(alignment: .leading, spacing: 10) {
-                Text(message.content[0].text)
+                Markdown(message.content[0].text)
                     .textSelection(.enabled)
                     .padding(10)
                     .background(message.isUser ? Color.blue : Color.gray)
@@ -58,7 +59,7 @@ struct ChatBalloonView: View {
         return "\(path)"
     }
     
-    private func actionContent(for id: String) -> AgentAction? {
+    private func actionContent(for id: String) -> AgentFileOperation? {
         return viewModel.agentActions.first(where: { $0.id == id })
     }
 }

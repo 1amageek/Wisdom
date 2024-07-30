@@ -15,7 +15,7 @@ struct ContextView: View {
     
     var body: some View {
         ZStack {
-            if appState.contextManager?.isLoading ?? true {
+            if ContextManager.shared.isLoading ?? true {
                 ProgressView("Loading context...")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
@@ -30,7 +30,7 @@ struct ContextView: View {
         }
         .onChange(of: appState.selection) { oldValue, newValue in
             Task {
-                self.context = await appState.contextManager?.getSelectedContext(for: newValue) ?? ""
+                self.context = await ContextManager.shared.getSelectedContext(for: newValue) ?? ""
             }
         }
     }

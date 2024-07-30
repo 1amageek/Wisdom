@@ -1,5 +1,5 @@
 //
-//  ImproveMessage.swift
+//  Transcript.swift
 //  Wisdom
 //
 //  Created by Norikazu Muramoto on 2024/07/26.
@@ -8,9 +8,9 @@
 import Foundation
 
 
-struct ImproveMessage: Identifiable, Codable {
+struct Transcript: Identifiable, Codable {
     var id: String
-    var operations: [AgentAction]
+    var operations: [AgentFileOperation]
     var text: String
     var timestamp: Date
 }

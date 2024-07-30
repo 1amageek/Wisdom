@@ -79,7 +79,9 @@ struct ContentView: View {
                         Image(systemName: "gear")
                     }
                     Button {
-                        appState.copyToClipboard()
+                        let pasteboard = NSPasteboard.general
+                        pasteboard.clearContents()
+                        pasteboard.setString(ContextManager.shared.getFullContext(), forType: .string)
                     } label: {
                         Image(systemName: "doc.on.clipboard")
                     }

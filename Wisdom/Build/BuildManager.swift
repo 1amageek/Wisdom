@@ -15,6 +15,7 @@ class BuildManager {
     private var outputPipe: Pipe?
     private var errorPipe: Pipe?
     
+    var rootURL: URL?
     var buildWorkingDirectory: URL?
     var buildType: BuildType = .swift
     var errorCount: Int = 0
@@ -23,6 +24,12 @@ class BuildManager {
     var buildOutputLines: [BuildLog] = []
     var lastBuildStatus: BuildStatus = .none
     var buildError: Error?
+    
+    static let shared = BuildManager()
+    
+    func setRootURL(_ url: URL) {
+        self.rootURL = url
+    }
     
     func setBuildWorkingDirectory(_ url: URL?) {
         self.buildWorkingDirectory = url
@@ -136,7 +143,7 @@ class BuildManager {
         return text.replacingOccurrences(of: workingDirectory.path, with: ".")
     }
     
-    func errors(_ rootURL: URL) -> String {
+    func errors() -> String {
         return buildOutputLines.map { convertUrlToPath($0.text) }.joined(separator: "\n")
     }
     

@@ -14,12 +14,15 @@ class RequirementsManager {
     static let shared = RequirementsManager()
     
     private let fileManager = FileManager.default
-    private var wisdomURL: URL?
+    private var rootURL: URL?
+    private var wisdomURL: URL? {
+        self.rootURL?.appendingPathComponent(".wisdom")
+    }
     
     private init() {}
     
     func setRootURL(_ url: URL) {
-        self.wisdomURL = url.appendingPathComponent(".wisdom")
+        self.rootURL = url
     }
     
     func createFile(name: String) throws {
@@ -40,19 +43,20 @@ class RequirementsManager {
     }
     
     func context() -> String {
+        guard let rootURL = rootURL else { return "" }
         guard let wisdomURL = wisdomURL else { return "" }
         do {
-            let fileURLs = try fileManager.contentsOfDirectory(at: wisdomURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
-            
+            let fileURLs = try fileManager.contentsOfDirectory(at: wisdomURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])            
             return try fileURLs
                 .filter { $0.pathExtension.lowercased() == "md" }
                 .map { url -> String in
+                    let relativePath = url.relativePath(from: rootURL)
                     let content = try String(contentsOf: url, encoding: .utf8)
                     return """
-                    File: \(url.lastPathComponent)
-                    
+                    path: \(relativePath)
+                    ```markdown:\(url.lastPathComponent)
                     \(content)
-                    
+                    ```
                     ---
                     """
                 }
@@ -79,16 +83,14 @@ extension RequirementsManager {
             try fileManager.createDirectory(at: wisdomURL, withIntermediateDirectories: true, attributes: nil)
         }
         
-        let requirementsURL = wisdomURL.appendingPathComponent("REQUIREMENTS.md")
-        let featureTodoURL = wisdomURL.appendingPathComponent("FEATURE_TODO.md")
-        
-        if !fileManager.fileExists(atPath: requirementsURL.path) {
-            try createRequirementsFile(at: requirementsURL)
-        }
-        
-        if !fileManager.fileExists(atPath: featureTodoURL.path) {
-            try createFeatureTodoFile(at: featureTodoURL)
-        }
+//        let requirementsURL = wisdomURL.appendingPathComponent("REQUIREMENTS.md")
+//        if !fileManager.fileExists(atPath: requirementsURL.path) {
+//            try createRequirementsFile(at: requirementsURL)
+//        }
+//        let featureTodoURL = wisdomURL.appendingPathComponent("FEATURE_TODO.md")
+//        if !fileManager.fileExists(atPath: featureTodoURL.path) {
+//            try createFeatureTodoFile(at: featureTodoURL)
+//        }
         return wisdomURL
     }
     
@@ -100,9 +102,9 @@ extension RequirementsManager {
         [Brief description of the product and its main purpose]
 
         ## Development Environment
-        - Language: [e.g., Swift 5.5]
+        - Language: [e.g., Swift 5.10]
         - Framework: [e.g., SwiftUI]
-        - Deployment Target: [e.g., iOS 15.0+]
+        - Deployment Target: [e.g., iOS 17.0+]
         - Key Dependencies: [List only crucial dependencies]
 
         ## Core Functionality

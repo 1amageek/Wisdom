@@ -32,11 +32,10 @@
 		1266B6112C53880F00A4A6C9 /* ChatBalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6102C53880F00A4A6C9 /* ChatBalloonView.swift */; };
 		1266B6132C5388A100A4A6C9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6122C5388A100A4A6C9 /* Functions.swift */; };
 		1266B6152C539C6D00A4A6C9 /* ChatThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6142C539C6D00A4A6C9 /* ChatThread.swift */; };
-		1266B6172C53B3F000A4A6C9 /* ImproveMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6162C53B3F000A4A6C9 /* ImproveMessage.swift */; };
+		1266B6172C53B3F000A4A6C9 /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6162C53B3F000A4A6C9 /* Transcript.swift */; };
 		1266B6192C53BC6B00A4A6C9 /* AgentActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6182C53BC6B00A4A6C9 /* AgentActionView.swift */; };
 		1266B61B2C540F4300A4A6C9 /* FileOperationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B61A2C540F4300A4A6C9 /* FileOperationService.swift */; };
 		1266B61D2C5495BD00A4A6C9 /* ImprovedCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B61C2C5495BD00A4A6C9 /* ImprovedCode.swift */; };
-		1266B61F2C549BE700A4A6C9 /* AgentAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B61E2C549BE700A4A6C9 /* AgentAction.swift */; };
 		1266B6222C54AABC00A4A6C9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6212C54AABC00A4A6C9 /* SettingView.swift */; };
 		1266B6242C54AAD800A4A6C9 /* CommandSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6232C54AAD800A4A6C9 /* CommandSettingView.swift */; };
 		1266B6262C54AAF200A4A6C9 /* ServerSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B6252C54AAF200A4A6C9 /* ServerSettingView.swift */; };
@@ -57,6 +56,7 @@
 		127445A62C576AE50080BCEB /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 127445A52C576AE50080BCEB /* CodeEditSourceEditor */; };
 		127445A82C576BE60080BCEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A72C576BE60080BCEB /* Theme.swift */; };
 		127445AA2C5777950080BCEB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A92C5777950080BCEB /* String+.swift */; };
+		127445B22C579D690080BCEB /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 127445B12C579D690080BCEB /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,11 +105,10 @@
 		1266B6102C53880F00A4A6C9 /* ChatBalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBalloonView.swift; sourceTree = "<group>"; };
 		1266B6122C5388A100A4A6C9 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		1266B6142C539C6D00A4A6C9 /* ChatThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatThread.swift; sourceTree = "<group>"; };
-		1266B6162C53B3F000A4A6C9 /* ImproveMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImproveMessage.swift; sourceTree = "<group>"; };
+		1266B6162C53B3F000A4A6C9 /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 		1266B6182C53BC6B00A4A6C9 /* AgentActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentActionView.swift; sourceTree = "<group>"; };
 		1266B61A2C540F4300A4A6C9 /* FileOperationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationService.swift; sourceTree = "<group>"; };
 		1266B61C2C5495BD00A4A6C9 /* ImprovedCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprovedCode.swift; sourceTree = "<group>"; };
-		1266B61E2C549BE700A4A6C9 /* AgentAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentAction.swift; sourceTree = "<group>"; };
 		1266B6212C54AABC00A4A6C9 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		1266B6232C54AAD800A4A6C9 /* CommandSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandSettingView.swift; sourceTree = "<group>"; };
 		1266B6252C54AAF200A4A6C9 /* ServerSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSettingView.swift; sourceTree = "<group>"; };
@@ -136,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127445B22C579D690080BCEB /* MarkdownUI in Frameworks */,
 				1266B5FA2C524DBC00A4A6C9 /* Vapor in Frameworks */,
 				127445A62C576AE50080BCEB /* CodeEditSourceEditor in Frameworks */,
 			);
@@ -193,7 +193,6 @@
 				1266B5F32C522D7300A4A6C9 /* FileTypeSelectionView.swift */,
 				1266B61A2C540F4300A4A6C9 /* FileOperationService.swift */,
 				1266B5F12C5227D000A4A6C9 /* CodeFile.swift */,
-				1266B61E2C549BE700A4A6C9 /* AgentAction.swift */,
 				127445822C55F39A0080BCEB /* Agent */,
 				1274457B2C54C97D0080BCEB /* Security */,
 				1266B6202C54AAAE00A4A6C9 /* Setting */,
@@ -271,7 +270,7 @@
 				1266B6182C53BC6B00A4A6C9 /* AgentActionView.swift */,
 				1266B60E2C53878700A4A6C9 /* ChatViewModel.swift */,
 				1266B60C2C53877C00A4A6C9 /* ChatMessage.swift */,
-				1266B6162C53B3F000A4A6C9 /* ImproveMessage.swift */,
+				1266B6162C53B3F000A4A6C9 /* Transcript.swift */,
 				1266B61C2C5495BD00A4A6C9 /* ImprovedCode.swift */,
 			);
 			path = Chat;
@@ -347,6 +346,7 @@
 			packageProductDependencies = (
 				1266B5F92C524DBC00A4A6C9 /* Vapor */,
 				127445A52C576AE50080BCEB /* CodeEditSourceEditor */,
+				127445B12C579D690080BCEB /* MarkdownUI */,
 			);
 			productName = Wisdom;
 			productReference = 1266B5B12C520E3E00A4A6C9 /* Wisdom.app */;
@@ -423,6 +423,7 @@
 			packageReferences = (
 				1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */,
 				127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
+				127445B02C579D570080BCEB /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
 			);
 			productRefGroup = 1266B5B22C520E3E00A4A6C9 /* Products */;
 			projectDirPath = "";
@@ -478,7 +479,6 @@
 				1266B6112C53880F00A4A6C9 /* ChatBalloonView.swift in Sources */,
 				1266B5EA2C520E4600A4A6C9 /* FileItem.swift in Sources */,
 				1266B6062C52B78300A4A6C9 /* BuildManager.swift in Sources */,
-				1266B61F2C549BE700A4A6C9 /* AgentAction.swift in Sources */,
 				1266B60F2C53878700A4A6C9 /* ChatViewModel.swift in Sources */,
 				1266B5F72C524D0E00A4A6C9 /* ServerManager.swift in Sources */,
 				1266B6242C54AAD800A4A6C9 /* CommandSettingView.swift in Sources */,
@@ -487,7 +487,7 @@
 				127445A32C57662E0080BCEB /* MainView.swift in Sources */,
 				1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */,
 				1266B6092C53873600A4A6C9 /* ChatNavigationView.swift in Sources */,
-				1266B6172C53B3F000A4A6C9 /* ImproveMessage.swift in Sources */,
+				1266B6172C53B3F000A4A6C9 /* Transcript.swift in Sources */,
 				127445962C574F260080BCEB /* SideBar.swift in Sources */,
 				1266B6132C5388A100A4A6C9 /* Functions.swift in Sources */,
 				1266B6192C53BC6B00A4A6C9 /* AgentActionView.swift in Sources */,
@@ -677,6 +677,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -705,6 +706,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -849,6 +851,14 @@
 				minimumVersion = 0.7.4;
 			};
 		};
+		127445B02C579D570080BCEB /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -861,6 +871,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
 			productName = CodeEditSourceEditor;
+		};
+		127445B12C579D690080BCEB /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 127445B02C579D570080BCEB /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

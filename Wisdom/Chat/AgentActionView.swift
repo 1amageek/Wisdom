@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MarkdownUI
 
 struct AgentActionView: View {
     
@@ -25,9 +26,11 @@ struct AgentActionView: View {
                     Text("Action: \(action.actionType.rawValue)")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                        .textSelection(.enabled)
                     
                     if let content = action.content {
-                        Text(content)
+                        Markdown(content)
+                            .textSelection(.enabled)
                             .font(.system(.body, design: .monospaced))
                             .padding(8)
                             .background(Color.secondary.opacity(0.1))
@@ -62,7 +65,7 @@ struct AgentActionView: View {
         }
     }
     
-    private func performAction(_ action: AgentAction) async {
+    private func performAction(_ action: AgentFileOperation) async {
         do {
             switch action.actionType {
             case .create, .update:

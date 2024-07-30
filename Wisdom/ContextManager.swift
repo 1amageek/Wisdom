@@ -12,10 +12,13 @@ import UniformTypeIdentifiers
 
 @Observable
 class ContextManager {
+    
+    static let shared = ContextManager()
+    
     private(set) var files: [CodeFile] = []
     private(set) var isLoading: Bool = false
     private var fileObserver: FileSystemObserver?
-    private let rootURL: URL
+    private var rootURL: URL?
     private let logger = Logger(subsystem: "team.stamp.ContextManager", category: "FileManagement")
     
     private var fullContext: String = ""
@@ -30,14 +33,19 @@ class ContextManager {
         var monitoredFileTypes: [String]
     }
     
-    private var config: Configuration
+    private var config: Configuration = Configuration(maxDepth: 7, excludedDirectories: [], maxFileSize: 1_000_000, debounceInterval: 0.5, monitoredFileTypes: ["swift", "ts", "js", "py", "rs"])
     
     private var updateWorkItem: DispatchWorkItem?
     
-    init(rootURL: URL, config: Configuration = Configuration(maxDepth: 5, excludedDirectories: ["Pods", ".git"], maxFileSize: 1_000_000, debounceInterval: 0.5, monitoredFileTypes: ["swift"])) {
+    init() { }
+    
+    func setRootURL(_ rootURL: URL) {
         self.rootURL = rootURL
-        self.config = config
         setupFileObserver()
+    }
+    
+    func setConfig(_ config: Configuration) {
+        self.config = config
     }
     
     func updateMonitoredFileTypes(_ fileTypes: [String]) {
@@ -51,6 +59,9 @@ class ContextManager {
     }
     
     private func setupFileObserver() {
+        
+        guard let rootURL else { return }
+        
         let configuration = FileSystemObserver.Configuration(
             url: rootURL,
             filterType: .extensions(config.monitoredFileTypes),
@@ -77,7 +88,7 @@ class ContextManager {
         }
         
         fileObserver?.startObserving()
-        logger.info("Started watching \(self.rootURL.path)")
+        logger.info("Started watching \(rootURL.path)")
         
         Task {
             await loadInitialFiles()
@@ -143,8 +154,10 @@ class ContextManager {
             }
         }
         
+        guard let rootURL else { return }
+        
         await loadFiles(in: rootURL, currentDepth: 0)
-        logger.info("Loaded \(loadedFiles) initial files from \(self.rootURL.path) and its subdirectories")
+        logger.info("Loaded \(loadedFiles) initial files from \(rootURL.path) and its subdirectories")
         
         if !accessDeniedDirectories.isEmpty {
             await handleAccessDeniedDirectories(accessDeniedDirectories)
@@ -254,6 +267,7 @@ class ContextManager {
     }
     
     private func updateFullContext() {
+        guard let rootURL else { return }
         let directoryTree = generateDirectoryTree(for: rootURL)
         let filesContent = formatFiles(files)
         fullContext = directoryTree + "\n\n" + filesContent
@@ -261,11 +275,12 @@ class ContextManager {
     }
     
     private func formatFiles(_ filesToFormat: [CodeFile]) -> String {
+        guard let rootURL else { return "" }
         let formattedFiles = filesToFormat
             .filter { config.monitoredFileTypes.contains($0.fileType) }
             .lazy
             .map { file in
-                let relativePath = file.url.relativePath(from: self.rootURL)
+                let relativePath = file.url.relativePath(from: rootURL)
                 let content = """
                 path: \(relativePath)
                 ```\(file.fileType):\(file.url.lastPathComponent)

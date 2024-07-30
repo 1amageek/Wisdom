@@ -12,9 +12,10 @@ import Observation
 struct WisdomApp: App {
     
     @State private var appState: AppState = AppState()
-    @State private var buildManager: BuildManager = BuildManager()
+    @State private var contextManager: ContextManager = ContextManager.shared
+    @State private var buildManager: BuildManager = BuildManager.shared
     @State private var directoryManager: DirectoryManager = DirectoryManager()
-    @State private var agent: Agent = Agent()
+    @State private var agent: Agent = Agent.shared
     
     
     init() {
@@ -48,11 +49,28 @@ struct WisdomApp: App {
                 buildManager.buildWorkingDirectory = nil
             }
         }
+        .commands{
+            CommandGroup(after: .newItem) {
+                Button("Save") {
+                    if let file = appState.selectedFile {
+                        Task {
+                            do {
+                                try await appState.saveFile(file)
+                            } catch {
+                                print(error)
+                            }
+                        }
+                    }
+                }
+                .keyboardShortcut("s", modifiers: .command)
+            }
+        }
         
         Window("Chat", id: "chat") {
             ChatNavigationView()
                 .environment(appState)
         }
+        .windowToolbarStyle(.unifiedCompact(showsTitle: false))
         .windowResizability(.contentSize)
     }
     
@@ -60,7 +78,7 @@ struct WisdomApp: App {
         appState.setURL(url)
         buildManager.buildWorkingDirectory = url
         Task {
-            await appState.serverManager.setDelegate(appState, buildManager: buildManager)
+            await appState.serverManager.setDelegate(appState)
             if await !appState.serverManager.isServerRunning() {
                 try? await appState.serverManager.start()
             }

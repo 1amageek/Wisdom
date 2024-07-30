@@ -7,27 +7,28 @@
 
 import Foundation
 import Vapor
+import Network
 
 actor ServerManager {
     private var app: Application?
     private weak var appState: AppState?
-    private weak var buildManager: BuildManager?
     private var isRunning = false
     var hostname: String
     var port: Int
+    var publicPort: Int
     
-    init(hostname: String = "127.0.0.1", port: Int = 6060) {
+    init(hostname: String = "0.0.0.0", port: Int = 6060, publicPort: Int = 6060) {
         self.hostname = hostname
         self.port = port
+        self.publicPort = publicPort
     }
     
     func isServerRunning() -> Bool {
         return isRunning
     }
     
-    func setDelegate(_ appState: AppState, buildManager: BuildManager) {
+    func setDelegate(_ appState: AppState) {
         self.appState = appState
-        self.buildManager = buildManager
     }
     
     func setHostname(_ newHostname: String) {
@@ -46,6 +47,11 @@ actor ServerManager {
         }
         self.port = newPort
         print("Port", self.port)
+    }
+    
+    func setPublicPort(_ newPort: Int) {
+        self.publicPort = newPort
+        print("Public Port", self.publicPort)
     }
     
     func start() async throws {
@@ -72,6 +78,7 @@ actor ServerManager {
             }
             self.isRunning = true
             print("Server started successfully on \(self.hostname):\(self.port)")
+            print("Public access available on port: \(self.publicPort)")
         } catch {
             print("Failed to start server: \(error)")
             if let nsError = error as NSError? {
@@ -100,7 +107,6 @@ actor ServerManager {
     }
     
     private func configureRoutes(_ app: Application) {
-        
         app.get("/") { req -> String in
             return "OK"
         }
@@ -110,21 +116,31 @@ actor ServerManager {
         }
         
         app.get("context") { req -> String in
-            return self.appState?.context ?? ""
+            return ContextManager.shared.getFullContext() ?? ""
         }
         
         app.get("errors") { req -> String in
-            guard let url = self.appState?.rootItem?.url else { return "" }
-            return self.buildManager?.errors(url) ?? ""
+            return BuildManager.shared.errors() ?? ""
         }
         
         app.get("files", ":filename") { req -> Response in
             guard let filename = req.parameters.get("filename"),
-                  let file = self.appState?.files.first(where: { $0.url.lastPathComponent == filename }) else {
+                  let file = ContextManager.shared.files.first(where: { $0.url.lastPathComponent == filename }) else {
                 throw Abort(.notFound)
             }
             
             return Response(status: .ok, body: .init(string: file.content))
+        }
+    }
+    
+    func getPublicIPAddress() async -> String? {
+        do {
+            let url = URL(string: "https://api.ipify.org")!
+            let (data, _) = try await URLSession.shared.data(from: url)
+            return String(data: data, encoding: .utf8)
+        } catch {
+            print("Error fetching public IP: \(error)")
+            return nil
         }
     }
     

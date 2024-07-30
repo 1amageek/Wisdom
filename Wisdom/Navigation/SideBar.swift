@@ -8,7 +8,6 @@
 import SwiftUI
 
 
-
 struct SideBar: View {
     
     @Environment(AppState.self) var appState: AppState
@@ -28,26 +27,40 @@ struct SideBar: View {
                     .tag(SidebarNavigation.requirements)
             }
             .pickerStyle(.segmented)
+            .padding(.horizontal, 4)
             
             switch appState.selectedNavigation {
             case .fileSystem:
                 FileSystemView(rootItem: appState.rootItem, selection: $fileSystemSelection) {
-                    Text("No directory loaded")
-                    
-                    Button {
-                        appState.selectDirectory()
-                    } label: {
-                        Text("Select Directory")
+                    VStack {
+                        Text("No directory loaded")
+                            .font(.title2)
+                            .foregroundStyle(.secondary)
+                        
+                        Button {
+                            appState.selectDirectory()
+                        } label: {
+                            Text("Select Directory")
+                        }
                     }
                 }
             case .requirements:
                 RequirementsView(rootItem: appState.rootItem, selection: $requirementsSelection) {
-                    Text("No directory loaded")
+                    VStack {
+                        Text("No directory loaded")
+                            .font(.title2)
+                            .foregroundStyle(.secondary)
+                        
+                        Button {
+                            appState.selectDirectory()
+                        } label: {
+                            Text("Select Directory")
+                        }
+                    }
                 }
             }
         }
         .frame(maxWidth: .infinity, alignment: .top)
-        .padding(.horizontal, 4)
         .onChange(of: fileSystemSelection) { oldValue, newValue in
             appState.selection = newValue
         }

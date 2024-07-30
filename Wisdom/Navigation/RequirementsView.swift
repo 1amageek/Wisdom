@@ -11,6 +11,8 @@ struct RequirementsView<Content: View>: View {
     
     let rootItem: FileItem?
     
+    @Environment(AppState.self) var appState: AppState
+    
     @Binding var selection: Set<FileItem>
     
     @State var isPresented: Bool = false
@@ -49,11 +51,12 @@ struct RequirementsView<Content: View>: View {
                             }
                     }
                 }
-                .navigationSplitViewColumnWidth(ideal: 260)
             } else {
                 content()
             }
         }
+        .frame(maxHeight: .infinity)
+        .navigationSplitViewColumnWidth(ideal: 260)
         .safeAreaInset(edge: .bottom) {
             HStack(spacing: 12) {
                 Button {
@@ -63,6 +66,7 @@ struct RequirementsView<Content: View>: View {
                 }
                 .controlSize(.small)
                 .buttonStyle(.borderless)
+                .disabled(appState.rootItem == nil)
                 Spacer()
             }
             .padding(8)

@@ -11,15 +11,13 @@ struct MainView: View {
     
     @Environment(AppState.self) var appState: AppState
     
-    @State var file: CodeFile?
-    
     var body: some View {
         ZStack {
-            if let file {
+            if let file = appState.selectedFile {
                 CodeEditor(Binding(get: {
                     file
                 }, set: { file in
-                    self.file = file
+                    appState.selectedFile = file
                 }))
                 .id(file.id)
             } else {
@@ -35,7 +33,7 @@ struct MainView: View {
                    let item = newValue.first,
                    let file = loadFile(item)
                 {
-                    self.file = file
+                    appState.selectedFile = file
                 }
             }
         }

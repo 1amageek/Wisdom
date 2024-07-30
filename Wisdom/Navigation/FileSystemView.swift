@@ -37,11 +37,12 @@ struct FileSystemView<Content: View>: View {
                             }
                     }
                 }
-                .navigationSplitViewColumnWidth(ideal: 260)
             } else {
                 content()
             }
         }
+        .frame(maxHeight: .infinity)
+        .navigationSplitViewColumnWidth(ideal: 260)
         .safeAreaInset(edge: .bottom) {
             HStack(spacing: 12) {
                 Button {

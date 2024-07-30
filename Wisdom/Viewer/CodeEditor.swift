@@ -45,7 +45,7 @@ struct CodeEditor: View {
         )
     }
     
-    var body: some View {    
+    var body: some View {
         CodeEditSourceEditor(
             $document.content,
             language: language,
@@ -63,8 +63,8 @@ struct CodeEditor: View {
 
 
 //#Preview {
-//    
+//
 //    @State var content: String = "string"
-//    
+//
 //    return CodeEditor($content)
 //}

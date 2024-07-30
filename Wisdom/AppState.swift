@@ -18,12 +18,10 @@ class AppState {
     
     var rootItem: FileItem?
     var selection: Set<FileItem> = []
+    var selectedFile: CodeFile?
     var availableFileTypes: [String] = []
     var selectedFileTypes: [String] = ["swift"]
-    var contextManager: ContextManager?
-    var serverManager: ServerManager = ServerManager()
-    var context: String { self.contextManager?.getFullContext() ?? "" }
-    var files: [CodeFile] { self.contextManager?.files ?? [] }
+    let serverManager: ServerManager = ServerManager()
     var isAgentRunning = false
     var selectedNavigation: SidebarNavigation = .fileSystem
     
@@ -43,7 +41,8 @@ class AppState {
             let resolvedURL = try directoryManager.setDirectory(url)
             self.rootItem = FileItem(url: resolvedURL)
             self.rootItem?.loadChildren()
-            self.contextManager = ContextManager(rootURL: resolvedURL, config: ContextManager.Configuration(
+            ContextManager.shared.setRootURL(resolvedURL)
+            ContextManager.shared.setConfig(ContextManager.Configuration(
                 maxDepth: 5,
                 excludedDirectories: ["Pods", ".git"],
                 maxFileSize: 1_000_000,
@@ -51,6 +50,7 @@ class AppState {
                 monitoredFileTypes: selectedFileTypes
             ))
             
+            BuildManager.shared.setRootURL(resolvedURL)
             RequirementsManager.shared.setRootURL(resolvedURL)
             
             UserDefaults.standard.set(resolvedURL.path, forKey: "LastOpenedDirectory")
@@ -63,6 +63,17 @@ class AppState {
         } catch {
             print("Error setting URL: \(error.localizedDescription)")
         }
+    }
+    
+    func saveFile(_ file: CodeFile) async throws {
+        guard let rootURL = rootItem?.url else {
+            throw FileOperationError.rootDirectoryNotSet
+        }
+        guard file.url.path.hasPrefix(rootURL.path) else {
+            throw FileOperationError.fileOutsideRootDirectory
+        }
+        let relativePath = file.url.relativePath(from: rootURL)
+        try await saveFile(path: relativePath, content: file.content)
     }
     
     func saveFile(path: String, content: String) async throws {
@@ -82,11 +93,6 @@ class AppState {
         do {
             try content.write(to: saveURL, atomically: true, encoding: .utf8)
             print("File saved successfully: \(saveURL.path)")
-            
-            // ContextManagerの更新（必要に応じて）
-            if let contextManager = self.contextManager {
-                await contextManager.addOrUpdateFile(at: saveURL)
-            }
         } catch {
             print("Error saving file: \(error.localizedDescription)")
             throw error
@@ -111,13 +117,10 @@ class AppState {
         }
     }
     
-    func getFileContent(for filePath: String) -> String? {
-        return files.first(where: { $0.url.path == filePath })?.content
-    }
     
     func updateSelectedFileTypes(_ types: [String]) {
         selectedFileTypes = types
-        contextManager?.updateMonitoredFileTypes(types)
+        ContextManager.shared.updateMonitoredFileTypes(types)
     }
     
     private func loadAvailableFileTypes(_ url: URL) async {
@@ -146,12 +149,6 @@ class AppState {
             self.availableFileTypes = Array(fileTypes).sorted()
             print("Available file types: \(self.availableFileTypes)")
         }
-    }
-    
-    func copyToClipboard() {
-        let pasteboard = NSPasteboard.general
-        pasteboard.clearContents()
-        pasteboard.setString(context, forType: .string)
     }
     
     func selectDirectory() {
@@ -220,10 +217,11 @@ extension AppState {
             let proposal = try await Functions.shared.improve(
                 userID: "testUser",
                 packageID: "testPackage",
-                message: message
+                message: message,
+                requirementsAndSpecification: RequirementsManager.shared.context(),
+                sources: ContextManager.shared.getFullContext(),
+                errors: BuildManager.shared.errors()
             )
-            
-            
             return proposal
         }
         

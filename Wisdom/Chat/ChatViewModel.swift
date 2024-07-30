@@ -9,12 +9,19 @@
 import SwiftUI
 import Observation
 
+enum ChatType {
+    case requirements
+    case implementation
+}
+
 @Observable
 class ChatViewModel {
+        
+    var type: ChatType = .requirements
     var threads: [ChatThread] = []
     var messages: [ChatMessage] = []
-    var agentActions: [AgentAction] = []
-    var selectedAction: AgentAction?
+    var agentActions: [AgentFileOperation] = []
+    var selectedAction: AgentFileOperation?
     var inputMessage: String = ""
     var isLoading: Bool = false
     var selectedThreadID: String? {
@@ -47,17 +54,36 @@ class ChatViewModel {
         
         Task {
             do {
-                let (response, actions) = try await Functions.shared.message(
-                    userID: "testUser",
-                    packageID: "testPackage",
-                    threadID: threadID,
-                    message: sentMessage
-                )
-                await MainActor.run {
-                    self.agentActions.append(contentsOf: actions)
-                    self.messages.append(response)
-                    isLoading = false
+                switch self.type {
+                case .implementation:
+                    let (response, actions) = try await Functions.shared.message(
+                        userID: "testUser",
+                        packageID: "testPackage",
+                        threadID: threadID,
+                        message: sentMessage,
+                        requirementsAndSpecification: RequirementsManager.shared.context(),
+                        sources: ContextManager.shared.getFullContext(),
+                        errors: BuildManager.shared.errors()
+                    )
+                    await MainActor.run {
+                        self.agentActions.append(contentsOf: actions)
+                        self.messages.append(response)
+                        isLoading = false
+                    }
+                case .requirements:
+                    let (response, actions) = try await Functions.shared.requirements(
+                        userID: "testUser",
+                        packageID: "testPackage",
+                        threadID: threadID,
+                        message: sentMessage
+                    )
+                    await MainActor.run {
+                        self.agentActions.append(contentsOf: actions)
+                        self.messages.append(response)
+                        isLoading = false
+                    }
                 }
+
             } catch {
                 await MainActor.run {
                     let errorMessage = ChatMessage(

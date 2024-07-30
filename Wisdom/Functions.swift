@@ -63,7 +63,7 @@ public class Functions {
         return data
     }
     
-    func requirements(userID: String, packageID: String, threadID: String, message: String) async throws -> ChatMessage {
+    func requirements(userID: String, packageID: String, threadID: String, message: String) async throws -> (ChatMessage, [AgentFileOperation]) {
         let parameters: [String: Any] = [
             "userID": userID,
             "packageID": packageID,
@@ -74,25 +74,31 @@ public class Functions {
         let decoder = Functions.createDecoder()
         
         do {
-            let chatMessage = try decoder.decode(ChatMessage.self, from: data)
-            print("Successfully decoded ChatMessage: \(chatMessage)")
-            return chatMessage
+            let message = try decoder.decode(Transcript.self, from: data)
+            let operations: [AgentFileOperation] = message.operations
+            let codeContents: [CodeContent] = operations.map { CodeContent(id: $0.id, path: $0.path) }
+            let chatMessage = ChatMessage(id: message.id, content: [.init(text: message.text, codes: codeContents)], role: .model, timestamp: message.timestamp)
+            print("Successfully decoded ChatMessage: \(message)")
+            return (chatMessage, operations)
         } catch {
             print("Decoding Error: \(error)")
             throw error
         }
     }
     
-    func message(userID: String, packageID: String, threadID: String, message: String) async throws -> (ChatMessage, [AgentAction]) {
+    func message(userID: String, packageID: String, threadID: String, message: String, requirementsAndSpecification: String, sources: String, errors: String) async throws -> (ChatMessage, [AgentFileOperation]) {
         let parameters: [String: Any] = [
-            "message": message
+            "message": message,
+            "requirementsAndSpecification": requirementsAndSpecification,
+            "sources": sources,
+            "errors": errors
         ]
         let data = try await callFunction("message", parameters: parameters)
         let decoder = Functions.createDecoder()
         
         do {
-            let improveMessage = try decoder.decode(ImproveMessage.self, from: data)
-            let operations: [AgentAction] = improveMessage.operations
+            let improveMessage = try decoder.decode(Transcript.self, from: data)
+            let operations: [AgentFileOperation] = improveMessage.operations
             let codeContents: [CodeContent] = operations.map { CodeContent(id: $0.id, path: $0.path) }
             let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.text, codes: codeContents)], role: .model, timestamp: improveMessage.timestamp)
             print("Successfully decoded ChatMessage: \(chatMessage)")
@@ -103,9 +109,12 @@ public class Functions {
         }
     }
     
-    func improve(userID: String, packageID: String, message: String) async throws -> AgentFileProposal {
+    func improve(userID: String, packageID: String, message: String, requirementsAndSpecification: String, sources: String, errors: String) async throws -> AgentFileProposal {
         let parameters: [String: Any] = [
-            "message": message
+            "message": message,
+            "requirementsAndSpecification": requirementsAndSpecification,
+            "sources": sources,
+            "errors": errors
         ]
         let data = try await callFunction("improve", parameters: parameters)
         let decoder = Functions.createDecoder()
@@ -119,40 +128,4 @@ public class Functions {
             throw error
         }
     }
-    
-//    func spec(userID: String, packageID: String, message: String, dependencies: String) async throws -> ProjectSpec {
-//        let parameters: [String: Any] = [
-//            "userID": userID,
-//            "packageID": packageID,
-//            "message": message,
-//            "dependencies": dependencies
-//        ]
-//        let data = try await callFunction("spec", parameters: parameters)
-//        let decoder = Functions.createDecoder()
-//        
-//        do {
-//            let spec = try decoder.decode(ProjectSpec.self, from: data)
-//            return spec
-//        } catch {
-//            print("Decoding Error: \(error)")
-//            throw error
-//        }
-//    }
-//    
-//    func gencode(userID: String, packageID: String, spec: FileSpec, dependencies: String) async throws -> String {
-//        let parameters: [String: Any] = [
-//            "userID": userID,
-//            "packageID": packageID,
-//            "spec": spec.toDictionary(),
-//            "dependencies": dependencies
-//        ]
-//        print("----", parameters)
-//        let data = try await callFunction("gencode", parameters: parameters)
-//        
-//        guard let codeString = String(data: data, encoding: .utf8) else {
-//            throw NSError(domain: "Gencode Error", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to convert response data to string"])
-//        }
-//        
-//        return codeString
-//    }
 }
