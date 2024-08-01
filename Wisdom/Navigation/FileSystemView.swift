@@ -37,6 +37,12 @@ struct FileSystemView<Content: View>: View {
                             }
                     }
                 }
+                .focusable()
+                .focusEffectDisabled()
+                .onKeyPress(.init(Character(UnicodeScalar(127)))) {
+                    appState.handleDeleteKeyPress()
+                    return .handled
+                }
             } else {
                 content()
             }

@@ -7,6 +7,7 @@
 
 import Foundation
 import AppKit
+import UniformTypeIdentifiers
 
 enum SidebarNavigation {
     case fileSystem
@@ -22,10 +23,9 @@ class AppState {
     var availableFileTypes: [String] = []
     var selectedFileTypes: [String] = ["swift"]
     let serverManager: ServerManager = ServerManager()
-    var isAgentRunning = false
     var selectedNavigation: SidebarNavigation = .fileSystem
+    var showingDeleteConfirmation = false
     
-    private var agent: Agent?
     private var directoryManager = DirectoryManager()
     
     // MARK: - Initialization
@@ -117,6 +117,31 @@ class AppState {
         }
     }
     
+    func handleDeleteKeyPress() {
+        let selectedFiles = self.selection.filter { !$0.isDirectory }
+        if !selectedFiles.isEmpty {
+            showingDeleteConfirmation = true
+        }
+    }
+    
+    func moveSelectedFilesToTrash() {
+        let selectedItems = selection.filter { !$0.isDirectory }
+        guard !selectedItems.isEmpty else { return }
+        
+        do {
+            let fileManager = FileManager.default
+            for item in selectedItems {
+                try fileManager.trashItem(at: item.url, resultingItemURL: nil)
+            }
+            
+            selection.removeAll()
+            selectedFile = nil
+            // ファイルシステムビューを更新
+//            rootItem?.loadChildren()
+        } catch {
+            print("Error moving files to trash: \(error)")
+        }
+    }
     
     func updateSelectedFileTypes(_ types: [String]) {
         selectedFileTypes = types
@@ -204,12 +229,12 @@ extension URL {
 
 extension AppState {
     
-    func startAgent(with message: String, agent: Agent, buildManager: BuildManager) async {
+    func startAgent(with message: String, agent: Agent) async {
         
         let buildClosure: Agent.BuildClosure = {
-            await buildManager.start()
-            let errorCount = buildManager.buildOutputLines.count
-            let successful = buildManager.lastBuildStatus == .success
+            await BuildManager.shared.start()
+            let errorCount = BuildManager.shared.buildOutputLines.count
+            let successful = BuildManager.shared.lastBuildStatus == .success
             return (errorCount, successful)
         }
         
@@ -236,14 +261,95 @@ extension AppState {
                 try await self.deleteFile(path: operation.path)
             }
         }
-        
-        isAgentRunning = true
+ 
         await agent.start(with: message, build: buildClosure, generate: generateClosure, fileOperation: fileOperationClosure)
-        isAgentRunning = false
     }
     
     func stopAgent() async {
-        agent?.stop()
-        isAgentRunning = false
+        Agent.shared.stop()
+    }
+}
+
+extension AppState {
+    
+    func createNewFileFromClipboard() async {
+        guard let targetURL = getTargetDirectoryURL() else {
+            print("No valid target directory selected")
+            return
+        }
+
+        let (typeName, fileExtension) = getTypeNameAndExtensionFromClipboard()
+        let fileName = typeName ?? "NewFile"
+        let ext = fileExtension ?? "txt"
+
+        let pasteboard = NSPasteboard.general
+        guard let content = pasteboard.string(forType: .string) else {
+            print("No text content in clipboard")
+            return
+        }
+
+        let newFileURL = targetURL.appendingPathComponent("\(fileName).\(ext)")
+        let file = CodeFile(url: newFileURL, content: content)
+
+        do {
+            try await saveFile(file)
+            print("File saved successfully: \(newFileURL.path)")
+            // ファイルシステムビューを更新
+            rootItem?.loadChildren()
+        } catch {
+            print("Error saving file: \(error)")
+        }
+    }
+
+    private func getTargetDirectoryURL() -> URL? {
+        if let selectedItem = selection.first {
+            if selectedItem.isDirectory {
+                return selectedItem.url
+            } else {
+                return selectedItem.url.deletingLastPathComponent()
+            }
+        } else if let rootURL = rootItem?.url {
+            return rootURL
+        }
+        return nil
+    }
+    
+    func getTypeNameFromClipboard() -> String? {
+         let pasteboard = NSPasteboard.general
+         guard let clipboardString = pasteboard.string(forType: .string) else {
+             return nil
+         }
+         let pattern = "(class|struct|enum|actor)\\s+(\\w+)"
+         let regex = try? NSRegularExpression(pattern: pattern, options: [])
+         if let match = regex?.firstMatch(in: clipboardString, options: [], range: NSRange(location: 0, length: clipboardString.utf16.count)) {
+             if let typeNameRange = Range(match.range(at: 2), in: clipboardString) {
+                 return String(clipboardString[typeNameRange])
+             }
+         }
+         return nil
+     }
+    
+    func getFileExtensionFromClipboard() -> String? {
+        let pasteboard = NSPasteboard.general
+        if let clipboardString = pasteboard.string(forType: .string) {
+            if clipboardString.contains("func ") || clipboardString.contains("class ") || clipboardString.contains("struct ") {
+                return "swift"
+            }
+        }
+        guard let types = pasteboard.types,
+              let uti = types.first(where: { UTType($0.rawValue)?.conforms(to: .content) == true }) else {
+            return nil
+        }
+        if let utType = UTType(uti.rawValue),
+           let preferredExtension = utType.preferredFilenameExtension {
+            return preferredExtension
+        }
+        return nil
+    }
+
+    func getTypeNameAndExtensionFromClipboard() -> (typeName: String?, fileExtension: String?) {
+        let typeName = getTypeNameFromClipboard()
+        let fileExtension = getFileExtensionFromClipboard()
+        return (typeName, fileExtension)
     }
 }

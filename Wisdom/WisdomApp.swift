@@ -50,7 +50,7 @@ struct WisdomApp: App {
             }
         }
         .commands{
-            CommandGroup(after: .newItem) {
+            CommandGroup(after: .saveItem) {
                 Button("Save") {
                     if let file = appState.selectedFile {
                         Task {
@@ -63,6 +63,14 @@ struct WisdomApp: App {
                     }
                 }
                 .keyboardShortcut("s", modifiers: .command)
+            }
+            CommandGroup(after: .newItem) {
+                Button("New Paste") {
+                    Task {
+                        await appState.createNewFileFromClipboard()
+                    }
+                }
+                .keyboardShortcut("v", modifiers: .command)
             }
         }
         

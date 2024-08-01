@@ -58,8 +58,6 @@ public class Functions {
         if let httpResponse = response as? HTTPURLResponse {
             print("HTTP Status Code: \(httpResponse.statusCode)")
         }
-        print("Response Data: \(String(data: data, encoding: .utf8) ?? "Unable to convert data to string")")
-        
         return data
     }
     
@@ -73,12 +71,18 @@ public class Functions {
         let data = try await callFunction("requirements", parameters: parameters)    
         let decoder = Functions.createDecoder()
         
+        print("-------------------")
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print(jsonString)
+        } else {
+            print("Unable to convert data to string")
+        }
+        
         do {
             let message = try decoder.decode(Transcript.self, from: data)
             let operations: [AgentFileOperation] = message.operations
             let codeContents: [CodeContent] = operations.map { CodeContent(id: $0.id, path: $0.path) }
             let chatMessage = ChatMessage(id: message.id, content: [.init(text: message.text, codes: codeContents)], role: .model, timestamp: message.timestamp)
-            print("Successfully decoded ChatMessage: \(message)")
             return (chatMessage, operations)
         } catch {
             print("Decoding Error: \(error)")
@@ -96,12 +100,18 @@ public class Functions {
         let data = try await callFunction("message", parameters: parameters)
         let decoder = Functions.createDecoder()
         
+        print("-------------------")
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print(jsonString)
+        } else {
+            print("Unable to convert data to string")
+        }
+        
         do {
             let improveMessage = try decoder.decode(Transcript.self, from: data)
             let operations: [AgentFileOperation] = improveMessage.operations
             let codeContents: [CodeContent] = operations.map { CodeContent(id: $0.id, path: $0.path) }
             let chatMessage = ChatMessage(id: improveMessage.id, content: [.init(text: improveMessage.text, codes: codeContents)], role: .model, timestamp: improveMessage.timestamp)
-            print("Successfully decoded ChatMessage: \(chatMessage)")
             return (chatMessage, operations)
         } catch {
             print("Decoding Error: \(error)")
@@ -119,9 +129,15 @@ public class Functions {
         let data = try await callFunction("improve", parameters: parameters)
         let decoder = Functions.createDecoder()
         
+        print("-------------------")
+        if let jsonString = String(data: data, encoding: .utf8) {
+            print(jsonString)
+        } else {
+            print("Unable to convert data to string")
+        }
+        
         do {
             let proposal = try decoder.decode(AgentFileProposal.self, from: data)
-            print("Successfully decoded proposal: \(proposal)")
             return proposal
         } catch {
             print("Decoding Error: \(error)")

@@ -51,6 +51,10 @@ struct RequirementsView<Content: View>: View {
                             }
                     }
                 }
+                .onKeyPress(.init(Character(UnicodeScalar(127)))) {
+                    appState.handleDeleteKeyPress()
+                    return .handled
+                }
             } else {
                 content()
             }

@@ -20,6 +20,42 @@ public struct AgentFileOperation: Identifiable, Codable {
     public let actionType: AgentFileOperationType
     public let path: String
     public let content: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, language, actionType, path, content
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        language = try container.decode(String.self, forKey: .language)
+        actionType = try container.decode(AgentFileOperationType.self, forKey: .actionType)
+        path = try container.decode(String.self, forKey: .path)
+        
+        if let base64Content = try container.decodeIfPresent(String.self, forKey: .content) {
+            if let decodedData = Data(base64Encoded: base64Content),
+               let decodedString = String(data: decodedData, encoding: .utf8) {
+                content = decodedString
+            } else {
+                throw DecodingError.dataCorruptedError(forKey: .content, in: container, debugDescription: "Failed to decode BASE64 content")
+            }
+        } else {
+            content = nil
+        }
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(language, forKey: .language)
+        try container.encode(actionType, forKey: .actionType)
+        try container.encode(path, forKey: .path)
+        
+        if let content = content {
+            let base64Content = Data(content.utf8).base64EncodedString()
+            try container.encode(base64Content, forKey: .content)
+        }
+    }
 }
 
 public struct AgentFileProposal: Identifiable, Codable {
@@ -58,11 +94,29 @@ public struct AgentLog: Identifiable, Codable {
 public struct AgentOption {
     let maxNoImprovementCount: Int
     let continueOnSuccess: Bool
+    let generateTimeout: TimeInterval?
     
-    public init(maxNoImprovementCount: Int = 5, continueOnSuccess: Bool = true) {
+    public init(maxNoImprovementCount: Int = 5,
+                continueOnSuccess: Bool = true,
+                generateTimeout: TimeInterval? = 60) {
         self.maxNoImprovementCount = maxNoImprovementCount
         self.continueOnSuccess = continueOnSuccess
+        self.generateTimeout = generateTimeout
     }
+}
+
+struct TimeoutError: Error {
+    let seconds: TimeInterval
+    
+    var localizedDescription: String {
+        return "Operation timed out after \(seconds) seconds"
+    }
+}
+
+enum AgentError: Error {
+    case buildFailed(String)
+    case generateFailed(String)
+    case fileOperationFailed(String)
 }
 
 @Observable
@@ -112,18 +166,18 @@ public class Agent {
                 message: message,
                 build: build,
                 generate: generate,
-                fileOperation: fileOperation
+                fileOperation: fileOperation,
+                option: option
             )
             currentTask = task
             
             addLog(.info, "[CYCLE:\(iterationCount)] Starting new iteration 🚀")
             
-            let result = await task.run { log in
-                self.addLog(log.type, log.message, details: log.details, proposalID: log.proposalID, operationID: log.operationID)
-            }
-            
-            switch result {
-            case .success(let buildResult):
+            do {
+                let buildResult = try await task.run(timeout: option.generateTimeout) { log in
+                    self.addLog(log.type, log.message, details: log.details, proposalID: log.proposalID, operationID: log.operationID)
+                }
+                
                 if buildResult.errorCount >= lastErrorCount {
                     noImprovementCount += 1
                     addLog(.warning, "[BUILD:\(iterationCount)] No improvement in error count", details: "Current: \(buildResult.errorCount), Last: \(lastErrorCount)")
@@ -137,8 +191,18 @@ public class Agent {
                     addLog(.info, "[CYCLE:\(iterationCount)] Build successful, stopping agent as configured")
                     break
                 }
-            case .failure(let error):
+            } catch {
                 addLog(.error, "[CYCLE:\(iterationCount)] Error in cycle", details: error.localizedDescription)
+                if let agentError = error as? AgentError {
+                    switch agentError {
+                    case .buildFailed(let errorDetails):
+                        addLog(.error, "[BUILD:\(iterationCount)] Build failed", details: errorDetails)
+                    case .generateFailed(let errorDetails):
+                        addLog(.error, "[GENERATE:\(iterationCount)] Generate failed", details: errorDetails)
+                    case .fileOperationFailed(let errorDetails):
+                        addLog(.error, "[FILE_OP:\(iterationCount)] File operation failed", details: errorDetails)
+                    }
+                }
                 noImprovementCount += 1
             }
             
@@ -214,10 +278,12 @@ public class Agent {
     }
 }
 
+
 public class AgentTask: Identifiable {
     public let id = UUID()
     public let startTime: Date
     
+    private let option: AgentOption
     private let message: String
     private let build: Agent.BuildClosure
     private let generate: Agent.GenerateClosure
@@ -229,57 +295,100 @@ public class AgentTask: Identifiable {
         message: String,
         build: @escaping Agent.BuildClosure,
         generate: @escaping Agent.GenerateClosure,
-        fileOperation: @escaping Agent.FileOperationClosure
-    ) {
-        self.startTime = Date()
-        self.message = message
-        self.build = build
-        self.generate = generate
-        self.fileOperation = fileOperation
-    }
-    
-    func run(logHandler: @escaping (AgentLog) -> Void) async -> Result<Agent.BuildResult, Error> {
-        do {
-            // Build process
-            logHandler(AgentLog(type: .info, message: "[BUILD] Starting build process"))
-            let (errorCount, buildSuccessful) = try await build()
-            let buildStatus = buildSuccessful ? "successful" : "failed"
-            logHandler(AgentLog(type: .info, message: "[BUILD] Build \(buildStatus) with \(errorCount) errors"))
-            
-            // Generate process
-            logHandler(AgentLog(type: .info, message: "[GENERATE] Starting code generation"))
-            let buildErrors = "Build \(buildStatus) with \(errorCount) errors."
-            let proposal: AgentFileProposal = try await generate(message, buildErrors)
-            logHandler(AgentLog(type: .info, message: "[GENERATE] Generated proposal", details: "Operations count: \(proposal.operations.count)", proposalID: proposal.id))
-            
-            // File operations
-            logHandler(AgentLog(type: .info, message: "[FILE_OP] Starting file operations", proposalID: proposal.id))
-            for operation in proposal.operations {
-                guard isRunning else { break }
-                do {
-                    try await fileOperation(operation)
-                    let fileName = (operation.path as NSString).lastPathComponent
-                    logHandler(AgentLog(type: .action, message: "[FILE_OP] Executed file operation",
-                                        details: "\(operation.actionType.rawValue) on file: \(fileName)",
-                                        proposalID: proposal.id,
-                                        operationID: operation.id))
-                } catch {
-                    let fileName = (operation.path as NSString).lastPathComponent
-                    logHandler(AgentLog(type: .error, message: "[FILE_OP] Failed file operation",
-                                        details: "\(operation.actionType.rawValue) on file: \(fileName) - Error: \(error.localizedDescription)",
-                                        proposalID: proposal.id,
-                                        operationID: operation.id))
-                }
-            }
-            logHandler(AgentLog(type: .info, message: "[FILE_OP] Completed all file operations", proposalID: proposal.id))
-            
-            return .success((errorCount: errorCount, successful: buildSuccessful))
-        } catch {
-            return .failure(error)
+        fileOperation: @escaping Agent.FileOperationClosure,
+        option: AgentOption) {
+            self.startTime = Date()
+            self.message = message
+            self.build = build
+            self.generate = generate
+            self.fileOperation = fileOperation
+            self.option = option
         }
+    
+    func run(timeout: TimeInterval?, logHandler: @escaping (AgentLog) -> Void) async throws -> Agent.BuildResult {
+        // Build process
+        logHandler(AgentLog(type: .info, message: "[BUILD] Starting build process"))
+        let (errorCount, buildSuccessful) = try await build()
+        let buildStatus = buildSuccessful ? "successful" : "failed"
+        logHandler(AgentLog(type: .info, message: "[BUILD] Build \(buildStatus) with \(errorCount) errors"))
+        
+        // Generate process
+        logHandler(AgentLog(type: .info, message: "[GENERATE] Starting code generation"))
+        let buildErrors = "Build \(buildStatus) with \(errorCount) errors."
+        let proposal: AgentFileProposal
+        do {
+            let startTime = Date()
+            if let timeout = timeout {
+                proposal = try await withTimeout(seconds: timeout) {
+                    try await self.generate(self.message, buildErrors)
+                }
+            } else {
+                proposal = try await self.generate(self.message, buildErrors)
+            }
+            let duration = Date().timeIntervalSince(startTime)
+            logHandler(AgentLog(type: .info, message: "[GENERATE] Generated proposal",
+                                details: "Duration: \(String(format: "%.2f", duration))s, Operations count: \(proposal.operations.count)",
+                                proposalID: proposal.id))
+            
+            logHandler(AgentLog(type: .info, message: "[GENERATE] Proposal content", details: String(describing: proposal)))
+        } catch let error as TimeoutError {
+            logHandler(AgentLog(type: .error, message: "[GENERATE] Timeout error", details: error.localizedDescription))
+            throw AgentError.generateFailed("Generation timed out after \(timeout ?? 0) seconds")
+        } catch let error as DecodingError {
+            logHandler(AgentLog(type: .error, message: "[GENERATE] Decoding error", details: "Error: \(error.localizedDescription)"))
+            logHandler(AgentLog(type: .error, message: "[GENERATE] Full decoding error", details: String(describing: error)))
+            throw AgentError.generateFailed("Decoding failed: Possible data mismatch or incomplete response from LLM")
+        } catch {
+            logHandler(AgentLog(type: .error, message: "[GENERATE] Unexpected error", details: "Error: \(error.localizedDescription)"))
+            logHandler(AgentLog(type: .error, message: "[GENERATE] Full error details", details: String(describing: error)))
+            throw AgentError.generateFailed("Generation failed: \(error.localizedDescription)")
+        }
+        
+        // Validate proposal
+        if proposal.operations.isEmpty {
+            logHandler(AgentLog(type: .warning, message: "[GENERATE] Empty proposal", details: "LLM returned no operations"))
+            throw AgentError.generateFailed("LLM returned an empty proposal")
+        }
+        
+        // File operations
+        logHandler(AgentLog(type: .info, message: "[FILE_OP] Starting file operations", proposalID: proposal.id))
+        for operation in proposal.operations {
+            guard isRunning else { break }
+            do {
+                try await fileOperation(operation)
+                let fileName = (operation.path as NSString).lastPathComponent
+                logHandler(AgentLog(type: .action, message: "[FILE_OP] Executed file operation",
+                                    details: "\(operation.actionType.rawValue) on file: \(fileName)",
+                                    proposalID: proposal.id,
+                                    operationID: operation.id))
+            } catch {
+                let fileName = (operation.path as NSString).lastPathComponent
+                throw AgentError.fileOperationFailed("File operation failed for \(fileName): \(error.localizedDescription)")
+            }
+        }
+        logHandler(AgentLog(type: .info, message: "[FILE_OP] Completed all file operations", proposalID: proposal.id))
+        
+        return (errorCount: errorCount, successful: buildSuccessful)
     }
     
     func stop() {
         isRunning = false
+    }
+    
+    private func withTimeout<T>(seconds: TimeInterval, operation: @escaping () async throws -> T) async throws -> T {
+        try await withThrowingTaskGroup(of: T.self) { group in
+            group.addTask {
+                try await operation()
+            }
+            
+            group.addTask {
+                try await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+                throw TimeoutError(seconds: seconds)
+            }
+            
+            let result = try await group.next()!
+            group.cancelAll()
+            return result
+        }
     }
 }

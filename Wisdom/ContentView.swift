@@ -9,14 +9,16 @@ struct ContentView: View {
     
     @Environment(\.openURL) private var openURL: OpenURLAction
     @Environment(\.openWindow) private var openWindow: OpenWindowAction
-        
+    
     @State private var isSettingsPresented = false
     @State private var isAgentMessageSheetPresented = false
+    
     @State var isServerRunning: Bool = false
     @State var isBuildInProgress: Bool = false
     @State private var showBuildErrorAlert = false
     @State private var selectedCode: ImprovedCode?
     @State private var agentMessage: String = ""
+    
     
     var body: some View {
         @Bindable var state = appState
@@ -27,7 +29,7 @@ struct ContentView: View {
                     ToolbarItemGroup(placement: .primaryAction) {
                         Spacer()
                         
-                        if !appState.isAgentRunning {
+                        if !agent.isRunning {
                             Button {
                                 Task {
                                     if buildManager.isBuilding {
@@ -43,16 +45,15 @@ struct ContentView: View {
                         }
                         
                         Button {
-                            withAnimation {
-                                if !isAgentMessageSheetPresented {
-                                    isAgentMessageSheetPresented = true
-                                } else {
-                                    agent.stop()
-                                    isAgentMessageSheetPresented = false
+                            if agent.isRunning {
+                                agent.stop()
+                            } else {
+                                Task {
+                                    await appState.startAgent(with: "実装してください。", agent: Agent.shared)
                                 }
                             }
                         } label: {
-                            Image(systemName: appState.isAgentRunning ? "stop.fill" : "forward.fill")
+                            Image(systemName: agent.isRunning ? "stop.fill" : "forward.fill")
                                 .padding(.horizontal, 4)
                         }
                     }
@@ -104,11 +105,24 @@ struct ContentView: View {
         } message: {
             Text("The build process failed. Please check the log for more details.")
         }
+        .alert("Move to Trash", isPresented: $state.showingDeleteConfirmation) {
+            Button("Cancel", role: .cancel) { }
+            Button("Move to Trash", role: .destructive) {
+                appState.moveSelectedFilesToTrash()
+            }
+        } message: {
+            let selectedFiles = appState.selection.filter { !$0.isDirectory }
+            if selectedFiles.count == 1 {
+                Text("Do you want to move '\(selectedFiles.first!.name)' to the Trash?")
+            } else {
+                Text("Do you want to move \(selectedFiles.count) items to the Trash?")
+            }
+        }
     }
     
     private func startAgent() {
         Task {
-            await appState.startAgent(with: agentMessage, agent: agent, buildManager: buildManager)
+            await appState.startAgent(with: agentMessage, agent: agent)
         }
     }
 }
