@@ -53,6 +53,7 @@ class AppState {
             
             Task {
                 await loadAvailableFileTypes(resolvedURL)
+                await BuildManager.shared.updateBuildSettingsFromProject()
             }
             
             print("Directory set successfully: \(resolvedURL.path)")

@@ -12,11 +12,9 @@ struct CommandSettingView: View {
     @State private var customCommands: [String: String] = [:]
     @State private var newPresetName: String = ""
     @State private var newPresetCommand: String = ""
-    @State private var selectedConfiguration: String = "Debug"
+    @State private var selectedSchema: String = ""
     @State private var enableParallelBuilding: Bool = true
     @State private var treatWarningsAsErrors: Bool = false
-
-    private let configurations = ["Debug", "Release"]
 
     var body: some View {
         Form {
@@ -24,7 +22,7 @@ struct CommandSettingView: View {
                 Text(buildManager.currentProjectURL?.lastPathComponent ?? "No project selected")
                     .font(.headline)
                 Text("Type: \(buildManager.detectedProjects[buildManager.currentProjectURL ?? URL(fileURLWithPath: "")]?.rawValue ?? "Unknown")")
-                Text("Build Tool: \(buildManager.buildTool == .spm ? "Swift Package Manager" : "Xcode")")
+                Text("Build Tool: \(buildManager.buildTool == .spm ? "Swift Package Manager" : (buildManager.buildTool == .xcodebuild ? "Xcode" : "npm"))")
             }
 
             Section(header: Text("Current Build Command")) {
@@ -32,15 +30,21 @@ struct CommandSettingView: View {
                     .font(.system(.body, design: .monospaced))
             }
             
-            Section(header: Text("Configuration")) {
-                Picker("Configuration", selection: $selectedConfiguration) {
-                    ForEach(configurations, id: \.self) {
-                        Text($0)
-                    }
+            switch buildManager.detectedProjects[buildManager.currentProjectURL ?? URL(fileURLWithPath: "")] {
+            case .spm:
+                Section(header: Text("Swift Package Manager Targets")) {
+                    schemaPicker
                 }
-                .onChange(of: selectedConfiguration) { _, newValue in
-                    buildManager.schemaManager.setSelectedSchema(newValue)
+            case .xcodeproj, .xcworkspace:
+                Section(header: Text("Xcode Schemes")) {
+                    schemaPicker
                 }
+            case .nodejs:
+                Section(header: Text("NPM Scripts")) {
+                    schemaPicker
+                }
+            case .unknown, .none:
+                Text("Unknown or unsupported project type")
             }
             
             Section(header: Text("Custom Command Presets")) {
@@ -83,28 +87,43 @@ struct CommandSettingView: View {
                 } else if buildManager.buildTool == .spm {
                     // SPM specific options can be added here
                     Text("SPM advanced options coming soon")
+                } else if buildManager.buildTool == .npm {
+                    // npm specific options can be added here
+                    Text("npm advanced options coming soon")
                 }
             }
         }
         .navigationTitle("Build Settings")
         .onAppear {
-            selectedConfiguration = buildManager.schemaManager.selectedSchema ?? "Debug"
+            selectedSchema = buildManager.schemaManager.selectedSchema ?? ""
+            Task {
+                await buildManager.updateBuildSettingsFromProject()
+            }
+        }
+    }
+
+    private var schemaPicker: some View {
+        Picker("Target/Scheme/Script", selection: $selectedSchema) {
+            ForEach(buildManager.schemaManager.availableSchemas, id: \.self) { schema in
+                Text(schema).tag(schema)
+            }
+        }
+        .onChange(of: selectedSchema) { _, newValue in
+            buildManager.schemaManager.setSelectedSchema(newValue)
+            buildManager.updateBuildCommand()
         }
     }
 
     private func updateBuildCommand() {
-        var command = buildManager.buildTool == .spm ? "swift build" : "xcodebuild"
+        var command = buildManager.buildCommand
         
         if buildManager.buildTool == .xcodebuild {
-            command += " -configuration \(selectedConfiguration)"
             if enableParallelBuilding {
                 command += " -parallelizeTargets"
             }
             if treatWarningsAsErrors {
                 command += " GCC_TREAT_WARNINGS_AS_ERRORS=YES"
             }
-        } else {
-            command += " -c \(selectedConfiguration)"
         }
 
         buildManager.setCustomBuildCommand(command)

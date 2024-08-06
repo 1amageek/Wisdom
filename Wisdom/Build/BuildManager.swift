@@ -13,12 +13,14 @@ class BuildManager {
     enum BuildTool {
         case spm
         case xcodebuild
+        case npm
     }
     
     enum ProjectType: String {
         case spm
         case xcodeproj
         case xcworkspace
+        case nodejs
         case unknown
     }
     
@@ -34,6 +36,7 @@ class BuildManager {
         case buildInProgress
         case buildFailed(code: Int32)
         case noWorkingDirectory
+        case invalidPackageInfo
     }
     
     // MARK: - Properties
@@ -56,6 +59,11 @@ class BuildManager {
     var buildOutputLines: [BuildLog] = []
     var lastBuildStatus: BuildStatus = .none
     var buildError: Error?
+    
+    var availablePlatforms: [String] = []
+    var selectedPlatform: String?
+    var availableScripts: [String] = []
+    var selectedScript: String?
     
     static let shared = BuildManager()
     
@@ -88,6 +96,8 @@ class BuildManager {
                 detectedProjects[fileURL] = .xcworkspace
             } else if fileURL.lastPathComponent == "Package.swift" {
                 detectedProjects[fileURL.deletingLastPathComponent()] = .spm
+            } else if fileURL.lastPathComponent == "package.json" {
+                detectedProjects[fileURL.deletingLastPathComponent()] = .nodejs
             }
         }
     }
@@ -100,12 +110,16 @@ class BuildManager {
                 buildTool = .spm
             case .xcodeproj, .xcworkspace:
                 buildTool = .xcodebuild
+            case .nodejs:
+                buildTool = .npm
             case .unknown:
-                buildTool = .spm // Default to SPM
+                buildTool = .spm
             }
         }
         resetBuildState()
-        updateBuildCommand()
+        Task {
+            await updateBuildSettingsFromProject()
+        }
     }
     
     func setCustomBuildCommand(_ command: String?) {
@@ -211,6 +225,26 @@ class BuildManager {
         return buildOutputLines.map { convertUrlToPath($0.text) }.joined(separator: "\n")
     }
     
+    func updateBuildSettingsFromProject() async {
+        guard let projectType = detectedProjects[currentProjectURL ?? URL(fileURLWithPath: "")] else {
+            print("No project detected")
+            return
+        }
+
+        switch projectType {
+        case .spm:
+            await updateSwiftPackageSettings()
+        case .xcodeproj, .xcworkspace:
+            await updateXcodeProjectSettings()
+        case .nodejs:
+            await updateNodeJSSettings()
+        case .unknown:
+            print("Unknown project type")
+        }
+        
+        updateBuildCommand()
+    }
+
     // MARK: - Private Methods
     private func resetBuildState() {
         errorCount = 0
@@ -220,16 +254,32 @@ class BuildManager {
         buildError = nil
     }
     
-    private func updateBuildCommand() {
+    func updateBuildCommand() {
+        var command = ""
         switch buildTool {
         case .spm:
-            customBuildCommand = "swift build"
+            command = "swift build"
+            if let platform = selectedPlatform {
+                command += " --platform \(platform)"
+            }
         case .xcodebuild:
-            if let url = currentProjectURL {
-                let projectName = url.lastPathComponent
-                customBuildCommand = "xcodebuild -project \"\(projectName)\""
+            command = "xcodebuild"
+            if let schema = schemaManager.selectedSchema {
+                command += " -scheme \(schema)"
+            }
+        case .npm:
+            if let script = selectedScript {
+                command = "npm run \(script)"
+            } else {
+                command = "npm run build"
             }
         }
+
+        if let customCommand = customBuildCommand {
+            command = customCommand
+        }
+
+        setCustomBuildCommand(command)
     }
     
     private func parseOutput(_ line: String) {
@@ -246,26 +296,113 @@ class BuildManager {
         return text.replacingOccurrences(of: workingDirectory.path, with: ".")
     }
     
+    private func updateSwiftPackageSettings() async {
+        do {
+            let packageInfo = try await fetchPackageInfo()
+            if let platforms = packageInfo["platforms"] as? [[String: Any]] {
+                availablePlatforms = platforms.compactMap { $0["platformName"] as? String }
+                if let first = availablePlatforms.first {
+                    selectedPlatform = first
+                }
+            }
+            if let targets = packageInfo["targets"] as? [[String: Any]] {
+                schemaManager.availableSchemas = targets.compactMap { $0["name"] as? String }
+                if let firstTarget = schemaManager.availableSchemas.first {
+                    schemaManager.selectedSchema = firstTarget
+                }
+            }
+        } catch {
+            print("Error fetching Swift package info: \(error)")
+        }
+    }
+
+    private func updateXcodeProjectSettings() async {
+        // Implementation for Xcode project settings
+        // This might involve parsing the project file or using xcodebuild -list
+        // For now, we'll just set a placeholder
+        schemaManager.availableSchemas = ["Debug", "Release"]
+        schemaManager.selectedSchema = "Debug"
+    }
+
+    private func updateNodeJSSettings() async {
+        do {
+            let packageInfo = try await fetchPackageJSON()
+            if let scripts = packageInfo["scripts"] as? [String: String] {
+                availableScripts = Array(scripts.keys)
+                if let first = availableScripts.first {
+                    selectedScript = first
+                }
+            }
+        } catch {
+            print("Error fetching package.json info: \(error)")
+        }
+    }
+
+    func fetchPackageInfo() async throws -> [String: Any] {
+        guard let workingDirectory = buildWorkingDirectory else {
+            throw BuildError.noWorkingDirectory
+        }
+
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+        process.arguments = ["swift", "package", "dump-package"]
+        process.currentDirectoryURL = workingDirectory
+
+        let outputPipe = Pipe()
+        process.standardOutput = outputPipe
+
+        try process.run()
+        process.waitUntilExit()
+
+        let data = try outputPipe.fileHandleForReading.readToEnd() ?? Data()
+        let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+
+        guard let packageInfo = jsonObject as? [String: Any] else {
+            throw BuildError.invalidPackageInfo
+        }
+
+        return packageInfo
+    }
+
+    func fetchPackageJSON() async throws -> [String: Any] {
+        guard let workingDirectory = buildWorkingDirectory else {
+            throw BuildError.noWorkingDirectory
+        }
+
+        let packageJSONURL = workingDirectory.appendingPathComponent("package.json")
+        let data = try Data(contentsOf: packageJSONURL)
+        let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+
+        guard let packageInfo = jsonObject as? [String: Any] else {
+            throw BuildError.invalidPackageInfo
+        }
+
+        return packageInfo
+    }
+    
     // MARK: - Computed Properties
     var buildCommand: String {
-        if let custom = customBuildCommand {
-            return custom
-        }
-        
-        var command = buildTool == .spm ? "swift build" : "xcodebuild"
-        
-        if buildTool == .xcodebuild {
-            if let schema = schemaManager.selectedSchema {
-                command += " -scheme \(schema)"
+        customBuildCommand ?? {
+            switch buildTool {
+            case .spm:
+                var command = "swift build"
+                if let platform = selectedPlatform {
+                    command += " --platform \(platform)"
+                }
+                return command
+            case .xcodebuild:
+                var command = "xcodebuild"
+                if let schema = schemaManager.selectedSchema {
+                    command += " -scheme \(schema)"
+                }
+                return command
+            case .npm:
+                if let script = selectedScript {
+                    return "npm run \(script)"
+                } else {
+                    return "npm run build"
+                }
             }
-            // Add more xcodebuild specific options here
-        } else {
-            if let configuration = schemaManager.selectedSchema {
-                command += " -c \(configuration)"
-            }
-            // Add more SPM specific options here
-        }
-        
-        return command
+        }()
     }
 }

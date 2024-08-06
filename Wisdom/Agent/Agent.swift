@@ -330,7 +330,7 @@ public class AgentTask: Identifiable {
                                 details: "Duration: \(String(format: "%.2f", duration))s, Operations count: \(proposal.operations.count)",
                                 proposalID: proposal.id))
             
-            logHandler(AgentLog(type: .info, message: "[GENERATE] Proposal content", details: String(describing: proposal)))
+            logHandler(AgentLog(type: .info, message: "[GENERATE] Proposal content", details: nil))
         } catch let error as TimeoutError {
             logHandler(AgentLog(type: .error, message: "[GENERATE] Timeout error", details: error.localizedDescription))
             throw AgentError.generateFailed("Generation timed out after \(timeout ?? 0) seconds")
