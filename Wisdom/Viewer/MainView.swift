@@ -13,7 +13,9 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            if let file = appState.selectedFile {
+            if appState.isShowingFullContext {
+                FullContextView()
+            } else if let file = appState.selectedFile {
                 CodeEditor(Binding(get: {
                     file
                 }, set: { file in

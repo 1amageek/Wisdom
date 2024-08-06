@@ -56,7 +56,7 @@ struct ChatNavigationView: View {
                 }
             }
         }
-        .frame(minWidth: 640, minHeight: 600)
+        .frame(minWidth: 480, idealWidth: 600, minHeight: 600)
         .environment(viewModel)
     }
 }

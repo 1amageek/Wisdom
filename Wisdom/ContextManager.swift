@@ -20,6 +20,7 @@ class ContextManager {
     private var fileObserver: FileSystemObserver?
     private var rootURL: URL?
     private let logger = Logger(subsystem: "team.stamp.ContextManager", category: "FileManagement")
+    private let queue = DispatchQueue(label: "com.contextmanager.filesqueue", attributes: .concurrent)
     
     private var fullContext: String = ""
     private var fileContexts: [String: String] = [:]
@@ -33,7 +34,13 @@ class ContextManager {
         var monitoredFileTypes: [String]
     }
     
-    private var config: Configuration = Configuration(maxDepth: 7, excludedDirectories: [], maxFileSize: 1_000_000, debounceInterval: 0.5, monitoredFileTypes: ["swift", "ts", "js", "py", "rs"])
+    private var config: Configuration = Configuration(
+        maxDepth: 7,
+        excludedDirectories: [],
+        maxFileSize: 1_000_000,
+        debounceInterval: 0.5,
+        monitoredFileTypes: ["swift", "tsx", "ts", "js", "py", "rs"]
+    )
     
     private var updateWorkItem: DispatchWorkItem?
     
@@ -109,7 +116,7 @@ class ContextManager {
     private func loadInitialFiles() async {
         var loadedFiles = 0
         var accessDeniedDirectories: [String] = []
-
+        
         func loadFiles(in directory: URL, currentDepth: Int) async {
             guard currentDepth <= config.maxDepth else { return }
             
@@ -203,15 +210,18 @@ class ContextManager {
             }
             
             let content = try String(contentsOf: url, encoding: .utf8)
-            if let index = files.firstIndex(where: { $0.url == url }) {
-                files[index].content = content
-                logger.info("File updated: \(url.lastPathComponent)")
-            } else {
-                let swiftFile = CodeFile(url: url, content: content)
-                files.append(swiftFile)
-                logger.info("File added: \(url.lastPathComponent)")
+            queue.async(flags: .barrier) { [weak self] in
+                guard let self = self else { return }
+                if let index = self.files.firstIndex(where: { $0.url == url }) {
+                    self.files[index].content = content
+                    self.logger.info("File updated: \(url.lastPathComponent)")
+                } else {
+                    let swiftFile = CodeFile(url: url, content: content)
+                    self.files.append(swiftFile)
+                    self.logger.info("File added: \(url.lastPathComponent)")
+                }
+                self.isContextDirty = true
             }
-            isContextDirty = true
         } catch {
             logger.error("Error adding/updating file \(url.lastPathComponent): \(error.localizedDescription)")
             removeFile(at: url)
@@ -219,14 +229,17 @@ class ContextManager {
     }
     
     private func removeFile(at url: URL) {
-        let initialCount = files.count
-        files.removeAll(where: { $0.url == url })
-        let removedCount = initialCount - files.count
-        if removedCount > 0 {
-            logger.info("File removed: \(url.lastPathComponent)")
-            isContextDirty = true
-        } else {
-            logger.warning("Attempted to remove non-existent file: \(url.lastPathComponent)")
+        queue.async(flags: .barrier) { [weak self] in
+            guard let self = self else { return }
+            let initialCount = self.files.count
+            self.files.removeAll(where: { $0.url == url })
+            let removedCount = initialCount - self.files.count
+            if removedCount > 0 {
+                self.logger.info("File removed: \(url.lastPathComponent)")
+                self.isContextDirty = true
+            } else {
+                self.logger.warning("Attempted to remove non-existent file: \(url.lastPathComponent)")
+            }
         }
     }
     
@@ -253,6 +266,28 @@ class ContextManager {
         return fileContexts[filePath]
     }
     
+    func getDirectoryContext(_ url: URL) -> String {
+        let fileManager = FileManager.default
+        guard let enumerator = fileManager.enumerator(at: url, includingPropertiesForKeys: [.isRegularFileKey]) else {
+            return ""
+        }
+        
+        var contexts: [String] = []
+        for case let fileURL as URL in enumerator {
+            guard let resourceValues = try? fileURL.resourceValues(forKeys: [.isRegularFileKey]),
+                  let isRegularFile = resourceValues.isRegularFile,
+                  isRegularFile else {
+                continue
+            }
+            
+            if let context = getFileContext(for: fileURL.path) {
+                contexts.append(context)
+            }
+        }
+        
+        return contexts.joined(separator: "\n\n")
+    }
+    
     // New method for getting context based on FileSystemView selection
     func getSelectedContext(for selectedItems: Set<FileItem>) async -> String {
         await MainActor.run { isLoading = true }
@@ -277,20 +312,30 @@ class ContextManager {
     private func formatFiles(_ filesToFormat: [CodeFile]) -> String {
         guard let rootURL else { return "" }
         let formattedFiles = filesToFormat
-            .filter { config.monitoredFileTypes.contains($0.fileType) }
+            .filter { file in
+                let relativePath = file.url.relativePath(from: rootURL)
+                return config.monitoredFileTypes.contains(file.fileType) &&
+                !isExcludedDirectory(relativePath)
+            }
             .lazy
             .map { file in
                 let relativePath = file.url.relativePath(from: rootURL)
                 let content = """
-                path: \(relativePath)
-                ```\(file.fileType):\(file.url.lastPathComponent)
-                \(file.content)
-                ```
-                """
+                    path: \(relativePath)
+                    ```\(file.fileType):\(file.url.lastPathComponent)
+                    \(file.content)
+                    ```
+                    """
                 self.fileContexts[file.url.path] = content
                 return content
             }
         return formattedFiles.joined(separator: "\n\n")
+    }
+    
+    private func isExcludedDirectory(_ path: String) -> Bool {
+        return config.excludedDirectories.contains { excludedDir in
+            path.hasPrefix(excludedDir) || path.contains("/\(excludedDir)/")
+        }
     }
     
     private func updateContextIfNeeded() {
@@ -317,9 +362,15 @@ extension ContextManager {
         var directoryStructure: [Int: Bool] = [:] // depth: isLastDirectory
         
         for case let fileURL as URL in enumerator {
+            // 除外ディレクトリのチェック
+            if config.excludedDirectories.contains(where: { fileURL.path.contains($0) }) {
+                enumerator.skipDescendants() // 除外ディレクトリの子をスキップ
+                continue
+            }
+            
             guard let resourceValues = try? fileURL.resourceValues(forKeys: [.isDirectoryKey]),
-                  let isDirectory = resourceValues.isDirectory, isDirectory else {
-                continue // Skip non-directory items
+                  let isDirectory = resourceValues.isDirectory else {
+                continue
             }
             
             let relativeDepth = fileURL.pathComponents.count - url.pathComponents.count
@@ -340,6 +391,10 @@ extension ContextManager {
             }
             
             result += "\(fileURL.lastPathComponent)\n"
+            
+            if !isDirectory {
+                enumerator.skipDescendants() // ファイルの場合は子をスキップ
+            }
         }
         
         return result

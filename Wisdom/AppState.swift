@@ -21,38 +21,34 @@ class AppState {
     var selection: Set<FileItem> = []
     var selectedFile: CodeFile?
     var availableFileTypes: [String] = []
-    var selectedFileTypes: [String] = ["swift"]
-    let serverManager: ServerManager = ServerManager()
+    var selectedFileTypes: [String] = ["swift", "tsx", "ts", "js", "py", "rs"]
     var selectedNavigation: SidebarNavigation = .fileSystem
+   
     var showingDeleteConfirmation = false
-    
-    private var directoryManager = DirectoryManager()
+    var isShowingFullContext: Bool = false
     
     // MARK: - Initialization
-    init() {
-        if let url = directoryManager.loadSavedDirectory() {
-            setURL(url)
-        }
-    }
+    init() { }
     
     // MARK: - Directory Management
     func setURL(_ url: URL) {
         do {
-            let resolvedURL = try directoryManager.setDirectory(url)
+            let resolvedURL = try DirectoryManager.shared.setDirectory(url)
             self.rootItem = FileItem(url: resolvedURL)
             self.rootItem?.loadChildren()
             ContextManager.shared.setRootURL(resolvedURL)
             ContextManager.shared.setConfig(ContextManager.Configuration(
                 maxDepth: 5,
-                excludedDirectories: ["Pods", ".git"],
+                excludedDirectories: ["Pods", ".git", ".storybook", "node_modules", ".next", "dataset", "ServiceAccount"],
                 maxFileSize: 1_000_000,
                 debounceInterval: 0.5,
                 monitoredFileTypes: selectedFileTypes
             ))
             
             BuildManager.shared.setRootURL(resolvedURL)
+            BuildManager.shared.setBuildWorkingDirectory(resolvedURL)
             RequirementsManager.shared.setRootURL(resolvedURL)
-            
+                        
             UserDefaults.standard.set(resolvedURL.path, forKey: "LastOpenedDirectory")
             
             Task {
@@ -186,12 +182,6 @@ class AppState {
         
         if panel.runModal() == .OK, let url = panel.url {
             setURL(url)
-        }
-    }
-    
-    deinit {
-        if let rootURL = rootItem?.url {
-            directoryManager.stopAccessingSecurityScopedResource(for: rootURL)
         }
     }
     

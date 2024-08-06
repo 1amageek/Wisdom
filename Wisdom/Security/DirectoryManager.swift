@@ -17,6 +17,8 @@ class DirectoryManager {
         case noSavedDirectory
     }
     
+    static let shared = DirectoryManager()
+    
     private var securityScopedBookmark: Data?
     
     func loadSavedDirectory() -> URL? {

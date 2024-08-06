@@ -56,9 +56,9 @@ struct ServerSettingView: View {
             HStack {
                 Button("Reset") {
                     Task {
-                        await appState.serverManager.setHostname("0.0.0.0")
-                        await appState.serverManager.setPort(6060)
-                        await appState.serverManager.setPublicPort(6060)
+                        await ServerManager.shared.setHostname("0.0.0.0")
+                        await ServerManager.shared.setPort(6060)
+                        await ServerManager.shared.setPublicPort(6060)
                         hostname = "0.0.0.0"
                         port = 6060
                         publicPort = 6060
@@ -70,9 +70,9 @@ struct ServerSettingView: View {
                 }
                 Button {
                     Task {
-                        await appState.serverManager.setHostname(hostname)
-                        await appState.serverManager.setPort(port)
-                        await appState.serverManager.setPublicPort(publicPort)
+                        await ServerManager.shared.setHostname(hostname)
+                        await ServerManager.shared.setPort(port)
+                        await ServerManager.shared.setPublicPort(publicPort)
                         dismiss()
                     }
                 } label: {
@@ -85,10 +85,10 @@ struct ServerSettingView: View {
         .frame(width: 300)
         .onAppear {
             Task {
-                hostname = await appState.serverManager.hostname
-                port = await appState.serverManager.port
-                publicPort = await appState.serverManager.publicPort
-                if let ip = await appState.serverManager.getPublicIPAddress() {
+                hostname = await ServerManager.shared.hostname
+                port = await ServerManager.shared.port
+                publicPort = await ServerManager.shared.publicPort
+                if let ip = await ServerManager.shared.getPublicIPAddress() {
                     publicIP = ip
                 } else {
                     publicIP = "Unable to fetch"

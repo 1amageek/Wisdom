@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1210E6A72C5DE10D0086DB5D /* FullContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210E6A62C5DE10D0086DB5D /* FullContextView.swift */; };
+		1210E6A92C60F02A0086DB5D /* SchemaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210E6A82C60F02A0086DB5D /* SchemaManager.swift */; };
 		1266B5B52C520E3E00A4A6C9 /* WisdomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5B42C520E3E00A4A6C9 /* WisdomApp.swift */; };
 		1266B5B72C520E3E00A4A6C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5B62C520E3E00A4A6C9 /* ContentView.swift */; };
 		1266B5BB2C520E3E00A4A6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1266B5BA2C520E3E00A4A6C9 /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1210E6A62C5DE10D0086DB5D /* FullContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContextView.swift; sourceTree = "<group>"; };
+		1210E6A82C60F02A0086DB5D /* SchemaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaManager.swift; sourceTree = "<group>"; };
 		1266B5B12C520E3E00A4A6C9 /* Wisdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wisdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1266B5B42C520E3E00A4A6C9 /* WisdomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomApp.swift; sourceTree = "<group>"; };
 		1266B5B62C520E3E00A4A6C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				1266B6052C52B78300A4A6C9 /* BuildManager.swift */,
+				1210E6A82C60F02A0086DB5D /* SchemaManager.swift */,
 				127445912C56ACEC0080BCEB /* BuildType.swift */,
 				1274458F2C56A8D10080BCEB /* BuildStatusView.swift */,
 				1274457E2C54DEEC0080BCEB /* BuildLog.swift */,
@@ -320,6 +325,7 @@
 			children = (
 				1266B5EF2C52180F00A4A6C9 /* ContextView.swift */,
 				127445A22C57662E0080BCEB /* MainView.swift */,
+				1210E6A62C5DE10D0086DB5D /* FullContextView.swift */,
 				127445A72C576BE60080BCEB /* Theme.swift */,
 				1274459D2C5765CD0080BCEB /* CodeEditor.swift */,
 				127445A92C5777950080BCEB /* String+.swift */,
@@ -497,6 +503,7 @@
 				127445A82C576BE60080BCEB /* Theme.swift in Sources */,
 				127445812C55DF880080BCEB /* ChatView.swift in Sources */,
 				127445842C55F49A0080BCEB /* Agent.swift in Sources */,
+				1210E6A92C60F02A0086DB5D /* SchemaManager.swift in Sources */,
 				1266B5E82C520E4600A4A6C9 /* FileItemView.swift in Sources */,
 				1266B5E92C520E4600A4A6C9 /* FileSystemView.swift in Sources */,
 				1266B5F42C522D7300A4A6C9 /* FileTypeSelectionView.swift in Sources */,
@@ -509,6 +516,7 @@
 				1266B6152C539C6D00A4A6C9 /* ChatThread.swift in Sources */,
 				1266B61D2C5495BD00A4A6C9 /* ImprovedCode.swift in Sources */,
 				1266B61B2C540F4300A4A6C9 /* FileOperationService.swift in Sources */,
+				1210E6A72C5DE10D0086DB5D /* FullContextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

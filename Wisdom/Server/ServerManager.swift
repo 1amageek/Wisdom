@@ -10,6 +10,9 @@ import Vapor
 import Network
 
 actor ServerManager {
+    
+    static let shared: ServerManager = ServerManager()
+    
     private var app: Application?
     private weak var appState: AppState?
     private var isRunning = false
@@ -17,7 +20,7 @@ actor ServerManager {
     var port: Int
     var publicPort: Int
     
-    init(hostname: String = "0.0.0.0", port: Int = 6060, publicPort: Int = 6060) {
+    init(hostname: String = "127.0.0.1", port: Int = 6060, publicPort: Int = 6060) {
         self.hostname = hostname
         self.port = port
         self.publicPort = publicPort
@@ -116,11 +119,11 @@ actor ServerManager {
         }
         
         app.get("context") { req -> String in
-            return ContextManager.shared.getFullContext() ?? ""
+            return ContextManager.shared.getFullContext()
         }
         
         app.get("errors") { req -> String in
-            return BuildManager.shared.errors() ?? ""
+            return BuildManager.shared.errors()
         }
         
         app.get("files", ":filename") { req -> Response in

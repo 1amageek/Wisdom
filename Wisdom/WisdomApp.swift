@@ -14,7 +14,8 @@ struct WisdomApp: App {
     @State private var appState: AppState = AppState()
     @State private var contextManager: ContextManager = ContextManager.shared
     @State private var buildManager: BuildManager = BuildManager.shared
-    @State private var directoryManager: DirectoryManager = DirectoryManager()
+    @State private var directoryManager: DirectoryManager = DirectoryManager.shared
+    @State private var serverManager: ServerManager = ServerManager.shared
     @State private var agent: Agent = Agent.shared
     
     
@@ -64,14 +65,14 @@ struct WisdomApp: App {
                 }
                 .keyboardShortcut("s", modifiers: .command)
             }
-            CommandGroup(after: .newItem) {
-                Button("New Paste") {
-                    Task {
-                        await appState.createNewFileFromClipboard()
-                    }
-                }
-                .keyboardShortcut("v", modifiers: .command)
-            }
+//            CommandGroup(after: .newItem) {
+//                Button("New Paste") {
+//                    Task {
+//                        await appState.createNewFileFromClipboard()
+//                    }
+//                }
+//                .keyboardShortcut("v", modifiers: .command)
+//            }
         }
         
         Window("Chat", id: "chat") {
@@ -86,9 +87,9 @@ struct WisdomApp: App {
         appState.setURL(url)
         buildManager.buildWorkingDirectory = url
         Task {
-            await appState.serverManager.setDelegate(appState)
-            if await !appState.serverManager.isServerRunning() {
-                try? await appState.serverManager.start()
+            await serverManager.setDelegate(appState)
+            if await !serverManager.isServerRunning() {
+                try? await serverManager.start()
             }
         }
     }

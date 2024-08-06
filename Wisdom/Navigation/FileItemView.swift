@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct FileItemView: View {
-        
     let item: FileItem
+    @State private var isHovered = false
     
     var body: some View {
         HStack {
@@ -18,12 +18,33 @@ struct FileItemView: View {
             Text(item.name)
                 .lineLimit(1)
             Spacer()
+            if isHovered {
+                Button(action: copyContext) {
+                    Image(systemName: "doc.on.clipboard")
+                }
+                .buttonStyle(.borderless)
+            }
         }
         .contentShape(Rectangle())
-        .listRowSeparator(.hidden)
+        .onHover { isHovered in
+            self.isHovered = isHovered
+        }
+    }
+    
+    private func copyContext() {
+        Task {
+            let context: String
+            if item.isDirectory {
+                context = ContextManager.shared.getDirectoryContext(item.url)
+            } else {
+                context = ContextManager.shared.getFileContext(for: item.url.path) ?? ""
+            }
+            
+            await MainActor.run {
+                let pasteboard = NSPasteboard.general
+                pasteboard.clearContents()
+                pasteboard.setString(context, forType: .string)
+            }
+        }
     }
 }
-
-//#Preview {
-//    FileItemView()
-//}

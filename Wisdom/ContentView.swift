@@ -80,6 +80,11 @@ struct ContentView: View {
                         Image(systemName: "gear")
                     }
                     Button {
+                        appState.isShowingFullContext.toggle()
+                    } label: {
+                        Image(systemName: "doc.text.magnifyingglass")
+                    }
+                    Button {
                         let pasteboard = NSPasteboard.general
                         pasteboard.clearContents()
                         pasteboard.setString(ContextManager.shared.getFullContext(), forType: .string)
