@@ -92,12 +92,12 @@ public struct AgentLog: Identifiable, Codable {
 }
 
 public struct AgentOption {
-    let maxNoImprovementCount: Int
-    let continueOnSuccess: Bool
-    let generateTimeout: TimeInterval?
+    public var maxNoImprovementCount: Int
+    public var continueOnSuccess: Bool
+    public var generateTimeout: TimeInterval?
     
     public init(maxNoImprovementCount: Int = 5,
-                continueOnSuccess: Bool = true,
+                continueOnSuccess: Bool = false,
                 generateTimeout: TimeInterval? = 60) {
         self.maxNoImprovementCount = maxNoImprovementCount
         self.continueOnSuccess = continueOnSuccess

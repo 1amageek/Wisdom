@@ -260,7 +260,7 @@ class BuildManager {
         case .spm:
             command = "swift build"
             if let platform = selectedPlatform {
-                command += " --platform \(platform)"
+                command += ""
             }
         case .xcodebuild:
             command = "xcodebuild"

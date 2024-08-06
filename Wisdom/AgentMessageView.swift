@@ -9,8 +9,16 @@ import SwiftUI
 
 struct AgentMessageView: View {
     @Binding var message: String
-    let onStart: () -> Void
+    @State private var continueOnSuccess: Bool = false
+    @State private var agentOption: AgentOption
+    let onStart: (AgentOption) -> Void
     @Environment(\.dismiss) private var dismiss
+    
+    init(message: Binding<String>, onStart: @escaping (AgentOption) -> Void) {
+        self._message = message
+        self.onStart = onStart
+        self._agentOption = State(initialValue: AgentOption(continueOnSuccess: false))
+    }
     
     var body: some View {
         VStack {
@@ -21,6 +29,12 @@ struct AgentMessageView: View {
                 .frame(height: 100)
                 .border(Color.gray, width: 1)
             
+            Toggle("Continue on Success", isOn: $continueOnSuccess)
+                .padding(.vertical)
+                .onChange(of: continueOnSuccess) { _, newValue in
+                    agentOption.continueOnSuccess = newValue
+                }
+            
             HStack {
                 Button("Cancel") {
                     dismiss()
@@ -29,7 +43,7 @@ struct AgentMessageView: View {
                 Spacer()
                 
                 Button("Start Agent") {
-                    onStart()
+                    onStart(agentOption)
                     dismiss()
                 }
             }

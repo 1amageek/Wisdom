@@ -220,7 +220,7 @@ extension URL {
 
 extension AppState {
     
-    func startAgent(with message: String, agent: Agent) async {
+    func startAgent(with message: String, option: AgentOption) async {
         
         let buildClosure: Agent.BuildClosure = {
             await BuildManager.shared.start()
@@ -253,7 +253,7 @@ extension AppState {
             }
         }
  
-        await agent.start(with: message, build: buildClosure, generate: generateClosure, fileOperation: fileOperationClosure)
+        await Agent.shared.start(with: message, option: option, build: buildClosure, generate: generateClosure, fileOperation: fileOperationClosure)
     }
     
     func stopAgent() async {

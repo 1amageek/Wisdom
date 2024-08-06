@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var isSettingsPresented = false
     @State private var isAgentMessageSheetPresented = false
     
-    @State var isServerRunning: Bool = false
     @State var isBuildInProgress: Bool = false
     @State private var showBuildErrorAlert = false
     @State private var selectedCode: ImprovedCode?
@@ -42,6 +41,7 @@ struct ContentView: View {
                                 Image(systemName: buildManager.isBuilding ? "stop.fill" : "play.fill")
                                     .padding(.horizontal, 6)
                             }
+                            .keyboardShortcut("b", modifiers: .command)
                         }
                         
                         Button {
@@ -49,13 +49,14 @@ struct ContentView: View {
                                 agent.stop()
                             } else {
                                 Task {
-                                    await appState.startAgent(with: "実装してください。", agent: Agent.shared)
+                                    isAgentMessageSheetPresented = true
                                 }
                             }
                         } label: {
                             Image(systemName: agent.isRunning ? "stop.fill" : "forward.fill")
                                 .padding(.horizontal, 4)
                         }
+                        .keyboardShortcut("r", modifiers: .command)
                     }
                 }
                 .padding(0)
@@ -103,7 +104,11 @@ struct ContentView: View {
             SettingView()
         }
         .sheet(isPresented: $isAgentMessageSheetPresented) {
-            AgentMessageView(message: $agentMessage, onStart: startAgent)
+            AgentMessageView(message: $agentMessage) { option in
+                Task {
+                    await appState.startAgent(with: agentMessage, option: option)
+                }
+            }
         }
         .alert("Build Failed", isPresented: $showBuildErrorAlert) {
             Button("OK", role: .cancel) { }
@@ -122,12 +127,6 @@ struct ContentView: View {
             } else {
                 Text("Do you want to move \(selectedFiles.count) items to the Trash?")
             }
-        }
-    }
-    
-    private func startAgent() {
-        Task {
-            await appState.startAgent(with: agentMessage, agent: agent)
         }
     }
 }
