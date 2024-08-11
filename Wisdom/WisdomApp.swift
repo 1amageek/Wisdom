@@ -12,6 +12,7 @@ import Observation
 struct WisdomApp: App {
     
     @State private var appState: AppState = AppState()
+    @State private var fileSystem: FileSystem = FileSystem.shared
     @State private var contextManager: ContextManager = ContextManager.shared
     @State private var buildManager: BuildManager = BuildManager.shared
     @State private var directoryManager: DirectoryManager = DirectoryManager.shared
@@ -34,6 +35,7 @@ struct WisdomApp: App {
                 .environment(appState)
                 .environment(buildManager)
                 .environment(agent)
+                .environment(fileSystem)
                 .onAppear {
                     if let url = directoryManager.loadSavedDirectory() {
                         setDirectoryURL(url)
@@ -86,6 +88,7 @@ struct WisdomApp: App {
     private func setDirectoryURL(_ url: URL) {
         appState.setURL(url)
         buildManager.buildWorkingDirectory = url
+        fileSystem.setURL(url)
         Task {
             await serverManager.setDelegate(appState)
             if await !serverManager.isServerRunning() {

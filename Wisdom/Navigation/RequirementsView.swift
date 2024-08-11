@@ -41,23 +41,23 @@ struct RequirementsView<Content: View>: View {
     
     var body: some View {
         ZStack {
-            if let rootItem = rootItem {
-                List(selection: $selection) {
-                    OutlineGroup(rootItem, children: \.children) { item in
-                        FileItemView(item: item)
-                            .tag(item)
-                            .onAppear {
-                                item.loadChildren()
-                            }
-                    }
-                }
-                .onKeyPress(.init(Character(UnicodeScalar(127)))) {
-                    appState.handleDeleteKeyPress()
-                    return .handled
-                }
-            } else {
-                content()
-            }
+//            if let rootItem = rootItem {
+//                List(selection: $selection) {
+//                    OutlineGroup(rootItem, children: \.children) { item in
+//                        FileItemView(item: item)
+//                            .tag(item)
+//                            .onAppear {
+//                                item.loadChildren()
+//                            }
+//                    }
+//                }
+//                .onKeyPress(.init(Character(UnicodeScalar(127)))) {
+//                    appState.handleDeleteKeyPress()
+//                    return .handled
+//                }
+//            } else {
+//                content()
+//            }
         }
         .frame(maxHeight: .infinity)
         .navigationSplitViewColumnWidth(ideal: 260)
@@ -112,7 +112,6 @@ struct RequirementsView<Content: View>: View {
         do {
             try "".write(to: newFileURL, atomically: true, encoding: .utf8)
             alertMessage = "File created successfully"
-            rootItem.loadChildren() // Refresh the file list
         } catch {
             alertMessage = "Error creating file: \(error.localizedDescription)"
         }

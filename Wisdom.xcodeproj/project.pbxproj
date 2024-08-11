@@ -16,9 +16,6 @@
 		1266B5C92C520E3F00A4A6C9 /* WisdomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5C82C520E3F00A4A6C9 /* WisdomTests.swift */; };
 		1266B5D32C520E3F00A4A6C9 /* WisdomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5D22C520E3F00A4A6C9 /* WisdomUITests.swift */; };
 		1266B5D52C520E3F00A4A6C9 /* WisdomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5D42C520E3F00A4A6C9 /* WisdomUITestsLaunchTests.swift */; };
-		1266B5E82C520E4600A4A6C9 /* FileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E62C520E4600A4A6C9 /* FileItemView.swift */; };
-		1266B5E92C520E4600A4A6C9 /* FileSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */; };
-		1266B5EA2C520E4600A4A6C9 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E12C520E4600A4A6C9 /* FileItem.swift */; };
 		1266B5EB2C520E4600A4A6C9 /* ContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E52C520E4600A4A6C9 /* ContextManager.swift */; };
 		1266B5EC2C520E4600A4A6C9 /* FileSystemObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */; };
 		1266B5EE2C520F4500A4A6C9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5ED2C520F4500A4A6C9 /* AppState.swift */; };
@@ -51,7 +48,6 @@
 		127445902C56A8D10080BCEB /* BuildStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274458F2C56A8D10080BCEB /* BuildStatusView.swift */; };
 		127445922C56ACEC0080BCEB /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445912C56ACEC0080BCEB /* BuildType.swift */; };
 		127445962C574F260080BCEB /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445952C574F260080BCEB /* SideBar.swift */; };
-		127445982C5751A10080BCEB /* RequirementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445972C5751A10080BCEB /* RequirementsView.swift */; };
 		1274459B2C575CDA0080BCEB /* RequirementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274459A2C575CDA0080BCEB /* RequirementsManager.swift */; };
 		1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1274459D2C5765CD0080BCEB /* CodeEditor.swift */; };
 		127445A32C57662E0080BCEB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A22C57662E0080BCEB /* MainView.swift */; };
@@ -59,6 +55,11 @@
 		127445A82C576BE60080BCEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A72C576BE60080BCEB /* Theme.swift */; };
 		127445AA2C5777950080BCEB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A92C5777950080BCEB /* String+.swift */; };
 		127445B22C579D690080BCEB /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 127445B12C579D690080BCEB /* MarkdownUI */; };
+		1297D8952C69829F000F1064 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E12C520E4600A4A6C9 /* FileItem.swift */; };
+		1297D8982C698459000F1064 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297D8962C698459000F1064 /* FileSystem.swift */; };
+		1297D8992C698459000F1064 /* FileItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297D8972C698459000F1064 /* FileItemSection.swift */; };
+		1297D89A2C698489000F1064 /* FileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E62C520E4600A4A6C9 /* FileItemView.swift */; };
+		1297D89B2C698494000F1064 /* FileSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		127445A22C57662E0080BCEB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		127445A72C576BE60080BCEB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		127445A92C5777950080BCEB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1297D8962C698459000F1064 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
+		1297D8972C698459000F1064 /* FileItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItemSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +315,8 @@
 			children = (
 				1266B5E12C520E4600A4A6C9 /* FileItem.swift */,
 				1266B5E62C520E4600A4A6C9 /* FileItemView.swift */,
+				1297D8972C698459000F1064 /* FileItemSection.swift */,
+				1297D8962C698459000F1064 /* FileSystem.swift */,
 				1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */,
 				1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */,
 				127445972C5751A10080BCEB /* RequirementsView.swift */,
@@ -478,12 +483,10 @@
 				1274457F2C54DEEC0080BCEB /* BuildLog.swift in Sources */,
 				1274458C2C561C110080BCEB /* AgentMessageView.swift in Sources */,
 				1266B60D2C53877C00A4A6C9 /* ChatMessage.swift in Sources */,
-				127445982C5751A10080BCEB /* RequirementsView.swift in Sources */,
 				1266B6262C54AAF200A4A6C9 /* ServerSettingView.swift in Sources */,
 				1266B5F22C5227D000A4A6C9 /* CodeFile.swift in Sources */,
 				1266B5B72C520E3E00A4A6C9 /* ContentView.swift in Sources */,
 				1266B6112C53880F00A4A6C9 /* ChatBalloonView.swift in Sources */,
-				1266B5EA2C520E4600A4A6C9 /* FileItem.swift in Sources */,
 				1266B6062C52B78300A4A6C9 /* BuildManager.swift in Sources */,
 				1266B60F2C53878700A4A6C9 /* ChatViewModel.swift in Sources */,
 				1266B5F72C524D0E00A4A6C9 /* ServerManager.swift in Sources */,
@@ -492,6 +495,7 @@
 				1274457A2C54B7E00080BCEB /* LogView.swift in Sources */,
 				127445A32C57662E0080BCEB /* MainView.swift in Sources */,
 				1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */,
+				1297D8952C69829F000F1064 /* FileItem.swift in Sources */,
 				1266B6092C53873600A4A6C9 /* ChatNavigationView.swift in Sources */,
 				1266B6172C53B3F000A4A6C9 /* Transcript.swift in Sources */,
 				127445962C574F260080BCEB /* SideBar.swift in Sources */,
@@ -501,18 +505,20 @@
 				1266B5EE2C520F4500A4A6C9 /* AppState.swift in Sources */,
 				1274459B2C575CDA0080BCEB /* RequirementsManager.swift in Sources */,
 				127445A82C576BE60080BCEB /* Theme.swift in Sources */,
+				1297D89A2C698489000F1064 /* FileItemView.swift in Sources */,
 				127445812C55DF880080BCEB /* ChatView.swift in Sources */,
+				1297D8982C698459000F1064 /* FileSystem.swift in Sources */,
 				127445842C55F49A0080BCEB /* Agent.swift in Sources */,
 				1210E6A92C60F02A0086DB5D /* SchemaManager.swift in Sources */,
-				1266B5E82C520E4600A4A6C9 /* FileItemView.swift in Sources */,
-				1266B5E92C520E4600A4A6C9 /* FileSystemView.swift in Sources */,
 				1266B5F42C522D7300A4A6C9 /* FileTypeSelectionView.swift in Sources */,
 				127445902C56A8D10080BCEB /* BuildStatusView.swift in Sources */,
 				1266B5EC2C520E4600A4A6C9 /* FileSystemObserver.swift in Sources */,
+				1297D89B2C698494000F1064 /* FileSystemView.swift in Sources */,
 				1266B6222C54AABC00A4A6C9 /* SettingView.swift in Sources */,
 				1274457D2C54C9F00080BCEB /* DirectoryManager.swift in Sources */,
 				1266B5EB2C520E4600A4A6C9 /* ContextManager.swift in Sources */,
 				1274458E2C5695B30080BCEB /* LogDetailView.swift in Sources */,
+				1297D8992C698459000F1064 /* FileItemSection.swift in Sources */,
 				1266B6152C539C6D00A4A6C9 /* ChatThread.swift in Sources */,
 				1266B61D2C5495BD00A4A6C9 /* ImprovedCode.swift in Sources */,
 				1266B61B2C540F4300A4A6C9 /* FileOperationService.swift in Sources */,

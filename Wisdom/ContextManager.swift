@@ -47,8 +47,15 @@ class ContextManager {
     init() { }
     
     func setRootURL(_ rootURL: URL) {
+        clearContext()
         self.rootURL = rootURL
         setupFileObserver()
+    }
+    
+    func clearContext() {
+        files.removeAll()
+        fullContext = ""
+        isContextDirty = true
     }
     
     func setConfig(_ config: Configuration) {

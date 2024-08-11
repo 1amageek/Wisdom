@@ -35,7 +35,6 @@ class AppState {
         do {
             let resolvedURL = try DirectoryManager.shared.setDirectory(url)
             self.rootItem = FileItem(url: resolvedURL)
-            self.rootItem?.loadChildren()
             ContextManager.shared.setRootURL(resolvedURL)
             ContextManager.shared.setConfig(ContextManager.Configuration(
                 maxDepth: 5,
@@ -286,7 +285,6 @@ extension AppState {
             try await saveFile(file)
             print("File saved successfully: \(newFileURL.path)")
             // ファイルシステムビューを更新
-            rootItem?.loadChildren()
         } catch {
             print("Error saving file: \(error)")
         }

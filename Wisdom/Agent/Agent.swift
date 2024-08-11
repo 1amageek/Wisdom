@@ -98,7 +98,7 @@ public struct AgentOption {
     
     public init(maxNoImprovementCount: Int = 5,
                 continueOnSuccess: Bool = false,
-                generateTimeout: TimeInterval? = 60) {
+                generateTimeout: TimeInterval? = 200) {
         self.maxNoImprovementCount = maxNoImprovementCount
         self.continueOnSuccess = continueOnSuccess
         self.generateTimeout = generateTimeout

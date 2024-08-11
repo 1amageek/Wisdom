@@ -52,14 +52,13 @@ struct FileSystemView: View {
                 }
                 .onAppear { section.item.loadFileItems() }
             }
-        }
+        }        
         .focusable()
         .focusEffectDisabled()
         .onKeyPress(.init(Character(UnicodeScalar(127)))) {
             fileSystem.showingDeleteConfirmation.toggle()
             return .handled
         }
-        .frame(minWidth: 220)
         .alert("Move to Trash", isPresented: $system.showingDeleteConfirmation) {
             Button("Cancel", role: .cancel) { }
             Button("Move to Trash", role: .destructive) {
