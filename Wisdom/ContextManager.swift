@@ -24,7 +24,10 @@ class ContextManager {
     
     private var fullContext: String = ""
     private var fileContexts: [String: String] = [:]
-    private var isContextDirty: Bool = false
+    private var isContextDirty: Bool = true
+    
+    // 除外パスのみを保持
+    var excludedPaths: Set<String> = []
     
     struct Configuration {
         let maxDepth: Int
@@ -32,6 +35,7 @@ class ContextManager {
         let maxFileSize: Int
         let debounceInterval: TimeInterval
         var monitoredFileTypes: [String]
+        var excludedPaths: Set<String> = []
     }
     
     private var config: Configuration = Configuration(
@@ -39,7 +43,8 @@ class ContextManager {
         excludedDirectories: [],
         maxFileSize: 1_000_000,
         debounceInterval: 0.5,
-        monitoredFileTypes: ["swift", "tsx", "ts", "js", "py", "rs"]
+        monitoredFileTypes: ["swift", "tsx", "ts", "js", "py", "rs"],
+        excludedPaths: []
     )
     
     private var updateWorkItem: DispatchWorkItem?
@@ -60,6 +65,9 @@ class ContextManager {
     
     func setConfig(_ config: Configuration) {
         self.config = config
+        self.excludedPaths = config.excludedPaths
+        isContextDirty = true
+        setupFileObserver()
     }
     
     func updateMonitoredFileTypes(_ fileTypes: [String]) {
@@ -72,8 +80,20 @@ class ContextManager {
         }
     }
     
+    func updateExcludedPaths(_ paths: Set<String>) {
+        self.excludedPaths = paths
+        isContextDirty = true
+        setupFileObserver()
+        Task {
+            await loadInitialFiles()
+        }
+    }
+    
+    private func isPathExcluded(_ path: String) -> Bool {
+        return excludedPaths.contains { path.hasPrefix($0) }
+    }
+    
     private func setupFileObserver() {
-        
         guard let rootURL else { return }
         
         let configuration = FileSystemObserver.Configuration(
@@ -90,7 +110,9 @@ class ContextManager {
             Task { @MainActor in
                 switch event {
                 case .created(let url), .modified(let url):
-                    await self.addOrUpdateFile(at: url)
+                    if !self.isPathExcluded(url.path) {
+                        await self.addOrUpdateFile(at: url)
+                    }
                 case .deleted(let url):
                     self.removeFile(at: url)
                 case .renamed(let oldURL, let newURL):
@@ -142,10 +164,10 @@ class ContextManager {
                         let resourceValues = try fileURL.resourceValues(forKeys: [.isDirectoryKey, .fileSizeKey])
                         
                         if let isDirectory = resourceValues.isDirectory, isDirectory {
-                            if !config.excludedDirectories.contains(fileURL.lastPathComponent) {
+                            if !config.excludedDirectories.contains(fileURL.lastPathComponent) && !isPathExcluded(fileURL.path) {
                                 await loadFiles(in: fileURL, currentDepth: currentDepth + 1)
                             }
-                        } else if config.monitoredFileTypes.contains(fileURL.pathExtension.lowercased()) {
+                        } else if config.monitoredFileTypes.contains(fileURL.pathExtension.lowercased()) && !isPathExcluded(fileURL.path) {
                             if let fileSize = resourceValues.fileSize, fileSize <= config.maxFileSize {
                                 await addOrUpdateFile(at: fileURL)
                                 loadedFiles += 1
@@ -260,7 +282,6 @@ class ContextManager {
         }
     }
     
-    // New method for getting full context (for server use)
     func getFullContext() -> String {
         if isContextDirty {
             updateFullContext()
@@ -268,7 +289,6 @@ class ContextManager {
         return fullContext
     }
     
-    // New method for getting context of a specific file (for server use)
     func getFileContext(for filePath: String) -> String? {
         return fileContexts[filePath]
     }
@@ -295,7 +315,6 @@ class ContextManager {
         return contexts.joined(separator: "\n\n")
     }
     
-    // New method for getting context based on FileSystemView selection
     func getSelectedContext(for selectedItems: Set<FileItem>) async -> String {
         await MainActor.run { isLoading = true }
         let selectedFiles = files.filter { file in
@@ -322,7 +341,8 @@ class ContextManager {
             .filter { file in
                 let relativePath = file.url.relativePath(from: rootURL)
                 return config.monitoredFileTypes.contains(file.fileType) &&
-                !isExcludedDirectory(relativePath)
+                !isExcludedDirectory(relativePath) &&
+                !isPathExcluded(file.url.path)
             }
             .lazy
             .map { file in

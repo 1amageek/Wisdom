@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Observation
+@_exported import FileSystemNavigator
 
 @main
 struct WisdomApp: App {
@@ -88,7 +89,7 @@ struct WisdomApp: App {
     private func setDirectoryURL(_ url: URL) {
         appState.setURL(url)
         buildManager.buildWorkingDirectory = url
-        fileSystem.setURL(url)
+//        fileSystem.setURL(url)
         Task {
             await serverManager.setDelegate(appState)
             if await !serverManager.isServerRunning() {

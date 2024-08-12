@@ -55,11 +55,7 @@
 		127445A82C576BE60080BCEB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A72C576BE60080BCEB /* Theme.swift */; };
 		127445AA2C5777950080BCEB /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127445A92C5777950080BCEB /* String+.swift */; };
 		127445B22C579D690080BCEB /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 127445B12C579D690080BCEB /* MarkdownUI */; };
-		1297D8952C69829F000F1064 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E12C520E4600A4A6C9 /* FileItem.swift */; };
-		1297D8982C698459000F1064 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297D8962C698459000F1064 /* FileSystem.swift */; };
-		1297D8992C698459000F1064 /* FileItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297D8972C698459000F1064 /* FileItemSection.swift */; };
-		1297D89A2C698489000F1064 /* FileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E62C520E4600A4A6C9 /* FileItemView.swift */; };
-		1297D89B2C698494000F1064 /* FileSystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */; };
+		1297D8DA2C69A647000F1064 /* FileSystemNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 1297D8D92C69A647000F1064 /* FileSystemNavigator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,11 +89,8 @@
 		1266B5CE2C520E3F00A4A6C9 /* WisdomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WisdomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1266B5D22C520E3F00A4A6C9 /* WisdomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomUITests.swift; sourceTree = "<group>"; };
 		1266B5D42C520E3F00A4A6C9 /* WisdomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisdomUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1266B5E12C520E4600A4A6C9 /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
-		1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemView.swift; sourceTree = "<group>"; };
 		1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemObserver.swift; sourceTree = "<group>"; };
 		1266B5E52C520E4600A4A6C9 /* ContextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextManager.swift; sourceTree = "<group>"; };
-		1266B5E62C520E4600A4A6C9 /* FileItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItemView.swift; sourceTree = "<group>"; };
 		1266B5ED2C520F4500A4A6C9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1266B5EF2C52180F00A4A6C9 /* ContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextView.swift; sourceTree = "<group>"; };
 		1266B5F12C5227D000A4A6C9 /* CodeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeFile.swift; sourceTree = "<group>"; };
@@ -133,8 +126,6 @@
 		127445A22C57662E0080BCEB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		127445A72C576BE60080BCEB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		127445A92C5777950080BCEB /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		1297D8962C698459000F1064 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
-		1297D8972C698459000F1064 /* FileItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItemSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +136,7 @@
 				127445B22C579D690080BCEB /* MarkdownUI in Frameworks */,
 				1266B5FA2C524DBC00A4A6C9 /* Vapor in Frameworks */,
 				127445A62C576AE50080BCEB /* CodeEditSourceEditor in Frameworks */,
+				1297D8DA2C69A647000F1064 /* FileSystemNavigator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,12 +305,7 @@
 		127445992C5754760080BCEB /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				1266B5E12C520E4600A4A6C9 /* FileItem.swift */,
-				1266B5E62C520E4600A4A6C9 /* FileItemView.swift */,
-				1297D8972C698459000F1064 /* FileItemSection.swift */,
-				1297D8962C698459000F1064 /* FileSystem.swift */,
 				1266B5E42C520E4600A4A6C9 /* FileSystemObserver.swift */,
-				1266B5E22C520E4600A4A6C9 /* FileSystemView.swift */,
 				127445972C5751A10080BCEB /* RequirementsView.swift */,
 				127445952C574F260080BCEB /* SideBar.swift */,
 			);
@@ -358,6 +345,7 @@
 				1266B5F92C524DBC00A4A6C9 /* Vapor */,
 				127445A52C576AE50080BCEB /* CodeEditSourceEditor */,
 				127445B12C579D690080BCEB /* MarkdownUI */,
+				1297D8D92C69A647000F1064 /* FileSystemNavigator */,
 			);
 			productName = Wisdom;
 			productReference = 1266B5B12C520E3E00A4A6C9 /* Wisdom.app */;
@@ -435,6 +423,7 @@
 				1266B5F52C524CDF00A4A6C9 /* XCRemoteSwiftPackageReference "vapor" */,
 				127445A42C576ADF0080BCEB /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
 				127445B02C579D570080BCEB /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				1297D8D82C69A620000F1064 /* XCRemoteSwiftPackageReference "FileSystemNavigator" */,
 			);
 			productRefGroup = 1266B5B22C520E3E00A4A6C9 /* Products */;
 			projectDirPath = "";
@@ -495,7 +484,6 @@
 				1274457A2C54B7E00080BCEB /* LogView.swift in Sources */,
 				127445A32C57662E0080BCEB /* MainView.swift in Sources */,
 				1274459E2C5765CD0080BCEB /* CodeEditor.swift in Sources */,
-				1297D8952C69829F000F1064 /* FileItem.swift in Sources */,
 				1266B6092C53873600A4A6C9 /* ChatNavigationView.swift in Sources */,
 				1266B6172C53B3F000A4A6C9 /* Transcript.swift in Sources */,
 				127445962C574F260080BCEB /* SideBar.swift in Sources */,
@@ -505,20 +493,16 @@
 				1266B5EE2C520F4500A4A6C9 /* AppState.swift in Sources */,
 				1274459B2C575CDA0080BCEB /* RequirementsManager.swift in Sources */,
 				127445A82C576BE60080BCEB /* Theme.swift in Sources */,
-				1297D89A2C698489000F1064 /* FileItemView.swift in Sources */,
 				127445812C55DF880080BCEB /* ChatView.swift in Sources */,
-				1297D8982C698459000F1064 /* FileSystem.swift in Sources */,
 				127445842C55F49A0080BCEB /* Agent.swift in Sources */,
 				1210E6A92C60F02A0086DB5D /* SchemaManager.swift in Sources */,
 				1266B5F42C522D7300A4A6C9 /* FileTypeSelectionView.swift in Sources */,
 				127445902C56A8D10080BCEB /* BuildStatusView.swift in Sources */,
 				1266B5EC2C520E4600A4A6C9 /* FileSystemObserver.swift in Sources */,
-				1297D89B2C698494000F1064 /* FileSystemView.swift in Sources */,
 				1266B6222C54AABC00A4A6C9 /* SettingView.swift in Sources */,
 				1274457D2C54C9F00080BCEB /* DirectoryManager.swift in Sources */,
 				1266B5EB2C520E4600A4A6C9 /* ContextManager.swift in Sources */,
 				1274458E2C5695B30080BCEB /* LogDetailView.swift in Sources */,
-				1297D8992C698459000F1064 /* FileItemSection.swift in Sources */,
 				1266B6152C539C6D00A4A6C9 /* ChatThread.swift in Sources */,
 				1266B61D2C5495BD00A4A6C9 /* ImprovedCode.swift in Sources */,
 				1266B61B2C540F4300A4A6C9 /* FileOperationService.swift in Sources */,
@@ -873,6 +857,14 @@
 				minimumVersion = 2.3.1;
 			};
 		};
+		1297D8D82C69A620000F1064 /* XCRemoteSwiftPackageReference "FileSystemNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1amageek/FileSystemNavigator.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -890,6 +882,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 127445B02C579D570080BCEB /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
 			productName = MarkdownUI;
+		};
+		1297D8D92C69A647000F1064 /* FileSystemNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1297D8D82C69A620000F1064 /* XCRemoteSwiftPackageReference "FileSystemNavigator" */;
+			productName = FileSystemNavigator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

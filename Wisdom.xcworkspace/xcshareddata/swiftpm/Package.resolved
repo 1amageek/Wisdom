@@ -1,5 +1,5 @@
 {
-  "originHash" : "b33845e4a1292789d083e38d3a0515e6652234637213deecb5ec6d3fbe595a49",
+  "originHash" : "bf2facff7d25407b0607bd4d98b7b75cda831ce5259741ff44bf49d60f96fc0a",
   "pins" : [
     {
       "identity" : "async-http-client",
@@ -53,6 +53,15 @@
       "state" : {
         "revision" : "9f7932f22ab6f64aafadc14491e694179b7d0f6f",
         "version" : "4.14.3"
+      }
+    },
+    {
+      "identity" : "filesystemnavigator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1amageek/FileSystemNavigator.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5f17cd2d656397c2dc400c31abba8540ddd01adf"
       }
     },
     {
