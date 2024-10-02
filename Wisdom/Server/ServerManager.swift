@@ -126,14 +126,14 @@ actor ServerManager {
             return BuildManager.shared.errors()
         }
         
-        app.get("files", ":filename") { req -> Response in
-            guard let filename = req.parameters.get("filename"),
-                  let file = ContextManager.shared.files.first(where: { $0.url.lastPathComponent == filename }) else {
-                throw Abort(.notFound)
-            }
-            
-            return Response(status: .ok, body: .init(string: file.content))
-        }
+//        app.get("files", ":filename") { req -> Response in
+//            guard let filename = req.parameters.get("filename"),
+//                  let file = ContextManager.shared.files.first(where: { $0.url.lastPathComponent == filename }) else {
+//                throw Abort(.notFound)
+//            }
+//            
+//            return Response(status: .ok, body: .init(string: file.content))
+//        }
     }
     
     func getPublicIPAddress() async -> String? {

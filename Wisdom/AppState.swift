@@ -21,7 +21,7 @@ class AppState {
     var selection: Set<FileItem> = []
     var selectedFile: CodeFile?
     var availableFileTypes: [String] = []
-    var selectedFileTypes: [String] = ["swift", "tsx", "ts", "js", "py", "rs"]
+    var selectedFileTypes: [String] = ["swift", "tsx", "ts", "js", "py", "rs", "txt"]
     var selectedNavigation: SidebarNavigation = .fileSystem
    
     var showingDeleteConfirmation = false
@@ -41,7 +41,8 @@ class AppState {
                 excludedDirectories: ["Pods", ".git", ".storybook", "node_modules", ".next", "dataset", "ServiceAccount"],
                 maxFileSize: 1_000_000,
                 debounceInterval: 0.5,
-                monitoredFileTypes: selectedFileTypes
+                monitoredFileTypes: selectedFileTypes,
+                excludedPaths: []
             ))
             
             BuildManager.shared.setRootURL(resolvedURL)

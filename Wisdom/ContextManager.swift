@@ -27,7 +27,7 @@ class ContextManager {
     private var isContextDirty: Bool = true
     
     // 除外パスのみを保持
-    var excludedPaths: Set<String> = []
+    private(set) var excludedPaths: Set<String> = []
     
     struct Configuration {
         let maxDepth: Int
@@ -80,8 +80,17 @@ class ContextManager {
         }
     }
     
-    func updateExcludedPaths(_ paths: Set<String>) {
-        self.excludedPaths = paths
+    func insertExcludedPath(_ path: String) {
+        excludedPaths.insert(path)
+        handleExcludedPathsChange()
+    }
+
+    func deleteExcludedPath(_ path: String) {
+        excludedPaths.remove(path)
+        handleExcludedPathsChange()
+    }
+
+    private func handleExcludedPathsChange() {
         isContextDirty = true
         setupFileObserver()
         Task {
@@ -91,6 +100,23 @@ class ContextManager {
     
     private func isPathExcluded(_ path: String) -> Bool {
         return excludedPaths.contains { path.hasPrefix($0) }
+    }
+    
+    func isPathMonitored(_ path: String) -> Bool {
+        guard let rootURL = rootURL else { return false }
+        let relativePath = URL(fileURLWithPath: path).relativePath(from: rootURL)
+        return !isExcludedDirectory(relativePath) && !isPathExcluded(path)
+    }
+    
+    func isFileMonitored(_ file: CodeFile) -> Bool {
+        guard isPathMonitored(file.url.path) else { return false }
+        return config.monitoredFileTypes.contains(file.fileType)
+    }
+    
+    private func isExcludedDirectory(_ relativePath: String) -> Bool {
+        return config.excludedDirectories.contains { excludedDir in
+            relativePath.hasPrefix(excludedDir) || relativePath.contains("/\(excludedDir)/")
+        }
     }
     
     private func setupFileObserver() {
@@ -338,12 +364,7 @@ class ContextManager {
     private func formatFiles(_ filesToFormat: [CodeFile]) -> String {
         guard let rootURL else { return "" }
         let formattedFiles = filesToFormat
-            .filter { file in
-                let relativePath = file.url.relativePath(from: rootURL)
-                return config.monitoredFileTypes.contains(file.fileType) &&
-                !isExcludedDirectory(relativePath) &&
-                !isPathExcluded(file.url.path)
-            }
+            .filter { isPathMonitored($0.url.path) }
             .lazy
             .map { file in
                 let relativePath = file.url.relativePath(from: rootURL)
@@ -353,16 +374,12 @@ class ContextManager {
                     \(file.content)
                     ```
                     """
-                self.fileContexts[file.url.path] = content
+                DispatchQueue.main.async {
+                    self.fileContexts[file.url.path] = content
+                }                
                 return content
             }
         return formattedFiles.joined(separator: "\n\n")
-    }
-    
-    private func isExcludedDirectory(_ path: String) -> Bool {
-        return config.excludedDirectories.contains { excludedDir in
-            path.hasPrefix(excludedDir) || path.contains("/\(excludedDir)/")
-        }
     }
     
     private func updateContextIfNeeded() {

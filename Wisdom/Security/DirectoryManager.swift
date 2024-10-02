@@ -49,8 +49,10 @@ class DirectoryManager {
             
             print("Directory set and bookmarked successfully: \(resolvedURL.path)")
             return resolvedURL
-        } catch {
+        } catch let error as NSError {
             print("Error setting URL and creating bookmark: \(error.localizedDescription)")
+            print("Error domain: \(error.domain), code: \(error.code)")
+            print("Error user info: \(error.userInfo)")
             throw OperationError.bookmarkCreationFailed
         }
     }

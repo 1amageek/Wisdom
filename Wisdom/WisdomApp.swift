@@ -89,11 +89,10 @@ struct WisdomApp: App {
     private func setDirectoryURL(_ url: URL) {
         appState.setURL(url)
         buildManager.buildWorkingDirectory = url
-//        fileSystem.setURL(url)
         Task {
             await serverManager.setDelegate(appState)
             if await !serverManager.isServerRunning() {
-                try? await serverManager.start()
+//                try? await serverManager.start()
             }
         }
     }

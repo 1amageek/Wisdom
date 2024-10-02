@@ -37,12 +37,12 @@ struct SideBar: View {
                             .buttonStyle(.borderless)
                         }
                         Toggle("", isOn: Binding(
-                            get: { !ContextManager.shared.excludedPaths.contains(item.wrappedValue.url.path) },
+                            get: { ContextManager.shared.isPathMonitored(item.wrappedValue.url.path) },
                             set: { newValue in
                                 if !newValue {
-                                    ContextManager.shared.excludedPaths.insert(item.wrappedValue.url.path)
+                                    ContextManager.shared.insertExcludedPath(item.wrappedValue.url.path)
                                 } else {
-                                    ContextManager.shared.excludedPaths.remove(item.wrappedValue.url.path)
+                                    ContextManager.shared.deleteExcludedPath(item.wrappedValue.url.path)
                                 }
                             }
                         ))
